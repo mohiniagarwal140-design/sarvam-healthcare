@@ -1,34 +1,31 @@
 # Sarvam Healthcare Pvt Ltd
 
-> **Ancient Ayurvedic Wisdom. Formulated with Modern Precision.**
+> **Classical Ayurvedic Wisdom. Formulated with Modern Molecular Precision.**
 
-Official repository for **Sarvam Healthcare Pvt Ltd**, an Ayurvedic and pharmaceutical wellness brand uniting classical Ayurvedic texts (*Charaka Samhita*, *Sushruta Samhita*) with modern pharmacological validation (HPLC molecular fingerprinting, supercritical CO2 extraction, ICP-MS heavy metal screening).
-
----
-
-## 🌿 Brand Philosophy
-
-* **Vedic Heritage**: Classical botanicals harvested according to *Ritu Charya* (seasonal windows) at peak bio-active concentration.
-* **Clinical Standard**: 100% heavy metal tested (<0.01 ppm lead, mercury, arsenic), zero synthetic chemical residues.
-* **Complete Transparency**: Customer-accessible Batch Certificate of Analysis (COA) for every production lot.
+Official multi-page website repository for **Sarvam Healthcare Pvt Ltd**, an Ayurvedic healthcare brand uniting classical Ayurvedic science (*Charaka Samhita*, *Sushruta Samhita*) with modern pharmacological validation (HPLC molecular fingerprinting, supercritical CO2 extraction, ICP-MS heavy metal screening).
 
 ---
 
-## 🚀 Live Website on GitHub Pages
+## 🌐 Live Pages on GitHub Pages
 
-* **Live URL**: `https://<your-username>.github.io/sarvam-healthcare/`
-* **Architecture**: Fully responsive static web platform built with HTML5, Tailwind CSS, and vanilla JavaScript.
+The entire website is live and publicly accessible:
+
+| Page | Description | Live Link |
+|---|---|---|
+| **Homepage** | Hero showcase, Tridosha Prakriti quiz, batch COA lookup, doctor booking | [View Homepage](https://mohiniagarwal140-design.github.io/sarvam-healthcare/) |
+| **Apothecary Shop** | Full catalog with Dosha filters, concern tabs, search, sorting & cart | [View Shop](https://mohiniagarwal140-design.github.io/sarvam-healthcare/shop.html) |
+| **Flagship Formulation** | *Amrit Rasayana Gold* with HPLC lab test specs, 30/60-day options, Anupana guide | [View Product](https://mohiniagarwal140-design.github.io/sarvam-healthcare/product.html) |
+| **Heritage & Science** | Three extraction pillars, Himalayan sourcing ethics map, Medical Advisory Board | [View Heritage & Science](https://mohiniagarwal140-design.github.io/sarvam-healthcare/about.html) |
+| **Doctor Consultations** | 1-on-1 video consultations with B.A.M.S & M.D. Vaidyas, slot scheduler & intake | [View Consultations](https://mohiniagarwal140-design.github.io/sarvam-healthcare/consultation.html) |
+| **Contact & Clinics** | Patient care desk, B2B wholesale distribution portal, clinic locations | [View Contact & Clinics](https://mohiniagarwal140-design.github.io/sarvam-healthcare/contact.html) |
 
 ---
 
-## 🧪 Formulations Featured
+## 🌿 Design System & Shared Architecture
 
-1. **Ashwagandha KSM-66® Max** (600mg, 5.2% Withanolides — Stress, Cortisol & Deep Sleep)
-2. **Triphala Active-Cleanse** (Bio-ferment 1:1:1 cold-water extract — Gut Agni & Colon Cleanse)
-3. **Curcumin 95% + Piperine Bio-Gold** (95% Curcuminoids + 5mg BioPerine — Joint Flexibility & Anti-Inflammatory)
-4. **Brahmi & Shankhpushpi Neuro-Focus** (20% Bacosides A & B — Cognitive Clarity & Acetylcholine Support)
-5. **Yakrit Shodhana Liver Care** (Kutki + Kalmegh + Bhumi Amla — Hepatic Enzyme & Bile Regulation)
-6. **Sarvam Ojas Rasayana Paste** (Wild Amla + Gir Cow A2 Cultured Ghee + 48 Herbs)
+* **Color Palette**: Himalayan Jade (`#0D5C46`, `#093B2D`) & Polished Rose Gold (`#C48B71`, `#D89E84`) with crisp clinical laboratory surfaces (`#F8FAF9`, `#FFFFFF`).
+* **Typography**: *Cinzel* (classical headings), *Playfair Display* (editorial subtitles), and *Plus Jakarta Sans* (readable clinical body text).
+* **Synchronized Shopping Cart**: Shared across all pages via `localStorage` (`sarvam_cart_items`). Adding items on the shop or product detail page instantly updates the drawer counter and subtotal across every tab.
 
 ---
 
@@ -36,17 +33,36 @@ Official repository for **Sarvam Healthcare Pvt Ltd**, an Ayurvedic and pharmace
 
 ```text
 sarvam-healthcare/
-├── index.html       # Full responsive homepage with cart, quiz & lab verification
-├── .nojekyll        # Bypasses Jekyll processing on GitHub Pages
-└── README.md        # Repository documentation
+├── index.html          # Flagship homepage with Tridosha quiz & batch COA lookup
+├── shop.html           # Full catalog with dynamic Dosha/concern filtering & search
+├── product.html        # Flagship product detail page for Amrit Rasayana Gold
+├── about.html          # Brand story, extraction pillars, sourcing map & doctor board
+├── consultation.html   # Tele-Ayurveda doctor video consultation booking engine
+├── contact.html        # Patient care desk, B2B pharmacy distribution, & clinics
+├── .nojekyll           # Bypasses Jekyll processing on GitHub Pages
+└── README.md           # Documentation and architecture guide
 ```
+
+---
+
+## ✏️ How to Edit the Website
+
+1. **Directly on GitHub**:
+   - Open this repository on [GitHub](https://github.com/mohiniagarwal140-design/sarvam-healthcare).
+   - Click on any HTML file (e.g. `shop.html` or `index.html`).
+   - Click the **Pencil icon** (Edit this file), update your text or products, and click **Commit changes**.
+   - GitHub Pages will automatically redeploy the updates within 30–60 seconds.
+
+2. **Locally / via AI Agent**:
+   - Make edits to the local files.
+   - Run `git add .`, `git commit -m "Update"`, and `git push origin main`.
 
 ---
 
 ## 📜 Regulatory & Certifications
 
 * **AYUSH License**: AY-DL-2024-00892
-* **Certifications**: AYUSH Premium Mark, GMP Certified, ISO 9001:2015, US-FDA Registered Facility
-* **Corporate Office**: Plot 44, Bio-Pharma Herbal Park, Sector 18, Udyog Vihar, Gurugram, Haryana - 122015, India.
+* **Certifications**: AYUSH Premium Mark, WHO-GMP Certified Facility, ISO 9001:2015, NABL ISO/IEC 17025 Accredited Laboratory Testing
+* **Headquarters**: Plot 44, Bio-Pharma Herbal Park, Sector 18, Udyog Vihar, Gurugram, Haryana - 122015, India.
 
 © 2026 Sarvam Healthcare Pvt Ltd. All rights reserved.

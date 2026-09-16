@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Clinics | Sarvam Healthcare Pvt Ltd</title>
+  <meta name="description" content="Get in touch with Sarvam Healthcare Pvt Ltd. Contact our patient care team, visit our clinical centers in Gurugram, Bengaluru, Mumbai, or inquire for B2B Ayurvedic distribution.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via allowlisted CDN -->
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+
+  <style>
+    :root {
+      --jade-deep: #093b2d;
+      --jade-primary: #0d5c46;
+      --jade-light: #15795d;
+      --jade-subtle: #edf5f2;
+      --jade-border: #d0e3dc;
+      
+      --rosegold-primary: #c48b71;
+      --rosegold-light: #d89e84;
+      --rosegold-dark: #a66b53;
+      --rosegold-subtle: #faf1ed;
+      
+      --bg-clinical: #f8faf9;
+      --card-white: #ffffff;
+      --charcoal-heading: #101c17;
+      --charcoal-body: #344840;
+      --muted-clinical: #5b7369;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-clinical);
+      color: var(--charcoal-body);
+      overflow-x: hidden;
+    }
+
+    .font-serif-display {
+      font-family: 'Cinzel', serif;
+    }
+
+    .font-serif-body {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .bg-clinical-pattern {
+      background-color: #f8faf9;
+      background-image: radial-gradient(#d0e3dc 0.75px, transparent 0.75px), radial-gradient(#d0e3dc 0.75px, #f8faf9 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+
+    .jade-btn-gradient {
+      background: linear-gradient(135deg, #0d5c46 0%, #093b2d 100%);
+      transition: all 0.3s ease;
+    }
+    .jade-btn-gradient:hover {
+      background: linear-gradient(135deg, #15795d 0%, #0d5c46 100%);
+      box-shadow: 0 10px 20px -5px rgba(13, 92, 70, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .rosegold-btn-gradient {
+      background: linear-gradient(135deg, #c48b71 0%, #a66b53 100%);
+      transition: all 0.3s ease;
+    }
+    .rosegold-btn-gradient:hover {
+      background: linear-gradient(135deg, #d89e84 0%, #c48b71 100%);
+      box-shadow: 0 10px 20px -5px rgba(196, 139, 113, 0.4);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- ================= TOP REGULATORY & TRUST BAR ================= -->
+  <aside aria-label="Regulatory Notice" class="bg-[#093b2d] text-white text-xs py-2 px-4 border-b border-[#c48b71]/30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#c48b71] animate-pulse"></span>
+        <span class="font-medium text-[#d89e84]">AYUSH License: AY-DL-2024-00892 • Corporate & Distribution Desk</span>
+      </div>
+      <div class="flex items-center space-x-4 text-[11px] text-white/80">
+        <span>📍 Pan-India Dispensaries in Gurugram, Mumbai & Bengaluru</span>
+        <a href="tel:+911149887200" class="hover:text-[#d89e84] transition-colors">📞 Care Helpline</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN NAVIGATION HEADER ================= -->
+  <header class="sticky top-0 z-40 bg-[#ffffff]/95 backdrop-blur-md border-b border-[#d0e3dc]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Identity -->
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-2xl bg-[#edf5f2] border-2 border-[#0d5c46] flex items-center justify-center text-[#0d5c46] font-serif-display font-bold text-2xl shadow-sm group-hover:bg-[#0d5c46] group-hover:text-white transition-all">
+          S
+        </div>
+        <div>
+          <span class="font-serif-display font-bold text-lg sm:text-xl tracking-tight text-[#0d5c46] block">
+            SARVAM HEALTHCARE
+          </span>
+          <span class="text-[10px] tracking-[0.25em] text-[#a66b53] font-semibold uppercase block">
+            Pvt Ltd • Modern Ayurveda
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-7 font-medium text-sm text-[#344840]">
+        <a href="shop.html" class="hover:text-[#c48b71] transition-colors">Shop Apothecary</a>
+        <a href="product.html" class="hover:text-[#c48b71] transition-colors">Flagship Product</a>
+        <a href="about.html" class="hover:text-[#c48b71] transition-colors">Heritage & Science</a>
+        <a href="index.html#dosha-section" class="text-[#0d5c46] font-semibold flex items-center gap-1.5 hover:text-[#c48b71] transition-colors">
+          <span class="w-2 h-2 rounded-full bg-[#c48b71] animate-pulse"></span>
+          Dosha Assessment
+        </a>
+        <a href="consultation.html" class="hover:text-[#c48b71] transition-colors">Consultations</a>
+        <a href="contact.html" class="text-[#0d5c46] font-bold border-b-2 border-[#c48b71] pb-1">Contact</a>
+      </nav>
+
+      <!-- Action Buttons & Cart -->
+      <div class="flex items-center space-x-4">
+        <a href="consultation.html" class="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#0d5c46] text-xs font-semibold text-[#0d5c46] hover:bg-[#0d5c46] hover:text-white transition-all">
+          <span>Book Vaidya</span>
+        </a>
+
+        <!-- Cart Trigger -->
+        <button id="cart-toggle-btn" class="relative p-2.5 rounded-full bg-[#edf5f2] hover:bg-[#dcefe8] text-[#0d5c46] transition-all" aria-label="View Cart">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          </svg>
+          <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-[#c48b71] text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
+        </button>
+
+        <!-- Mobile menu hamburger -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-[#0d5c46]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="hidden md:hidden bg-[#ffffff] border-b border-[#d0e3dc] px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="shop.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Shop Apothecary</a>
+      <a href="product.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Flagship Product (Amrit Rasayana)</a>
+      <a href="about.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Heritage & Science</a>
+      <a href="index.html#dosha-section" class="block py-2 text-[#0d5c46]">Take Dosha Quiz</a>
+      <a href="consultation.html" class="block py-2 text-[#0d5c46] font-semibold">Book Doctor Consultation</a>
+      <a href="contact.html" class="block py-2 text-[#c48b71] font-bold">Contact & Clinics</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="bg-clinical-pattern pt-14 pb-12 border-b border-[#d0e3dc]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#edf5f2] border border-[#d0e3dc] text-xs font-semibold text-[#0d5c46]">
+          <span>🌿 Patient Support & Corporate Distribution</span>
+        </div>
+        <h1 class="font-serif-display text-3xl sm:text-5xl font-bold text-[#0d5c46] tracking-tight">
+          Connect with Our Team
+        </h1>
+        <p class="text-xs sm:text-sm text-[#5b7369]">
+          Whether you need regimen guidance, batch certificate verification, or pharmacy distribution partnership, our clinical desk is here to assist you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT FORM & DISPENSARIES ================= -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      
+      <!-- LEFT COLUMN: INTERACTIVE FORM WITH TABS -->
+      <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 border border-[#d0e3dc] shadow-sm space-y-6">
+        
+        <!-- Tab Selector: Patient Support vs B2B Wholesale -->
+        <div class="flex border-b border-[#d0e3dc] gap-6 text-xs sm:text-sm font-bold">
+          <button onclick="switchFormTab('patient')" id="form-tab-patient" class="pb-3 text-[#0d5c46] border-b-2 border-[#c48b71] transition-all">
+            👤 Patient Care & Orders
+          </button>
+          <button onclick="switchFormTab('b2b')" id="form-tab-b2b" class="pb-3 text-[#5b7369] hover:text-[#0d5c46] transition-all">
+            🏥 Clinic & Pharmacy Distribution (B2B)
+          </button>
+        </div>
+
+        <!-- Form 1: Patient Inquiry -->
+        <form id="patient-form" onsubmit="handleContactSubmit(event, 'patient')" class="space-y-4 text-xs">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Your Name *</label>
+              <input type="text" required placeholder="e.g. Somya Agarwal" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+            </div>
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Email Address *</label>
+              <input type="email" required placeholder="somya@example.com" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Phone / WhatsApp *</label>
+              <input type="tel" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+            </div>
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Order ID / Batch # (If Applicable)</label>
+              <input type="text" placeholder="e.g. #SRV-1092" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-[#0d5c46] mb-1">Nature of Inquiry *</label>
+            <select class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+              <option>Dosha Regimen & Anupana Guidance</option>
+              <option>Order Tracking & Cold-Chain Shipping</option>
+              <option>Batch Certificate of Analysis (COA) Request</option>
+              <option>Doctor Consultation Rescheduling</option>
+              <option>General Ayurvedic Inquiry</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-[#0d5c46] mb-1">Your Message *</label>
+            <textarea rows="4" required placeholder="How can our clinical team support your wellness journey?" class="w-full px-3.5 py-2 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]"></textarea>
+          </div>
+
+          <button type="submit" class="jade-btn-gradient text-white w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow">
+            Submit Patient Care Request →
+          </button>
+        </form>
+
+        <!-- Form 2: B2B Wholesale & Clinics -->
+        <form id="b2b-form" onsubmit="handleContactSubmit(event, 'b2b')" class="space-y-4 text-xs hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Organization / Clinic Name *</label>
+              <input type="text" required placeholder="e.g. AyurVeda Wellness Retreat" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+            </div>
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Doctor / Contact Person Name *</label>
+              <input type="text" required placeholder="Dr. V. K. Nair" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Corporate Email Address *</label>
+              <input type="email" required placeholder="partnerships@clinic.com" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+            </div>
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Mobile / Phone Number *</label>
+              <input type="tel" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Estimated Monthly Volume</label>
+              <select class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+                <option>50 - 200 Units (Specialist Clinic)</option>
+                <option>200 - 1,000 Units (Hospital / Wellness Resort)</option>
+                <option>1,000+ Units (Regional Distributor)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">City & State</label>
+              <input type="text" placeholder="e.g. Kochi, Kerala" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]">
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-[#0d5c46] mb-1">Specific Formulations of Interest</label>
+            <textarea rows="3" placeholder="e.g. Amrit Rasayana Gold, Ashwagandha KSM-66, or Bulk Supercritical Extracts..." class="w-full px-3.5 py-2 rounded-xl border border-[#d0e3dc] bg-[#f8faf9] focus:outline-none focus:border-[#c48b71]"></textarea>
+          </div>
+
+          <button type="submit" class="rosegold-btn-gradient text-white w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow">
+            Request B2B Institutional Wholesale Catalog →
+          </button>
+        </form>
+
+      </div>
+
+      <!-- RIGHT COLUMN: DISPENSARY LOCATIONS & DIRECT CHANNELS -->
+      <div class="lg:col-span-5 space-y-6">
+        
+        <!-- Direct Helpline Card -->
+        <div class="p-6 rounded-3xl bg-[#edf5f2] border border-[#d0e3dc] space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-[#0d5c46] text-white flex items-center justify-center text-lg font-bold">
+              📞
+            </div>
+            <div>
+              <span class="text-xs text-[#a66b53] font-bold uppercase tracking-wider block">Immediate Assistance</span>
+              <h3 class="font-serif-display font-bold text-base text-[#0d5c46]">Ayurvedic Help Desk</h3>
+            </div>
+          </div>
+
+          <div class="space-y-2 text-xs text-[#344840]">
+            <div class="flex justify-between py-1 border-b border-[#d0e3dc]">
+              <span class="text-[#5b7369]">Patient Helpline:</span>
+              <a href="tel:+911149887200" class="font-bold text-[#0d5c46] hover:underline">+91 (011) 4988-7200</a>
+            </div>
+            <div class="flex justify-between py-1 border-b border-[#d0e3dc]">
+              <span class="text-[#5b7369]">WhatsApp Care:</span>
+              <a href="https://wa.me/919876543210" target="_blank" class="font-bold text-[#0d5c46] hover:underline">+91 98765 43210</a>
+            </div>
+            <div class="flex justify-between py-1 border-b border-[#d0e3dc]">
+              <span class="text-[#5b7369]">Clinical Inquiries:</span>
+              <span class="font-bold text-[#0d5c46]">care@sarvamhealthcare.com</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-[#5b7369]">Desk Hours:</span>
+              <span class="font-bold text-[#344840]">Mon - Sat: 9:00 AM - 7:00 PM IST</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Physical Dispensaries -->
+        <div class="space-y-3">
+          <h3 class="font-serif-display text-base font-bold text-[#0d5c46]">
+            Flagship Centers & Dispensaries
+          </h3>
+
+          <div class="p-4 rounded-2xl bg-white border border-[#d0e3dc] text-xs space-y-1">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[#0d5c46]">Corporate HQ & Analytical Center</span>
+              <span class="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">Main Lab</span>
+            </div>
+            <p class="text-[#5b7369]">Plot 44, Bio-Pharma Herbal Park, Sector 18, Udyog Vihar, Gurugram, Haryana - 122015</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white border border-[#d0e3dc] text-xs space-y-1">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[#0d5c46]">Bengaluru Clinical Dispensary</span>
+              <span class="text-[10px] text-[#a66b53] bg-[#faf1ed] px-1.5 py-0.5 rounded border border-[#c48b71]/30">Consultation Hub</span>
+            </div>
+            <p class="text-[#5b7369]">100 Feet Road, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka - 560038</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white border border-[#d0e3dc] text-xs space-y-1">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-[#0d5c46]">Rishikesh Herbal Extraction Facility</span>
+              <span class="text-[10px] text-[#0d5c46] bg-[#edf5f2] px-1.5 py-0.5 rounded border border-[#d0e3dc]">Botanical Wildcrafting</span>
+            </div>
+            <p class="text-[#5b7369]">Badrinath Marg, Tapovan, Rishikesh, Uttarakhand - 249192</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ================= SUCCESS FEEDBACK MODAL ================= -->
+  <div id="contact-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 border border-[#c48b71]/40 shadow-2xl relative text-center space-y-3">
+      <button onclick="closeContactModal()" class="absolute top-5 right-5 text-gray-400 hover:text-gray-700 p-2 text-lg">✕</button>
+
+      <div class="w-16 h-16 mx-auto rounded-full bg-[#edf5f2] border-2 border-[#0d5c46] flex items-center justify-center text-3xl shadow">
+        📨
+      </div>
+
+      <h3 class="font-serif-display text-xl font-bold text-[#0d5c46]">Message Dispatched</h3>
+      <p class="text-xs text-[#5b7369]" id="contact-modal-msg">
+        Thank you for contacting Sarvam Healthcare Pvt Ltd. A senior clinical coordinator will review your request and reply within 2-4 business hours.
+      </p>
+
+      <button onclick="closeContactModal()" class="jade-btn-gradient text-white w-full py-3 rounded-xl font-bold text-xs uppercase tracking-wider shadow">
+        Close Window
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#093b2d] text-white pt-16 pb-12 border-t-4 border-[#c48b71]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Brand & Mission -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-[#edf5f2] text-[#0d5c46] flex items-center justify-center font-serif-display font-bold text-xl">S</div>
+            <div>
+              <span class="font-serif-display font-bold text-sm tracking-wide block text-white">SARVAM HEALTHCARE</span>
+              <span class="text-[9px] tracking-[0.2em] text-[#d89e84] font-semibold uppercase block">Pvt Ltd • Modern Ayurveda</span>
+            </div>
+          </div>
+          <p class="text-xs text-[#d0e3dc] leading-relaxed">
+            Bridging 5,000 years of classical Ayurvedic science with modern pharmacognosy, supercritical fluid extraction, and rigorous double-blind trials.
+          </p>
+          <div class="text-xs text-[#d89e84] font-serif-body italic">
+            "सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः" <br>
+            <span class="text-[11px] text-white/50 not-italic">May all beings be happy, may all beings be free from disease.</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-serif-display text-sm font-bold text-[#d89e84] uppercase tracking-wider mb-4">Apothecary</h4>
+          <ul class="space-y-2.5 text-xs text-[#d0e3dc]">
+            <li><a href="shop.html" class="hover:text-white transition-colors">All Formulations</a></li>
+            <li><a href="product.html" class="hover:text-white transition-colors text-[#d89e84] font-semibold">Flagship Amrit Rasayana Gold →</a></li>
+            <li><a href="shop.html?cat=vitality" class="hover:text-white transition-colors">Vitality & Rasayana</a></li>
+            <li><a href="shop.html?cat=digestion" class="hover:text-white transition-colors">Digestive Bio-Actives</a></li>
+            <li><a href="shop.html?cat=stress" class="hover:text-white transition-colors">Stress & Sleep Support</a></li>
+            <li><a href="shop.html?cat=immunity" class="hover:text-white transition-colors">Metabolic & Immunity</a></li>
+          </ul>
+        </div>
+
+        <!-- Clinical & Science -->
+        <div>
+          <h4 class="font-serif-display text-sm font-bold text-[#d89e84] uppercase tracking-wider mb-4">Science & Vaidya</h4>
+          <ul class="space-y-2.5 text-xs text-[#d0e3dc]">
+            <li><a href="about.html" class="hover:text-white transition-colors">Heritage & Extraction Science</a></li>
+            <li><a href="about.html#sourcing" class="hover:text-white transition-colors">Himalayan Sourcing Ethics</a></li>
+            <li><a href="consultation.html" class="hover:text-white transition-colors">Book Vaidya Video Consult</a></li>
+            <li><a href="index.html#dosha-section" class="hover:text-white transition-colors">Tridosha Diagnostic Tool</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Clinics & Distribution Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Corporate Info -->
+        <div>
+          <h4 class="font-serif-display text-sm font-bold text-[#d89e84] uppercase tracking-wider mb-4">Dispensary Headquarters</h4>
+          <p class="text-xs text-[#d0e3dc] leading-relaxed">
+            <strong>Sarvam Healthcare Pvt Ltd</strong><br>
+            AYUSH License: AY-DL-2024-00892<br>
+            Plot 44, Bio-Pharma Herbal Park,<br>
+            Sector 18, Udyog Vihar, Gurugram,<br>
+            Haryana - 122015, India.<br>
+            <span class="block mt-2 text-[#d89e84]">care@sarvamhealthcare.com</span>
+            <span>+91 (011) 4988-7200</span>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
+        <p>© 2026 Sarvam Healthcare Pvt Ltd. All rights reserved.</p>
+        <div class="flex space-x-6 text-[11px]">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#" class="hover:underline">AYUSH Disclaimers</a>
+          <a href="#" class="hover:underline">GMP Compliance</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= SLIDE-OUT CART DRAWER (SYNCHRONIZED) ================= -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 pointer-events-none transition-all duration-300">
+    <div id="cart-backdrop" onclick="closeCart()" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"></div>
+
+    <div id="cart-panel" class="absolute top-0 right-0 w-full max-w-md h-full bg-[#f8faf9] shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 pointer-events-auto border-l border-[#d0e3dc]">
+      
+      <div class="p-6 bg-[#0d5c46] text-white flex justify-between items-center">
+        <div>
+          <h3 class="font-serif-display text-lg font-bold">Your Healing Box</h3>
+          <p class="text-xs text-[#d89e84]">Sarvam Healthcare Direct Dispensary</p>
+        </div>
+        <button onclick="closeCart()" class="text-white/70 hover:text-white p-2">✕</button>
+      </div>
+
+      <div class="bg-[#edf5f2] p-3.5 border-b border-[#d0e3dc] text-xs text-center text-[#344840]">
+        <span id="shipping-progress-text">Add ₹500 more for <strong>FREE Express Delivery</strong>!</span>
+        <div class="w-full h-1.5 bg-[#d0e3dc] rounded-full overflow-hidden mt-2">
+          <div id="shipping-bar" class="h-full bg-[#c48b71] transition-all" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div id="cart-items-container" class="p-6 overflow-y-auto flex-grow space-y-4"></div>
+
+      <div class="p-6 bg-white border-t border-[#d0e3dc] space-y-4">
+        <div class="flex gap-2">
+          <input type="text" id="promo-input" placeholder="Promo code (SARVAMFIRST / VEDA15)" class="flex-grow px-3 py-2 rounded-xl border border-[#d0e3dc] text-xs uppercase focus:outline-none focus:border-[#c48b71]">
+          <button onclick="applyPromoCode()" class="px-4 py-2 rounded-xl bg-[#edf5f2] text-[#0d5c46] font-bold text-xs hover:bg-[#dcefe8] border border-[#d0e3dc]">Apply</button>
+        </div>
+        <div id="promo-msg" class="text-[11px] font-semibold hidden"></div>
+
+        <div class="space-y-1.5 text-xs text-[#5b7369]">
+          <div class="flex justify-between">
+            <span>Subtotal:</span>
+            <span id="cart-subtotal" class="font-semibold text-[#0d5c46]">₹0</span>
+          </div>
+          <div class="flex justify-between text-emerald-700" id="discount-row" style="display:none;">
+            <span>Ayurvedic Discount (15%):</span>
+            <span id="cart-discount">-₹0</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Standard Shipping:</span>
+            <span id="cart-shipping" class="text-emerald-700 font-semibold">FREE</span>
+          </div>
+          <div class="flex justify-between text-sm font-bold text-[#0d5c46] pt-2 border-t border-[#edf2f0]">
+            <span>Total Amount:</span>
+            <span id="cart-total">₹0</span>
+          </div>
+        </div>
+
+        <button onclick="handleCheckout()" class="rosegold-btn-gradient text-white w-full py-3.5 rounded-xl font-bold text-xs tracking-wider uppercase shadow-lg hover:scale-101 transition-transform">
+          Proceed to Secure Checkout →
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // 1. Persistent Cart Management
+    let cart = [];
+    try {
+      const saved = localStorage.getItem('sarvam_cart_items');
+      if (saved) cart = JSON.parse(saved);
+    } catch(e) { cart = []; }
+    let discountApplied = false;
+
+    function saveCart() {
+      try {
+        localStorage.setItem('sarvam_cart_items', JSON.stringify(cart));
+      } catch(e) {}
+    }
+
+    function updateCartQuantity(id, delta) {
+      const item = cart.find(i => i.id === id);
+      if (item) {
+        item.quantity += delta;
+        if (item.quantity <= 0) {
+          cart = cart.filter(i => i.id !== id);
+        }
+      }
+      saveCart();
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const countBadge = document.getElementById('cart-count-badge');
+      const container = document.getElementById('cart-items-container');
+      const subtotalEl = document.getElementById('cart-subtotal');
+      const totalEl = document.getElementById('cart-total');
+      const shippingBar = document.getElementById('shipping-bar');
+      const shippingText = document.getElementById('shipping-progress-text');
+
+      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      countBadge.textContent = totalItems;
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-16 text-[#5b7369]">
+            <span class="text-4xl block mb-2">🌿</span>
+            <p class="text-sm font-semibold">Your healing box is empty</p>
+            <p class="text-xs mt-1">Explore our clinical Ayurvedic remedies and add to your regimen.</p>
+          </div>
+        `;
+        subtotalEl.textContent = '₹0';
+        totalEl.textContent = '₹0';
+        shippingBar.style.width = '0%';
+        shippingText.innerHTML = 'Add ₹500 more for <strong>FREE Express Delivery</strong>!';
+        return;
+      }
+
+      let subtotal = 0;
+      let html = '';
+
+      cart.forEach(item => {
+        const itemTotal = item.price * item.quantity;
+        subtotal += itemTotal;
+        html += `
+          <div class="p-3.5 rounded-xl bg-white border border-[#d0e3dc] flex items-center justify-between gap-3">
+            <div class="flex-grow">
+              <h4 class="font-bold text-xs text-[#0d5c46]">${item.name}</h4>
+              <p class="text-[10px] text-[#5b7369]">${item.concern}</p>
+              <div class="text-xs font-semibold text-[#0d5c46] mt-1">₹${item.price} each</div>
+            </div>
+            <div class="flex items-center gap-2 bg-[#edf5f2] px-2 py-1 rounded-lg border border-[#d0e3dc]">
+              <button onclick="updateCartQuantity(${item.id}, -1)" class="text-[#0d5c46] font-bold px-1 hover:text-[#c48b71]">-</button>
+              <span class="text-xs font-bold w-4 text-center">${item.quantity}</span>
+              <button onclick="updateCartQuantity(${item.id}, 1)" class="text-[#0d5c46] font-bold px-1 hover:text-[#c48b71]">+</button>
+            </div>
+            <div class="text-right">
+              <span class="text-xs font-bold text-[#0d5c46]">₹${itemTotal}</span>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+      subtotalEl.textContent = '₹' + subtotal;
+
+      let finalTotal = subtotal;
+      const discountRow = document.getElementById('discount-row');
+      const discountVal = document.getElementById('cart-discount');
+      if (discountApplied) {
+        const disc = Math.round(subtotal * 0.15);
+        finalTotal = subtotal - disc;
+        discountRow.style.display = 'flex';
+        discountVal.textContent = '-₹' + disc;
+      } else {
+        discountRow.style.display = 'none';
+      }
+
+      totalEl.textContent = '₹' + finalTotal;
+
+      if (subtotal >= 500) {
+        shippingBar.style.width = '100%';
+        shippingText.innerHTML = '🎉 You unlocked <strong>FREE Express Delivery</strong>!';
+      } else {
+        const remaining = 500 - subtotal;
+        const pct = Math.min(100, Math.round((subtotal / 500) * 100));
+        shippingBar.style.width = pct + '%';
+        shippingText.innerHTML = `Add <strong>₹${remaining}</strong> more for <strong>FREE Express Delivery</strong>!`;
+      }
+    }
+
+    function openCart() {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-backdrop');
+      const panel = document.getElementById('cart-panel');
+      drawer.classList.remove('pointer-events-none');
+      backdrop.classList.remove('opacity-0');
+      backdrop.classList.add('opacity-100');
+      panel.classList.remove('translate-x-full');
+      panel.classList.add('translate-x-0');
+    }
+
+    function closeCart() {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-backdrop');
+      const panel = document.getElementById('cart-panel');
+      backdrop.classList.remove('opacity-100');
+      backdrop.classList.add('opacity-0');
+      panel.classList.remove('translate-x-0');
+      panel.classList.add('translate-x-full');
+      setTimeout(() => {
+        drawer.classList.add('pointer-events-none');
+      }, 300);
+    }
+
+    function applyPromoCode() {
+      const input = document.getElementById('promo-input').value.trim().toUpperCase();
+      const msg = document.getElementById('promo-msg');
+      if (input === 'SARVAMFIRST' || input === 'VEDA15') {
+        discountApplied = true;
+        msg.textContent = '✓ 15% Ayurvedic discount applied!';
+        msg.className = 'text-[11px] font-semibold text-emerald-700 block';
+      } else {
+        discountApplied = false;
+        msg.textContent = '✕ Invalid promo code. Try SARVAMFIRST or VEDA15';
+        msg.className = 'text-[11px] font-semibold text-rose-600 block';
+      }
+      updateCartUI();
+    }
+
+    function handleCheckout() {
+      if (cart.length === 0) {
+        alert('Your healing box is empty.');
+        return;
+      }
+      alert('Directing you to 256-Bit Encrypted Payment Gateway.');
+    }
+
+    // 2. Form Tabs & Submissions
+    function switchFormTab(tab) {
+      const patientForm = document.getElementById('patient-form');
+      const b2bForm = document.getElementById('b2b-form');
+      const tabPatient = document.getElementById('form-tab-patient');
+      const tabB2b = document.getElementById('form-tab-b2b');
+
+      if (tab === 'patient') {
+        patientForm.classList.remove('hidden');
+        b2bForm.classList.add('hidden');
+        tabPatient.classList.add('text-[#0d5c46]', 'border-b-2', 'border-[#c48b71]');
+        tabPatient.classList.remove('text-[#5b7369]');
+        tabB2b.classList.remove('text-[#0d5c46]', 'border-b-2', 'border-[#c48b71]');
+        tabB2b.classList.add('text-[#5b7369]');
+      } else {
+        patientForm.classList.add('hidden');
+        b2bForm.classList.remove('hidden');
+        tabB2b.classList.add('text-[#0d5c46]', 'border-b-2', 'border-[#c48b71]');
+        tabB2b.classList.remove('text-[#5b7369]');
+        tabPatient.classList.remove('text-[#0d5c46]', 'border-b-2', 'border-[#c48b71]');
+        tabPatient.classList.add('text-[#5b7369]');
+      }
+    }
+
+    function handleContactSubmit(e, type) {
+      e.preventDefault();
+      const modal = document.getElementById('contact-modal');
+      const msg = document.getElementById('contact-modal-msg');
+      if (type === 'patient') {
+        msg.textContent = 'Namaste! Your patient care request has been registered. An Ayurvedic care coordinator will connect with you on WhatsApp/Email within 2-4 hours.';
+      } else {
+        msg.textContent = 'Thank you for your institutional partnership inquiry. Our B2B Distribution Director will send the wholesale catalogue and commercial terms to your email.';
+      }
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeContactModal() {
+      const modal = document.getElementById('contact-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateCartUI();
+      document.getElementById('cart-toggle-btn').addEventListener('click', openCart);
+      document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+        const nav = document.getElementById('mobile-nav');
+        nav.classList.toggle('hidden');
+      });
+    });
+
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'sarvam_cart_items') {
+        try {
+          cart = JSON.parse(e.newValue || '[]');
+          updateCartUI();
+        } catch(err) {}
+      }
+    });
+  </script>
+</body>
+</html>

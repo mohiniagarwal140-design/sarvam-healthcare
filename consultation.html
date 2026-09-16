@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayurvedic Doctor Consultation | Tele-Health Clinic | Sarvam Healthcare</title>
+  <meta name="description" content="Book 1-on-1 private video consultations with certified B.A.M.S and M.D. Ayurvedic physicians from Sarvam Healthcare. Get personalized Prakriti diagnosis and prescription.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via allowlisted CDN -->
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+
+  <style>
+    :root {
+      --jade-deep: #093b2d;
+      --jade-primary: #0d5c46;
+      --jade-light: #15795d;
+      --jade-subtle: #edf5f2;
+      --jade-border: #d0e3dc;
+      
+      --rosegold-primary: #c48b71;
+      --rosegold-light: #d89e84;
+      --rosegold-dark: #a66b53;
+      --rosegold-subtle: #faf1ed;
+      
+      --bg-clinical: #f8faf9;
+      --card-white: #ffffff;
+      --charcoal-heading: #101c17;
+      --charcoal-body: #344840;
+      --muted-clinical: #5b7369;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-clinical);
+      color: var(--charcoal-body);
+      overflow-x: hidden;
+    }
+
+    .font-serif-display {
+      font-family: 'Cinzel', serif;
+    }
+
+    .font-serif-body {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .bg-clinical-pattern {
+      background-color: #f8faf9;
+      background-image: radial-gradient(#d0e3dc 0.75px, transparent 0.75px), radial-gradient(#d0e3dc 0.75px, #f8faf9 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+
+    .jade-btn-gradient {
+      background: linear-gradient(135deg, #0d5c46 0%, #093b2d 100%);
+      transition: all 0.3s ease;
+    }
+    .jade-btn-gradient:hover {
+      background: linear-gradient(135deg, #15795d 0%, #0d5c46 100%);
+      box-shadow: 0 10px 20px -5px rgba(13, 92, 70, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .rosegold-btn-gradient {
+      background: linear-gradient(135deg, #c48b71 0%, #a66b53 100%);
+      transition: all 0.3s ease;
+    }
+    .rosegold-btn-gradient:hover {
+      background: linear-gradient(135deg, #d89e84 0%, #c48b71 100%);
+      box-shadow: 0 10px 20px -5px rgba(196, 139, 113, 0.4);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- ================= TOP REGULATORY & TRUST BAR ================= -->
+  <aside aria-label="Regulatory Notice" class="bg-[#093b2d] text-white text-xs py-2 px-4 border-b border-[#c48b71]/30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#c48b71] animate-pulse"></span>
+        <span class="font-medium text-[#d89e84]">Accredited B.A.M.S & M.D. Ayurveda Physicians Panel • AYUSH Compliant</span>
+      </div>
+      <div class="flex items-center space-x-4 text-[11px] text-white/80">
+        <span>✨ 100% Private & 256-Bit Encrypted Video Platform</span>
+        <a href="tel:+911149887200" class="hover:text-[#d89e84] transition-colors">📞 Care Helpline</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN NAVIGATION HEADER ================= -->
+  <header class="sticky top-0 z-40 bg-[#ffffff]/95 backdrop-blur-md border-b border-[#d0e3dc]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Identity -->
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-2xl bg-[#edf5f2] border-2 border-[#0d5c46] flex items-center justify-center text-[#0d5c46] font-serif-display font-bold text-2xl shadow-sm group-hover:bg-[#0d5c46] group-hover:text-white transition-all">
+          S
+        </div>
+        <div>
+          <span class="font-serif-display font-bold text-lg sm:text-xl tracking-tight text-[#0d5c46] block">
+            SARVAM HEALTHCARE
+          </span>
+          <span class="text-[10px] tracking-[0.25em] text-[#a66b53] font-semibold uppercase block">
+            Pvt Ltd • Modern Ayurveda
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-7 font-medium text-sm text-[#344840]">
+        <a href="shop.html" class="hover:text-[#c48b71] transition-colors">Shop Apothecary</a>
+        <a href="product.html" class="hover:text-[#c48b71] transition-colors">Flagship Product</a>
+        <a href="about.html" class="hover:text-[#c48b71] transition-colors">Heritage & Science</a>
+        <a href="index.html#dosha-section" class="text-[#0d5c46] font-semibold flex items-center gap-1.5 hover:text-[#c48b71] transition-colors">
+          <span class="w-2 h-2 rounded-full bg-[#c48b71] animate-pulse"></span>
+          Dosha Assessment
+        </a>
+        <a href="consultation.html" class="text-[#0d5c46] font-bold border-b-2 border-[#c48b71] pb-1">Consultations</a>
+        <a href="contact.html" class="hover:text-[#c48b71] transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Buttons & Cart -->
+      <div class="flex items-center space-x-4">
+        <a href="#booking-section" class="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#0d5c46] text-xs font-semibold text-white hover:bg-[#093b2d] transition-all">
+          <span>Book Appointment</span>
+        </a>
+
+        <!-- Cart Trigger -->
+        <button id="cart-toggle-btn" class="relative p-2.5 rounded-full bg-[#edf5f2] hover:bg-[#dcefe8] text-[#0d5c46] transition-all" aria-label="View Cart">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          </svg>
+          <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-[#c48b71] text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
+        </button>
+
+        <!-- Mobile menu hamburger -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-[#0d5c46]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="hidden md:hidden bg-[#ffffff] border-b border-[#d0e3dc] px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="shop.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Shop Apothecary</a>
+      <a href="product.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Flagship Product (Amrit Rasayana)</a>
+      <a href="about.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Heritage & Science</a>
+      <a href="index.html#dosha-section" class="block py-2 text-[#0d5c46]">Take Dosha Quiz</a>
+      <a href="consultation.html" class="block py-2 text-[#c48b71] font-bold">Book Doctor Consultation</a>
+      <a href="contact.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Contact & Clinics</a>
+    </div>
+  </header>
+
+  <!-- ================= CONSULTATION HERO ================= -->
+  <section class="bg-clinical-pattern pt-14 pb-16 border-b border-[#d0e3dc]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#edf5f2] border border-[#d0e3dc] text-xs font-semibold text-[#0d5c46]">
+            <span>🩺 Tele-Ayurveda Virtual Health Center</span>
+          </div>
+
+          <h1 class="font-serif-display text-3xl sm:text-5xl font-bold text-[#0d5c46] tracking-tight leading-tight">
+            Personalized Healing with <br>
+            <span class="font-serif-body italic font-normal text-[#a66b53]">Accredited Ayurvedic Vaidyas</span>
+          </h1>
+
+          <p class="text-xs sm:text-sm text-[#5b7369] leading-relaxed max-w-2xl">
+            True healing begins by identifying the root Dosha imbalance (*Hetu*) rather than masking symptoms. Connect 1-on-1 with experienced B.A.M.S and M.D. Ayurvedic doctors from the comfort of your home.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs">
+            <div class="p-3 bg-white rounded-xl border border-[#d0e3dc]">
+              <span class="text-[#0d5c46] font-bold block">✓ Prakriti Analysis</span>
+              <span class="text-[10px] text-[#5b7369]">Identify Vata, Pitta & Kapha</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-[#d0e3dc]">
+              <span class="text-[#0d5c46] font-bold block">✓ Custom Herbal Diet</span>
+              <span class="text-[10px] text-[#5b7369]">Tailored Ahara & Vihara Plan</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-[#d0e3dc]">
+              <span class="text-[#0d5c46] font-bold block">✓ AYUSH Prescription</span>
+              <span class="text-[10px] text-[#5b7369]">Digitally Signed & Verified</span>
+            </div>
+          </div>
+
+          <a href="#booking-section" class="inline-block jade-btn-gradient text-white px-8 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow">
+            Book Your Video Appointment Below ↓
+          </a>
+        </div>
+
+        <!-- Right Visual Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-[#c48b71]/35 shadow-xl space-y-5">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-2xl bg-[#edf5f2] border-2 border-[#0d5c46] flex items-center justify-center text-3xl shadow-sm">
+                👩‍⚕️
+              </div>
+              <div>
+                <h3 class="font-serif-display font-bold text-base text-[#0d5c46]">Dr. Vaidya Ananya Deshmukh</h3>
+                <span class="text-xs text-[#a66b53] font-semibold block">B.A.M.S, M.D. (Ayurveda - BHU)</span>
+                <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 inline-block mt-1">
+                  ● Next Available: Today at 4:30 PM
+                </span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#f8faf9] border border-[#d0e3dc] text-xs space-y-2">
+              <div class="flex justify-between">
+                <span class="text-[#5b7369]">Consultation Format:</span>
+                <span class="font-bold text-[#0d5c46]">Private HD Video Call</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-[#5b7369]">Average Rating:</span>
+                <span class="font-bold text-[#c48b71]">★★★★★ 4.98 (1,420+ Consults)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-[#5b7369]">Languages:</span>
+                <span class="font-bold text-[#344840]">English, Hindi, Marathi</span>
+              </div>
+            </div>
+
+            <p class="text-xs text-[#5b7369] italic">
+              "Ayurveda treats the patient who has the disease, not merely the disease which the patient has."
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE BOOKING WIZARD ================= -->
+  <section id="booking-section" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <span class="text-xs font-bold text-[#a66b53] tracking-widest uppercase">Instant Scheduling</span>
+        <h2 class="font-serif-display text-2xl sm:text-3xl font-bold text-[#0d5c46] mt-1">
+          Schedule Your Consultation
+        </h2>
+        <p class="text-xs text-[#5b7369] mt-1">
+          Select your consultation package, physician, and preferred time slot.
+        </p>
+      </div>
+
+      <div class="bg-[#f8faf9] rounded-3xl p-6 sm:p-10 border border-[#d0e3dc] shadow-md space-y-8">
+        
+        <!-- STEP 1: SELECT PACKAGE -->
+        <div>
+          <span class="text-xs font-bold text-[#a66b53] uppercase tracking-wider block mb-3">
+            Step 1: Choose Consultation Package
+          </span>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            
+            <div onclick="selectPackageTier('prakriti', 499)" id="tier-prakriti" class="tier-card active-tier p-4 rounded-2xl bg-white border-2 border-[#0d5c46] cursor-pointer shadow-sm transition-all">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-bold text-[#0d5c46] block text-sm">Prakriti & Dosha Audit</span>
+                <span class="font-bold text-[#0d5c46]">₹499</span>
+              </div>
+              <p class="text-[11px] text-[#5b7369] leading-relaxed">
+                30-min comprehensive constitution analysis, tongue diagnostic guide, and lifestyle recommendations.
+              </p>
+            </div>
+
+            <div onclick="selectPackageTier('chronic', 899)" id="tier-chronic" class="tier-card p-4 rounded-2xl bg-white border border-[#d0e3dc] hover:border-[#c48b71] cursor-pointer shadow-sm transition-all">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-bold text-[#0d5c46] block text-sm">Chronic Imbalance Plan</span>
+                <span class="font-bold text-[#0d5c46]">₹899</span>
+              </div>
+              <p class="text-[11px] text-[#5b7369] leading-relaxed">
+                45-min deep session for Gut Agni, Arthritis, Fatty Liver, or Insomnia. Includes 2 follow-ups.
+              </p>
+            </div>
+
+            <div onclick="selectPackageTier('rasayana', 1499)" id="tier-rasayana" class="tier-card p-4 rounded-2xl bg-white border border-[#d0e3dc] hover:border-[#c48b71] cursor-pointer shadow-sm transition-all">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-bold text-[#0d5c46] block text-sm">Rasayana Longevity</span>
+                <span class="font-bold text-[#0d5c46]">₹1,499</span>
+              </div>
+              <p class="text-[11px] text-[#5b7369] leading-relaxed">
+                60-min family health blueprint, complete biological age assessment, and Ojas restoration protocol.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- STEP 2: SELECT DOCTOR & TIME -->
+        <div>
+          <span class="text-xs font-bold text-[#a66b53] uppercase tracking-wider block mb-3">
+            Step 2: Select Ayurvedic Physician & Slot
+          </span>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 text-xs">
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Select Physician</label>
+              <select id="doctor-select" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-white font-medium text-[#344840] focus:outline-none focus:border-[#c48b71]">
+                <option value="Dr. Vaidya Ananya Deshmukh (M.D. Ayurveda)">Dr. Vaidya Ananya Deshmukh (B.A.M.S, M.D. - Rasayana Specialist)</option>
+                <option value="Dr. Hariprasad Shastri (Gold Medalist)">Dr. Hariprasad Shastri (B.A.M.S - Nadi & Agni Specialist)</option>
+                <option value="Dr. Rajeshwar Varma (Ph.D. Pharmacognosy)">Dr. Rajeshwar Varma (M.Pharm, Ph.D. - Herbal Phytotherapy)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Preferred Date</label>
+              <select id="date-select" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-white font-medium text-[#344840] focus:outline-none focus:border-[#c48b71]">
+                <option value="Today (Immediate / Evening)">Today (September 16, 2026)</option>
+                <option value="Tomorrow (Morning)">Tomorrow (September 17, 2026)</option>
+                <option value="Friday (Afternoon)">Friday (September 18, 2026)</option>
+                <option value="Saturday (Weekend Special)">Saturday (September 19, 2026)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Time Slots Pills -->
+          <div class="space-y-2 text-xs">
+            <label class="block font-semibold text-[#0d5c46]">Available Time Slots:</label>
+            <div class="flex flex-wrap gap-2" id="slots-container">
+              <button type="button" onclick="selectSlot(this)" class="slot-pill active-slot px-3 py-1.5 rounded-lg border-2 border-[#0d5c46] bg-[#edf5f2] font-semibold text-[#0d5c46]">
+                4:30 PM - 5:00 PM (Today)
+              </button>
+              <button type="button" onclick="selectSlot(this)" class="slot-pill px-3 py-1.5 rounded-lg border border-[#d0e3dc] bg-white text-[#344840] hover:border-[#c48b71]">
+                6:00 PM - 6:30 PM (Today)
+              </button>
+              <button type="button" onclick="selectSlot(this)" class="slot-pill px-3 py-1.5 rounded-lg border border-[#d0e3dc] bg-white text-[#344840] hover:border-[#c48b71]">
+                10:00 AM - 10:30 AM (Tomorrow)
+              </button>
+              <button type="button" onclick="selectSlot(this)" class="slot-pill px-3 py-1.5 rounded-lg border border-[#d0e3dc] bg-white text-[#344840] hover:border-[#c48b71]">
+                11:30 AM - 12:00 PM (Tomorrow)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3: PATIENT INTAKE FORM -->
+        <form onsubmit="handleBookingSubmit(event)" class="space-y-4 pt-4 border-t border-[#d0e3dc] text-xs">
+          <span class="text-xs font-bold text-[#a66b53] uppercase tracking-wider block">
+            Step 3: Patient Health Profile
+          </span>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Full Legal Name *</label>
+              <input type="text" id="patient-name" required placeholder="e.g. Ramesh Sharma" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-white focus:outline-none focus:border-[#c48b71]">
+            </div>
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">WhatsApp Mobile Number *</label>
+              <input type="tel" id="patient-phone" required placeholder="+91 98765 43210 (For video link)" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-white focus:outline-none focus:border-[#c48b71]">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Primary Health Concern *</label>
+              <select id="patient-concern" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-white focus:outline-none focus:border-[#c48b71]">
+                <option>Digestive Sluggishness / IBS / Bloating (Agni Mandya)</option>
+                <option>Chronic Stress / Adrenal Fatigue / Insomnia (Vata Vriddhi)</option>
+                <option>Joint Inflammation / Stiffness / Arthritis (Amavata)</option>
+                <option>Liver Sluggishness / High Cholesterol (Yakrit Dosha)</option>
+                <option>Skin Allergies / Psoriasis / Hair Thinning</option>
+                <option>General Longevity / Rasayana Rejuvenation</option>
+              </select>
+            </div>
+            <div>
+              <label class="block font-semibold text-[#0d5c46] mb-1">Age & Biological Sex</label>
+              <input type="text" id="patient-demographics" placeholder="e.g. 38, Male" class="w-full px-3.5 py-2.5 rounded-xl border border-[#d0e3dc] bg-white focus:outline-none focus:border-[#c48b71]">
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-[#0d5c46] mb-1">Current Medications / Existing Diagnoses (Optional)</label>
+            <textarea id="patient-notes" rows="2" placeholder="Mention any ongoing allopathic or herbal supplements..." class="w-full px-3.5 py-2 rounded-xl border border-[#d0e3dc] bg-white focus:outline-none focus:border-[#c48b71]"></textarea>
+          </div>
+
+          <button type="submit" class="rosegold-btn-gradient text-white w-full py-4 rounded-xl font-bold text-xs uppercase tracking-wider shadow-lg">
+            Confirm Video Consultation & Receive WhatsApp Pass →
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BOOKING SUCCESS MODAL ================= -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-[#c48b71]/40 shadow-2xl relative">
+      <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-gray-400 hover:text-gray-700 p-2 text-lg">✕</button>
+
+      <div class="text-center space-y-3">
+        <div class="w-16 h-16 mx-auto rounded-full bg-[#edf5f2] border-2 border-[#0d5c46] flex items-center justify-center text-3xl shadow">
+          🎉
+        </div>
+
+        <span class="px-3 py-1 rounded-full bg-[#faf1ed] text-[#a66b53] border border-[#c48b71]/30 text-[10px] font-bold uppercase tracking-wider">
+          Appointment Confirmed
+        </span>
+
+        <h3 class="font-serif-display text-2xl font-bold text-[#0d5c46]">Namaste! Your Session is Booked</h3>
+        
+        <p class="text-xs text-[#5b7369]">
+          Your video appointment pass has been issued. A secure encrypted Google Meet & WhatsApp invitation has been dispatched.
+        </p>
+
+        <div class="p-4 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc] text-xs text-left space-y-2">
+          <div class="flex justify-between">
+            <span class="text-[#5b7369]">Appointment Pass ID:</span>
+            <span class="font-bold text-[#0d5c46]" id="pass-id">#SRV-VCD-8921</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-[#5b7369]">Physician:</span>
+            <span class="font-bold text-[#0d5c46]" id="pass-doc">Dr. Vaidya Ananya Deshmukh</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-[#5b7369]">Time & Slot:</span>
+            <span class="font-bold text-[#344840]" id="pass-time">Today, 4:30 PM IST</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-[#5b7369]">Format:</span>
+            <span class="font-bold text-emerald-700">Encrypted HD Video Call</span>
+          </div>
+        </div>
+
+        <button onclick="closeBookingModal()" class="jade-btn-gradient text-white w-full py-3 rounded-xl font-bold text-xs uppercase tracking-wider shadow">
+          Done • Explore Recommended Remedies
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#093b2d] text-white pt-16 pb-12 border-t-4 border-[#c48b71]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Brand & Mission -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-[#edf5f2] text-[#0d5c46] flex items-center justify-center font-serif-display font-bold text-xl">S</div>
+            <div>
+              <span class="font-serif-display font-bold text-sm tracking-wide block text-white">SARVAM HEALTHCARE</span>
+              <span class="text-[9px] tracking-[0.2em] text-[#d89e84] font-semibold uppercase block">Pvt Ltd • Modern Ayurveda</span>
+            </div>
+          </div>
+          <p class="text-xs text-[#d0e3dc] leading-relaxed">
+            Bridging 5,000 years of classical Ayurvedic science with modern pharmacognosy, supercritical fluid extraction, and rigorous double-blind trials.
+          </p>
+          <div class="text-xs text-[#d89e84] font-serif-body italic">
+            "सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः" <br>
+            <span class="text-[11px] text-white/50 not-italic">May all beings be happy, may all beings be free from disease.</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-serif-display text-sm font-bold text-[#d89e84] uppercase tracking-wider mb-4">Apothecary</h4>
+          <ul class="space-y-2.5 text-xs text-[#d0e3dc]">
+            <li><a href="shop.html" class="hover:text-white transition-colors">All Formulations</a></li>
+            <li><a href="product.html" class="hover:text-white transition-colors text-[#d89e84] font-semibold">Flagship Amrit Rasayana Gold →</a></li>
+            <li><a href="shop.html?cat=vitality" class="hover:text-white transition-colors">Vitality & Rasayana</a></li>
+            <li><a href="shop.html?cat=digestion" class="hover:text-white transition-colors">Digestive Bio-Actives</a></li>
+            <li><a href="shop.html?cat=stress" class="hover:text-white transition-colors">Stress & Sleep Support</a></li>
+            <li><a href="shop.html?cat=immunity" class="hover:text-white transition-colors">Metabolic & Immunity</a></li>
+          </ul>
+        </div>
+
+        <!-- Clinical & Science -->
+        <div>
+          <h4 class="font-serif-display text-sm font-bold text-[#d89e84] uppercase tracking-wider mb-4">Science & Vaidya</h4>
+          <ul class="space-y-2.5 text-xs text-[#d0e3dc]">
+            <li><a href="about.html" class="hover:text-white transition-colors">Heritage & Extraction Science</a></li>
+            <li><a href="about.html#sourcing" class="hover:text-white transition-colors">Himalayan Sourcing Ethics</a></li>
+            <li><a href="consultation.html" class="hover:text-white transition-colors">Book Vaidya Video Consult</a></li>
+            <li><a href="index.html#dosha-section" class="hover:text-white transition-colors">Tridosha Diagnostic Tool</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Clinics & Distribution Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Corporate Info -->
+        <div>
+          <h4 class="font-serif-display text-sm font-bold text-[#d89e84] uppercase tracking-wider mb-4">Dispensary Headquarters</h4>
+          <p class="text-xs text-[#d0e3dc] leading-relaxed">
+            <strong>Sarvam Healthcare Pvt Ltd</strong><br>
+            AYUSH License: AY-DL-2024-00892<br>
+            Plot 44, Bio-Pharma Herbal Park,<br>
+            Sector 18, Udyog Vihar, Gurugram,<br>
+            Haryana - 122015, India.<br>
+            <span class="block mt-2 text-[#d89e84]">care@sarvamhealthcare.com</span>
+            <span>+91 (011) 4988-7200</span>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
+        <p>© 2026 Sarvam Healthcare Pvt Ltd. All rights reserved.</p>
+        <div class="flex space-x-6 text-[11px]">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#" class="hover:underline">AYUSH Disclaimers</a>
+          <a href="#" class="hover:underline">GMP Compliance</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= SLIDE-OUT CART DRAWER (SYNCHRONIZED) ================= -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 pointer-events-none transition-all duration-300">
+    <div id="cart-backdrop" onclick="closeCart()" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"></div>
+
+    <div id="cart-panel" class="absolute top-0 right-0 w-full max-w-md h-full bg-[#f8faf9] shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 pointer-events-auto border-l border-[#d0e3dc]">
+      
+      <div class="p-6 bg-[#0d5c46] text-white flex justify-between items-center">
+        <div>
+          <h3 class="font-serif-display text-lg font-bold">Your Healing Box</h3>
+          <p class="text-xs text-[#d89e84]">Sarvam Healthcare Direct Dispensary</p>
+        </div>
+        <button onclick="closeCart()" class="text-white/70 hover:text-white p-2">✕</button>
+      </div>
+
+      <div class="bg-[#edf5f2] p-3.5 border-b border-[#d0e3dc] text-xs text-center text-[#344840]">
+        <span id="shipping-progress-text">Add ₹500 more for <strong>FREE Express Delivery</strong>!</span>
+        <div class="w-full h-1.5 bg-[#d0e3dc] rounded-full overflow-hidden mt-2">
+          <div id="shipping-bar" class="h-full bg-[#c48b71] transition-all" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div id="cart-items-container" class="p-6 overflow-y-auto flex-grow space-y-4"></div>
+
+      <div class="p-6 bg-white border-t border-[#d0e3dc] space-y-4">
+        <div class="flex gap-2">
+          <input type="text" id="promo-input" placeholder="Promo code (SARVAMFIRST / VEDA15)" class="flex-grow px-3 py-2 rounded-xl border border-[#d0e3dc] text-xs uppercase focus:outline-none focus:border-[#c48b71]">
+          <button onclick="applyPromoCode()" class="px-4 py-2 rounded-xl bg-[#edf5f2] text-[#0d5c46] font-bold text-xs hover:bg-[#dcefe8] border border-[#d0e3dc]">Apply</button>
+        </div>
+        <div id="promo-msg" class="text-[11px] font-semibold hidden"></div>
+
+        <div class="space-y-1.5 text-xs text-[#5b7369]">
+          <div class="flex justify-between">
+            <span>Subtotal:</span>
+            <span id="cart-subtotal" class="font-semibold text-[#0d5c46]">₹0</span>
+          </div>
+          <div class="flex justify-between text-emerald-700" id="discount-row" style="display:none;">
+            <span>Ayurvedic Discount (15%):</span>
+            <span id="cart-discount">-₹0</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Standard Shipping:</span>
+            <span id="cart-shipping" class="text-emerald-700 font-semibold">FREE</span>
+          </div>
+          <div class="flex justify-between text-sm font-bold text-[#0d5c46] pt-2 border-t border-[#edf2f0]">
+            <span>Total Amount:</span>
+            <span id="cart-total">₹0</span>
+          </div>
+        </div>
+
+        <button onclick="handleCheckout()" class="rosegold-btn-gradient text-white w-full py-3.5 rounded-xl font-bold text-xs tracking-wider uppercase shadow-lg hover:scale-101 transition-transform">
+          Proceed to Secure Checkout →
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT APPLICATION ================= -->
+  <script>
+    // 1. Persistent Cart Management
+    let cart = [];
+    try {
+      const saved = localStorage.getItem('sarvam_cart_items');
+      if (saved) cart = JSON.parse(saved);
+    } catch(e) { cart = []; }
+    let discountApplied = false;
+
+    function saveCart() {
+      try {
+        localStorage.setItem('sarvam_cart_items', JSON.stringify(cart));
+      } catch(e) {}
+    }
+
+    function updateCartQuantity(id, delta) {
+      const item = cart.find(i => i.id === id);
+      if (item) {
+        item.quantity += delta;
+        if (item.quantity <= 0) {
+          cart = cart.filter(i => i.id !== id);
+        }
+      }
+      saveCart();
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const countBadge = document.getElementById('cart-count-badge');
+      const container = document.getElementById('cart-items-container');
+      const subtotalEl = document.getElementById('cart-subtotal');
+      const totalEl = document.getElementById('cart-total');
+      const shippingBar = document.getElementById('shipping-bar');
+      const shippingText = document.getElementById('shipping-progress-text');
+
+      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      countBadge.textContent = totalItems;
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-16 text-[#5b7369]">
+            <span class="text-4xl block mb-2">🌿</span>
+            <p class="text-sm font-semibold">Your healing box is empty</p>
+            <p class="text-xs mt-1">Explore our clinical Ayurvedic remedies and add to your regimen.</p>
+          </div>
+        `;
+        subtotalEl.textContent = '₹0';
+        totalEl.textContent = '₹0';
+        shippingBar.style.width = '0%';
+        shippingText.innerHTML = 'Add ₹500 more for <strong>FREE Express Delivery</strong>!';
+        return;
+      }
+
+      let subtotal = 0;
+      let html = '';
+
+      cart.forEach(item => {
+        const itemTotal = item.price * item.quantity;
+        subtotal += itemTotal;
+        html += `
+          <div class="p-3.5 rounded-xl bg-white border border-[#d0e3dc] flex items-center justify-between gap-3">
+            <div class="flex-grow">
+              <h4 class="font-bold text-xs text-[#0d5c46]">${item.name}</h4>
+              <p class="text-[10px] text-[#5b7369]">${item.concern}</p>
+              <div class="text-xs font-semibold text-[#0d5c46] mt-1">₹${item.price} each</div>
+            </div>
+            <div class="flex items-center gap-2 bg-[#edf5f2] px-2 py-1 rounded-lg border border-[#d0e3dc]">
+              <button onclick="updateCartQuantity(${item.id}, -1)" class="text-[#0d5c46] font-bold px-1 hover:text-[#c48b71]">-</button>
+              <span class="text-xs font-bold w-4 text-center">${item.quantity}</span>
+              <button onclick="updateCartQuantity(${item.id}, 1)" class="text-[#0d5c46] font-bold px-1 hover:text-[#c48b71]">+</button>
+            </div>
+            <div class="text-right">
+              <span class="text-xs font-bold text-[#0d5c46]">₹${itemTotal}</span>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+      subtotalEl.textContent = '₹' + subtotal;
+
+      let finalTotal = subtotal;
+      const discountRow = document.getElementById('discount-row');
+      const discountVal = document.getElementById('cart-discount');
+      if (discountApplied) {
+        const disc = Math.round(subtotal * 0.15);
+        finalTotal = subtotal - disc;
+        discountRow.style.display = 'flex';
+        discountVal.textContent = '-₹' + disc;
+      } else {
+        discountRow.style.display = 'none';
+      }
+
+      totalEl.textContent = '₹' + finalTotal;
+
+      if (subtotal >= 500) {
+        shippingBar.style.width = '100%';
+        shippingText.innerHTML = '🎉 You unlocked <strong>FREE Express Delivery</strong>!';
+      } else {
+        const remaining = 500 - subtotal;
+        const pct = Math.min(100, Math.round((subtotal / 500) * 100));
+        shippingBar.style.width = pct + '%';
+        shippingText.innerHTML = `Add <strong>₹${remaining}</strong> more for <strong>FREE Express Delivery</strong>!`;
+      }
+    }
+
+    function openCart() {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-backdrop');
+      const panel = document.getElementById('cart-panel');
+      drawer.classList.remove('pointer-events-none');
+      backdrop.classList.remove('opacity-0');
+      backdrop.classList.add('opacity-100');
+      panel.classList.remove('translate-x-full');
+      panel.classList.add('translate-x-0');
+    }
+
+    function closeCart() {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-backdrop');
+      const panel = document.getElementById('cart-panel');
+      backdrop.classList.remove('opacity-100');
+      backdrop.classList.add('opacity-0');
+      panel.classList.remove('translate-x-0');
+      panel.classList.add('translate-x-full');
+      setTimeout(() => {
+        drawer.classList.add('pointer-events-none');
+      }, 300);
+    }
+
+    function applyPromoCode() {
+      const input = document.getElementById('promo-input').value.trim().toUpperCase();
+      const msg = document.getElementById('promo-msg');
+      if (input === 'SARVAMFIRST' || input === 'VEDA15') {
+        discountApplied = true;
+        msg.textContent = '✓ 15% Ayurvedic discount applied!';
+        msg.className = 'text-[11px] font-semibold text-emerald-700 block';
+      } else {
+        discountApplied = false;
+        msg.textContent = '✕ Invalid promo code. Try SARVAMFIRST or VEDA15';
+        msg.className = 'text-[11px] font-semibold text-rose-600 block';
+      }
+      updateCartUI();
+    }
+
+    function handleCheckout() {
+      if (cart.length === 0) {
+        alert('Your healing box is empty.');
+        return;
+      }
+      alert('Directing you to 256-Bit Encrypted Payment Gateway.');
+    }
+
+    // 2. Booking Interactions
+    let selectedTier = 'prakriti';
+    let selectedTierPrice = 499;
+    let selectedSlotText = '4:30 PM - 5:00 PM (Today)';
+
+    function selectPackageTier(tier, price) {
+      selectedTier = tier;
+      selectedTierPrice = price;
+
+      document.querySelectorAll('.tier-card').forEach(c => {
+        c.classList.remove('border-2', 'border-[#0d5c46]', 'bg-[#edf5f2]');
+        c.classList.add('border', 'border-[#d0e3dc]', 'bg-white');
+      });
+
+      const active = document.getElementById('tier-' + tier);
+      active.classList.remove('border', 'border-[#d0e3dc]', 'bg-white');
+      active.classList.add('border-2', 'border-[#0d5c46]', 'bg-[#edf5f2]');
+    }
+
+    function selectSlot(btn) {
+      document.querySelectorAll('.slot-pill').forEach(b => {
+        b.classList.remove('border-2', 'border-[#0d5c46]', 'bg-[#edf5f2]', 'text-[#0d5c46]', 'font-semibold');
+        b.classList.add('border', 'border-[#d0e3dc]', 'bg-white', 'text-[#344840]');
+      });
+      btn.classList.add('border-2', 'border-[#0d5c46]', 'bg-[#edf5f2]', 'text-[#0d5c46]', 'font-semibold');
+      btn.classList.remove('border', 'border-[#d0e3dc]', 'bg-white', 'text-[#344840]');
+      selectedSlotText = btn.textContent.trim();
+    }
+
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('patient-name').value;
+      const phone = document.getElementById('patient-phone').value;
+      const doctor = document.getElementById('doctor-select').value;
+      const date = document.getElementById('date-select').value;
+
+      document.getElementById('pass-id').textContent = '#SRV-VCD-' + Math.floor(1000 + Math.random() * 9000);
+      document.getElementById('pass-doc').textContent = doctor;
+      document.getElementById('pass-time').textContent = date + ' • ' + selectedSlotText;
+
+      const modal = document.getElementById('booking-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateCartUI();
+      document.getElementById('cart-toggle-btn').addEventListener('click', openCart);
+      document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+        const nav = document.getElementById('mobile-nav');
+        nav.classList.toggle('hidden');
+      });
+    });
+
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'sarvam_cart_items') {
+        try {
+          cart = JSON.parse(e.newValue || '[]');
+          updateCartUI();
+        } catch(err) {}
+      }
+    });
+  </script>
+</body>
+</html>
