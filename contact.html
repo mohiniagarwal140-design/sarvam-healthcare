@@ -6,6 +6,24 @@
   <title>Contact & Clinics | Sarvam Healthcare Pvt Ltd</title>
   <meta name="description" content="Get in touch with Sarvam Healthcare Pvt Ltd. Contact our patient care team, visit our clinical centers in Gurugram, Bengaluru, Mumbai, or inquire for B2B Ayurvedic distribution.">
 
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1079267505010562');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1079267505010562&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -666,6 +684,17 @@
         alert('Your healing box is empty.');
         return;
       }
+
+      // Meta Pixel InitiateCheckout Event
+      if (typeof fbq === 'function') {
+        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        fbq('track', 'InitiateCheckout', {
+          num_items: cart.reduce((sum, item) => sum + item.quantity, 0),
+          value: subtotal,
+          currency: 'INR'
+        });
+      }
+
       alert('Directing you to 256-Bit Encrypted Payment Gateway.');
     }
 
@@ -697,6 +726,14 @@
       e.preventDefault();
       const modal = document.getElementById('contact-modal');
       const msg = document.getElementById('contact-modal-msg');
+
+      // Meta Pixel Contact / Lead Event
+      if (typeof fbq === 'function') {
+        fbq('track', type === 'b2b' ? 'Lead' : 'Contact', {
+          content_name: type === 'b2b' ? 'B2B Wholesale Inquiry' : 'Patient Support Request'
+        });
+      }
+
       if (type === 'patient') {
         msg.textContent = 'Namaste! Your patient care request has been registered. An Ayurvedic care coordinator will connect with you on WhatsApp/Email within 2-4 hours.';
       } else {

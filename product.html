@@ -6,6 +6,24 @@
   <title>Sarvam Amrit Rasayana Gold | Pure Shilajit & 24K Swarna Bhasma | Sarvam Healthcare</title>
   <meta name="description" content="Sarvam Amrit Rasayana Gold: Classical Rasayana formulation featuring Himalayan Shilajit, 24K Swarna Bhasma, Kashmiri Saffron, and Ashwagandha. HPLC-standardized, zero heavy metals.">
 
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1079267505010562');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1079267505010562&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -753,6 +771,17 @@
       saveCart();
       updateCartUI();
       openCart();
+
+      // Meta Pixel AddToCart Event
+      if (typeof fbq === 'function') {
+        fbq('track', 'AddToCart', {
+          content_ids: [String(id)],
+          content_name: name,
+          content_category: concern,
+          value: price * quantity,
+          currency: 'INR'
+        });
+      }
     }
 
     function updateCartQuantity(id, delta) {
@@ -890,6 +919,17 @@
         alert('Your healing box is empty. Please select a formulation first.');
         return;
       }
+
+      // Meta Pixel InitiateCheckout Event
+      if (typeof fbq === 'function') {
+        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        fbq('track', 'InitiateCheckout', {
+          num_items: cart.reduce((sum, item) => sum + item.quantity, 0),
+          value: subtotal,
+          currency: 'INR'
+        });
+      }
+
       alert('Namaste! Directing you to 256-Bit Encrypted Payment Gateway. Order batch verification certificate generated.');
     }
 
@@ -1008,6 +1048,18 @@
     // Initialize
     document.addEventListener('DOMContentLoaded', () => {
       updateCartUI();
+
+      // Meta Pixel ViewContent Event
+      if (typeof fbq === 'function') {
+        fbq('track', 'ViewContent', {
+          content_ids: ['101'],
+          content_name: 'Sarvam Amrit Rasayana Gold',
+          content_category: 'Rasayana & Vitality',
+          content_type: 'product',
+          value: 1999,
+          currency: 'INR'
+        });
+      }
 
       document.getElementById('cart-toggle-btn').addEventListener('click', openCart);
       document.getElementById('mobile-menu-btn').addEventListener('click', () => {

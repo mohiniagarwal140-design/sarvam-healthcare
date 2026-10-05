@@ -6,6 +6,24 @@
   <title>Sarvam Healthcare Pvt Ltd | Modern Ayurvedic Science & Pure Formulations</title>
   <meta name="description" content="Sarvam Healthcare fuses classical Ayurvedic wisdom with modern clinical precision. Standardized herbal extracts, HPLC-verified potency, and zero heavy metals.">
   
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1079267505010562');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1079267505010562&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1466,6 +1484,17 @@
       saveCart();
       updateCartUI();
       openCart();
+
+      // Meta Pixel AddToCart Event
+      if (typeof fbq === 'function') {
+        fbq('track', 'AddToCart', {
+          content_ids: [String(id)],
+          content_name: name,
+          content_category: concern,
+          value: price,
+          currency: 'INR'
+        });
+      }
     }
 
     function updateCartQuantity(id, delta) {
@@ -1604,6 +1633,17 @@
         alert('Your cart is empty.');
         return;
       }
+
+      // Meta Pixel InitiateCheckout Event
+      if (typeof fbq === 'function') {
+        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        fbq('track', 'InitiateCheckout', {
+          num_items: cart.reduce((sum, item) => sum + item.quantity, 0),
+          value: subtotal,
+          currency: 'INR'
+        });
+      }
+
       alert('Thank you for choosing Sarvam Healthcare! Redirecting to secure gateway...');
     }
 
@@ -1772,6 +1812,17 @@
 
     function handleConsultSubmit(e) {
       e.preventDefault();
+
+      // Meta Pixel Lead Event
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', {
+          content_name: 'Ayurvedic Doctor Video Consultation',
+          content_category: 'Consultation',
+          value: 499,
+          currency: 'INR'
+        });
+      }
+
       alert('Namaste! Your video consultation with our B.A.M.S Vaidya has been confirmed. A WhatsApp invitation link has been sent.');
       closeConsultModal();
     }
