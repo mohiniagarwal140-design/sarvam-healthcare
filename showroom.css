@@ -1,43 +1,66 @@
 /* =====================================================================
    SARVAM HEALTHCARE PVT. LTD. - LUXURY SHOWROOM DESIGN SYSTEM
-   Palette: Emerald Green (#075B46 / #063D32) | Warm Cream (#F8F4E9 / #FFFDF7) | Antique Gold (#B08D57 / #D4BE91)
+   Theme: Deep Obsidian & Burnished Rose Gold
+   Palette:
+     - Deep Obsidian & Espresso: #111714 / #0A0D0C / #18201C
+     - Clean Alabaster & Silk: #FAF8F5 / #FFFFFF / #F0ECE4
+     - Burnished Rose Gold: #C48B71 / #D99E84 / #A3694F / #FAF2EE
    ===================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Emerald Green System */
-  --emerald-primary: #075B46;
-  --emerald-deep: #063D32;
-  --emerald-darkest: #042720;
-  --emerald-light: #0d755b;
-  --emerald-subtle: #E9F2EE;
-  --emerald-border: #C8DDD6;
+  /* Deep Obsidian System */
+  --obsidian-darkest: #0A0D0C;
+  --obsidian-primary: #111714;
+  --obsidian-surface: #18201C;
+  --obsidian-card: #202A25;
+  --obsidian-light: #28352F;
+  --obsidian-subtle: #EEF3F0;
+  --obsidian-border: #2D3933;
 
-  /* Warm Cream & Showroom Surfaces */
-  --cream-bg: #F8F4E9;
-  --cream-surface: #FFFDF7;
+  /* Aliased for backward compatibility */
+  --emerald-primary: #111714;
+  --emerald-deep: #0A0D0C;
+  --emerald-darkest: #0A0D0C;
+  --emerald-subtle: #FAF2EE;
+  --emerald-border: #E8E2D9;
+
+  /* Clean Alabaster & Light Silk Surfaces */
+  --alabaster-bg: #FAF8F5;
+  --alabaster-surface: #FFFFFF;
+  --alabaster-card: #FFFFFF;
+  --alabaster-border: #E8E2D9;
+  --alabaster-muted: #F0ECE4;
+
+  --cream-bg: #FAF8F5;
+  --cream-surface: #FFFFFF;
   --cream-card: #FFFFFF;
-  --cream-border: #E6DFD1;
-  --cream-muted: #EFE9DC;
+  --cream-border: #E8E2D9;
 
-  /* Antique Gold Accents */
-  --gold-antique: #B08D57;
-  --gold-soft: #D4BE91;
-  --gold-deep: #8E6F3A;
-  --gold-light: #FAF5EB;
-  --gold-border: rgba(176, 141, 87, 0.35);
+  /* Burnished Rose Gold Accents */
+  --rosegold-primary: #C48B71;
+  --rosegold-soft: #D99E84;
+  --rosegold-deep: #A3694F;
+  --rosegold-light: #FAF2EE;
+  --rosegold-border: rgba(196, 139, 113, 0.4);
+
+  --gold-antique: #C48B71;
+  --gold-soft: #D99E84;
+  --gold-deep: #A3694F;
+  --gold-light: #FAF2EE;
+  --gold-border: rgba(196, 139, 113, 0.4);
 
   /* Typography & Neutral System */
-  --text-dark: #242B27;
-  --text-secondary: #686E68;
-  --text-muted: #8B948E;
+  --text-dark: #111714;
+  --text-secondary: #5E6863;
+  --text-muted: #88948E;
   --white: #FFFFFF;
 }
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: var(--cream-bg);
+  background-color: var(--alabaster-bg);
   color: var(--text-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,58 +74,71 @@ body {
 
 /* Warm Showroom Micro-Grid Texture */
 .bg-showroom-pattern {
-  background-color: var(--cream-bg);
+  background-color: var(--alabaster-bg);
   background-image: 
-    radial-gradient(circle at 50% 50%, rgba(176, 141, 87, 0.08) 1px, transparent 1px),
-    radial-gradient(circle at 0 0, rgba(7, 91, 70, 0.04) 1px, transparent 1px);
+    radial-gradient(circle at 50% 50%, rgba(196, 139, 113, 0.12) 1px, transparent 1px),
+    radial-gradient(circle at 0 0, rgba(17, 23, 20, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Dark Obsidian Showroom Texture */
+.bg-obsidian-pattern {
+  background-color: var(--obsidian-primary);
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(196, 139, 113, 0.15) 1px, transparent 1px),
+    radial-gradient(circle at 0 0, rgba(217, 158, 132, 0.08) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 /* Luxury Card & Vitrine Styling */
 .showroom-vitrine {
-  background: var(--cream-surface);
-  border: 1px solid var(--cream-border);
-  box-shadow: 0 4px 20px -2px rgba(36, 43, 39, 0.04), 0 2px 6px -1px rgba(176, 141, 87, 0.05);
+  background: var(--alabaster-surface);
+  border: 1px solid var(--alabaster-border);
+  box-shadow: 0 4px 20px -2px rgba(17, 23, 20, 0.04), 0 2px 8px -1px rgba(196, 139, 113, 0.06);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
 }
 
 .showroom-vitrine:hover {
   transform: translateY(-3px);
-  border-color: var(--gold-antique);
-  box-shadow: 0 16px 32px -6px rgba(7, 91, 70, 0.12), 0 4px 12px -2px rgba(176, 141, 87, 0.15);
+  border-color: var(--rosegold-primary);
+  box-shadow: 0 16px 32px -6px rgba(17, 23, 20, 0.12), 0 4px 14px -2px rgba(196, 139, 113, 0.25);
 }
 
 .showroom-card-flagship {
-  background: linear-gradient(180deg, #FFFDF7 0%, #FFFFFF 100%);
-  border: 1px solid var(--gold-antique);
-  box-shadow: 0 10px 30px -4px rgba(176, 141, 87, 0.18);
+  background: linear-gradient(180deg, #FAF2EE 0%, #FFFFFF 100%);
+  border: 1px solid var(--rosegold-primary);
+  box-shadow: 0 10px 30px -4px rgba(196, 139, 113, 0.25);
 }
 
 /* Luxury Button System */
+.btn-obsidian,
 .btn-emerald {
-  background-color: var(--emerald-primary);
+  background-color: var(--obsidian-primary);
   color: var(--white);
-  border: 1px solid var(--emerald-deep);
+  border: 1px solid var(--rosegold-primary);
   transition: all 0.25s ease;
 }
 
+.btn-obsidian:hover,
 .btn-emerald:hover {
-  background-color: var(--emerald-deep);
-  box-shadow: 0 8px 20px -4px rgba(7, 91, 70, 0.35);
+  background-color: var(--obsidian-surface);
+  box-shadow: 0 8px 20px -4px rgba(196, 139, 113, 0.35);
   transform: translateY(-1px);
 }
 
+.btn-rosegold,
 .btn-gold {
-  background: linear-gradient(135deg, #B08D57 0%, #8E6F3A 100%);
+  background: linear-gradient(135deg, #C48B71 0%, #A3694F 100%);
   color: #FFFFFF;
-  border: 1px solid #8E6F3A;
+  border: 1px solid #A3694F;
   transition: all 0.25s ease;
 }
 
+.btn-rosegold:hover,
 .btn-gold:hover {
-  background: linear-gradient(135deg, #C29F68 0%, #9E7D47 100%);
-  box-shadow: 0 8px 20px -4px rgba(176, 141, 87, 0.4);
+  background: linear-gradient(135deg, #D99E84 0%, #B6785C 100%);
+  box-shadow: 0 8px 20px -4px rgba(196, 139, 113, 0.45);
   transform: translateY(-1px);
 }
 
@@ -118,27 +154,30 @@ body {
   transform: translateY(-1px);
 }
 
+.btn-outline-rosegold,
 .btn-outline-gold {
   background: transparent;
-  color: var(--emerald-deep);
-  border: 1px solid var(--gold-antique);
+  color: var(--obsidian-primary);
+  border: 1px solid var(--rosegold-primary);
   transition: all 0.25s ease;
 }
 
+.btn-outline-rosegold:hover,
 .btn-outline-gold:hover {
-  background: var(--gold-light);
-  color: var(--emerald-deep);
-  border-color: var(--gold-deep);
+  background: var(--rosegold-light);
+  color: var(--rosegold-deep);
+  border-color: var(--rosegold-deep);
 }
 
 /* Editorial Dividers */
+.rosegold-divider,
 .gold-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--gold-antique) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, var(--rosegold-primary) 50%, transparent 100%);
 }
 
-.gold-border-subtle {
-  border-color: var(--gold-border);
+.rosegold-border-subtle {
+  border-color: var(--rosegold-border);
 }
 
 /* Accessible reduced motion */

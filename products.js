@@ -36,7 +36,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Immediate Dispatch",
     certifications: ["AYUSH Premium Mark", "NABL Tested", "USP 2021 Heavy Metal Pass (0.00 ppm)"],
     isFlagship: true,
-    accentColor: "#B08D57"
+    accentColor: "#C48B71"
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Dispatch in 24h",
     certifications: ["WHO-GMP Facility", "Heavy Metals 0 ppm", "Alcohol-Free Herbal Decoction"],
     isFlagship: false,
-    accentColor: "#075B46"
+    accentColor: "#111714"
   },
   {
     id: 2,
@@ -86,7 +86,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Immediate Dispatch",
     certifications: ["AYUSH Standard", "Zero Refined Sugars", "Solvent-Free"],
     isFlagship: false,
-    accentColor: "#075B46"
+    accentColor: "#111714"
   },
   {
     id: 8,
@@ -111,7 +111,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Immediate Dispatch",
     certifications: ["AYUSH Premium Mark", "HPLC Verified", "Zero Synthetic Steroids"],
     isFlagship: false,
-    accentColor: "#B08D57"
+    accentColor: "#C48B71"
   },
   {
     id: 1,
@@ -136,7 +136,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Fast Dispatch",
     certifications: ["KSM-66 Gold Standard", "100% Vegetarian Pullulan Capsules", "Non-GMO"],
     isFlagship: false,
-    accentColor: "#075B46"
+    accentColor: "#111714"
   },
   {
     id: 3,
@@ -161,7 +161,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Dispatch in 24h",
     certifications: ["Zero Heavy Metals", "WHO-GMP Certified", "Supercritical CO2 Extraction"],
     isFlagship: false,
-    accentColor: "#B08D57"
+    accentColor: "#C48B71"
   },
   {
     id: 4,
@@ -186,7 +186,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Immediate Dispatch",
     certifications: ["AYUSH Standard", "HPLC Validated", "Zero Synthetic Nootropics"],
     isFlagship: false,
-    accentColor: "#075B46"
+    accentColor: "#111714"
   },
   {
     id: 6,
@@ -211,7 +211,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Small-Batch Prepared",
     certifications: ["Zero Refined Cane Sugar", "Copper Batch Cooked", "AYUSH Premium Mark"],
     isFlagship: false,
-    accentColor: "#B08D57"
+    accentColor: "#C48B71"
   },
   {
     id: 7,
@@ -236,7 +236,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Dispatch in 24h",
     certifications: ["Non-Habit Forming", "Zero Melatonin Synthetics", "AYUSH Standard"],
     isFlagship: false,
-    accentColor: "#075B46"
+    accentColor: "#111714"
   },
   {
     id: 9,
@@ -261,7 +261,7 @@ const SARVAM_PRODUCTS = [
     leadTime: "In Stock • Immediate Dispatch",
     certifications: ["AYUSH Standard", "HPLC Standardized", "Zero Fillers"],
     isFlagship: false,
-    accentColor: "#075B46"
+    accentColor: "#111714"
   }
 ];
 
