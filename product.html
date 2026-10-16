@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarvam Amrit Rasayana Gold | Pure Shilajit & 24K Swarna Bhasma | Sarvam Healthcare</title>
-  <meta name="description" content="Sarvam Amrit Rasayana Gold: Classical Rasayana formulation featuring Himalayan Shilajit, 24K Swarna Bhasma, Kashmiri Saffron, and Ashwagandha. HPLC-standardized, zero heavy metals.">
+  <title id="meta-page-title">Sarvam Amrit Rasayana Gold | Classical Ayurvedic Medicine | Sarvam Healthcare</title>
+  <meta id="meta-page-desc" name="description" content="Classical Ayurvedic formulation verified through HPLC pharmacognosy, supercritical extraction, and zero heavy metal testing. Consult Sarvam Healthcare Vaidyas.">
 
   <!-- Meta Pixel Code -->
   <script>
@@ -24,141 +24,79 @@
   /></noscript>
   <!-- End Meta Pixel Code -->
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS via allowlisted CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <link rel="stylesheet" href="showroom.css">
 
-  <style>
-    :root {
-      --jade-deep: #093b2d;
-      --jade-primary: #0d5c46;
-      --jade-light: #15795d;
-      --jade-subtle: #edf5f2;
-      --jade-border: #d0e3dc;
-      
-      --rosegold-primary: #c48b71;
-      --rosegold-light: #d89e84;
-      --rosegold-dark: #a66b53;
-      --rosegold-subtle: #faf1ed;
-      
-      --bg-clinical: #f8faf9;
-      --card-white: #ffffff;
-      --charcoal-heading: #101c17;
-      --charcoal-body: #344840;
-      --muted-clinical: #5b7369;
-    }
-
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: var(--bg-clinical);
-      color: var(--charcoal-body);
-      overflow-x: hidden;
-    }
-
-    .font-serif-display {
-      font-family: 'Cinzel', serif;
-    }
-
-    .font-serif-body {
-      font-family: 'Playfair Display', serif;
-    }
-
-    .bg-clinical-pattern {
-      background-color: #f8faf9;
-      background-image: radial-gradient(#d0e3dc 0.75px, transparent 0.75px), radial-gradient(#d0e3dc 0.75px, #f8faf9 0.75px);
-      background-size: 30px 30px;
-      background-position: 0 0, 15px 15px;
-    }
-
-    .jade-btn-gradient {
-      background: linear-gradient(135deg, #0d5c46 0%, #093b2d 100%);
-      transition: all 0.3s ease;
-    }
-    .jade-btn-gradient:hover {
-      background: linear-gradient(135deg, #15795d 0%, #0d5c46 100%);
-      box-shadow: 0 10px 20px -5px rgba(13, 92, 70, 0.35);
-      transform: translateY(-1px);
-    }
-
-    .rosegold-btn-gradient {
-      background: linear-gradient(135deg, #c48b71 0%, #a66b53 100%);
-      transition: all 0.3s ease;
-    }
-    .rosegold-btn-gradient:hover {
-      background: linear-gradient(135deg, #d89e84 0%, #c48b71 100%);
-      box-shadow: 0 10px 20px -5px rgba(196, 139, 113, 0.4);
-      transform: translateY(-1px);
-    }
-  </style>
+  <script src="products.js"></script>
 </head>
-<body class="antialiased min-h-screen flex flex-col justify-between">
+<body class="bg-[#F8F4E9] text-[#242B27] min-h-screen flex flex-col justify-between antialiased">
 
-  <!-- ================= TOP REGULATORY & TRUST BAR ================= -->
-  <aside aria-label="Regulatory Notice" class="bg-[#093b2d] text-white text-xs py-2 px-4 border-b border-[#c48b71]/30">
+  <!-- ================= TOP CONCIERGE & TRUST STRIP ================= -->
+  <aside aria-label="Showroom Notice" class="bg-[#063D32] text-white text-xs py-2 px-4 border-b border-[#B08D57]/30">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
       <div class="flex items-center space-x-2">
-        <span class="inline-block w-2 h-2 rounded-full bg-[#c48b71] animate-pulse"></span>
-        <span class="font-medium text-[#d89e84]">AYUSH Premium Mark Certified • Swarna Bhasma Purity 99.9%</span>
+        <span class="inline-block w-2 h-2 rounded-full bg-[#B08D57] animate-pulse"></span>
+        <span class="font-medium text-[#D4BE91]">AYUSH Premium Mark Certified • HPLC Fingerprinted Formulations</span>
       </div>
-      <div class="flex items-center space-x-4 text-[11px] text-white/80">
-        <span>✨ Includes Complimentary 1-on-1 Ayurvedic Vaidya Consultation</span>
-        <a href="tel:+911149887200" class="hover:text-[#d89e84] transition-colors">📞 Care Helpline</a>
+      <div class="flex items-center space-x-5 text-[11px] text-white/90">
+        <a href="tel:+911149887200" class="hover:text-[#D4BE91] transition-colors">📞 Helpline: +91 (011) 4988-7200</a>
+        <a href="https://wa.me/919876543210?text=Hello%20Sarvam%20Healthcare%2C%20I%20would%20like%20to%20enquire%20about%20your%20Ayurvedic%20medicines." target="_blank" class="hover:text-[#D4BE91] transition-colors flex items-center gap-1">
+          <span class="text-emerald-400 font-bold">💬</span> WhatsApp Care: +91 98765 43210
+        </a>
       </div>
     </div>
   </aside>
 
-  <!-- ================= MAIN NAVIGATION HEADER ================= -->
-  <header class="sticky top-0 z-40 bg-[#ffffff]/95 backdrop-blur-md border-b border-[#d0e3dc]">
+  <!-- ================= LUXURY HEADER & NAVIGATION ================= -->
+  <header class="sticky top-0 z-40 bg-[#FFFDF7]/95 backdrop-blur-md border-b border-[#E6DFD1]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Brand Identity -->
+      <!-- Brand Emblem & Title -->
       <a href="index.html" class="flex items-center gap-3.5 group">
-        <div class="w-12 h-12 rounded-2xl bg-[#edf5f2] border-2 border-[#0d5c46] flex items-center justify-center text-[#0d5c46] font-serif-display font-bold text-2xl shadow-sm group-hover:bg-[#0d5c46] group-hover:text-white transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-[#075B46] border border-[#B08D57] flex items-center justify-center text-[#D4BE91] font-serif-luxury font-bold text-2xl shadow-sm group-hover:bg-[#063D32] transition-all">
           S
         </div>
         <div>
-          <span class="font-serif-display font-bold text-lg sm:text-xl tracking-tight text-[#0d5c46] block">
+          <span class="font-serif-luxury font-bold text-xl sm:text-2xl tracking-tight text-[#063D32] block leading-tight">
             SARVAM HEALTHCARE
           </span>
-          <span class="text-[10px] tracking-[0.25em] text-[#a66b53] font-semibold uppercase block">
-            Pvt Ltd • Modern Ayurveda
+          <span class="text-[9px] tracking-[0.22em] text-[#8E6F3A] font-semibold uppercase block">
+            Pvt Ltd • Modern Ayurveda Showroom
           </span>
         </div>
       </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center space-x-7 font-medium text-sm text-[#344840]">
-        <a href="shop.html" class="hover:text-[#c48b71] transition-colors">Shop Apothecary</a>
-        <a href="product.html" class="text-[#0d5c46] font-bold border-b-2 border-[#c48b71] pb-1">Flagship Product</a>
-        <a href="about.html" class="hover:text-[#c48b71] transition-colors">Heritage & Science</a>
-        <a href="index.html#dosha-section" class="text-[#0d5c46] font-semibold flex items-center gap-1.5 hover:text-[#c48b71] transition-colors">
-          <span class="w-2 h-2 rounded-full bg-[#c48b71] animate-pulse"></span>
-          Dosha Assessment
-        </a>
-        <a href="consultation.html" class="hover:text-[#c48b71] transition-colors">Consultations</a>
-        <a href="contact.html" class="hover:text-[#c48b71] transition-colors">Contact</a>
+      <nav class="hidden md:flex items-center space-x-7 font-medium text-sm text-[#242B27]">
+        <a href="index.html" class="hover:text-[#075B46] transition-colors">Home</a>
+        <a href="shop.html" class="hover:text-[#075B46] transition-colors">Medicine Showroom</a>
+        <a href="product.html" class="text-[#075B46] font-bold border-b-2 border-[#B08D57] pb-1">Product Details</a>
+        <a href="about.html" class="hover:text-[#075B46] transition-colors">Heritage & Science</a>
+        <a href="consultation.html" class="hover:text-[#075B46] transition-colors">Doctor Consultations</a>
+        <a href="contact.html" class="hover:text-[#075B46] transition-colors">Contact</a>
       </nav>
 
-      <!-- Action Buttons & Cart -->
-      <div class="flex items-center space-x-4">
-        <a href="consultation.html" class="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#0d5c46] text-xs font-semibold text-[#0d5c46] hover:bg-[#0d5c46] hover:text-white transition-all">
-          <span>Book Vaidya</span>
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-3.5">
+        <a id="header-whatsapp-btn" href="#" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl btn-whatsapp-showroom text-xs font-semibold shadow">
+          <span>💬</span>
+          <span>WhatsApp Enquiry</span>
         </a>
 
         <!-- Cart Trigger -->
-        <button id="cart-toggle-btn" class="relative p-2.5 rounded-full bg-[#edf5f2] hover:bg-[#dcefe8] text-[#0d5c46] transition-all" aria-label="View Cart">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="cart-toggle-btn" class="relative p-2.5 rounded-full bg-[#E9F2EE] hover:bg-[#C8DDD6] text-[#075B46] transition-all" aria-label="View Healing Box">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
           </svg>
-          <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-[#c48b71] text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
+          <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-[#B08D57] text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
         </button>
 
-        <!-- Mobile menu hamburger -->
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-[#0d5c46]">
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-[#063D32]">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -167,593 +105,632 @@
 
     </div>
 
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobile-nav" class="hidden md:hidden bg-[#ffffff] border-b border-[#d0e3dc] px-6 py-4 space-y-3 text-sm font-medium">
-      <a href="shop.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Shop Apothecary</a>
-      <a href="product.html" class="block py-2 text-[#c48b71] font-bold">Flagship Product (Amrit Rasayana)</a>
-      <a href="about.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Heritage & Science</a>
-      <a href="index.html#dosha-section" class="block py-2 text-[#0d5c46]">Take Dosha Quiz</a>
-      <a href="consultation.html" class="block py-2 text-[#0d5c46] font-semibold">Book Doctor Consultation</a>
-      <a href="contact.html" class="block py-2 text-[#0d5c46] hover:text-[#c48b71]">Contact & Clinics</a>
+    <!-- Mobile Drawer -->
+    <div id="mobile-nav" class="hidden md:hidden bg-[#FFFDF7] border-b border-[#E6DFD1] px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="index.html" class="block py-1 text-[#242B27]">Home</a>
+      <a href="shop.html" class="block py-1 text-[#242B27]">Medicine Showroom</a>
+      <a href="product.html" class="block py-1 text-[#075B46] font-bold">Product Details</a>
+      <a href="about.html" class="block py-1 text-[#242B27]">Heritage & Extraction Science</a>
+      <a href="consultation.html" class="block py-1 text-[#242B27]">Doctor Consultations</a>
+      <a href="contact.html" class="block py-1 text-[#242B27]">Contact & Dispensary Clinics</a>
     </div>
   </header>
 
-  <!-- ================= BREADCRUMBS ================= -->
-  <nav aria-label="Breadcrumb" class="bg-white border-b border-[#d0e3dc] py-3 text-xs text-[#5b7369]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-2">
-      <a href="index.html" class="hover:text-[#0d5c46]">Home</a>
+  <!-- ================= BREADCRUMB & SHOWROOM VITRINE SECTION ================= -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+    
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-xs text-[#686E68] mb-6">
+      <a href="index.html" class="hover:text-[#063D32]">Home</a>
       <span>/</span>
-      <a href="shop.html" class="hover:text-[#0d5c46]">Apothecary</a>
+      <a href="shop.html" class="hover:text-[#063D32]">Dispensary Showroom</a>
       <span>/</span>
-      <a href="shop.html?cat=vitality" class="hover:text-[#0d5c46]">Rasayana & Vitality</a>
+      <a id="breadcrumb-category-link" href="shop.html" class="hover:text-[#063D32]"><span id="breadcrumb-category">Category</span></a>
       <span>/</span>
-      <span class="text-[#0d5c46] font-semibold truncate">Sarvam Amrit Rasayana Gold</span>
-    </div>
-  </nav>
+      <span class="text-[#063D32] font-semibold" id="breadcrumb-name">Product Name</span>
+    </nav>
 
-  <!-- ================= MAIN PRODUCT HERO ================= -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    <!-- Product Hero Presentation -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- LEFT: INTERACTIVE IMAGE GALLERY -->
-      <div class="lg:col-span-6 space-y-4">
+      <!-- LEFT: LUXURY SHOWROOM INSPECTION GALLERY (5 Cols) -->
+      <div class="lg:col-span-5 space-y-4">
         
-        <!-- Main Image Display Card -->
-        <div id="main-display-card" class="relative bg-white rounded-3xl p-8 border-2 border-[#c48b71]/35 shadow-xl text-center overflow-hidden bg-clinical-pattern">
-          
-          <div class="absolute top-4 left-4 flex flex-col gap-2 z-10 text-left">
-            <span class="px-3 py-1 rounded-full bg-[#0d5c46] text-white text-[10px] font-bold shadow tracking-wider uppercase">
-              👑 Crown Rasayana
-            </span>
-            <span class="px-3 py-1 rounded-full bg-[#faf1ed] text-[#a66b53] border border-[#c48b71]/30 text-[10px] font-bold">
-              24K Swarna Bhasma
-            </span>
+        <!-- Main Vitrine Display Box -->
+        <div class="bg-white rounded-3xl p-8 border border-[#E6DFD1] shadow-md relative overflow-hidden flex flex-col items-center justify-center text-center min-h-[380px] bg-showroom-pattern" id="gallery-main-card">
+          <div id="gallery-screen" class="w-full flex flex-col items-center">
+            <!-- Dynamic gallery icon & title -->
           </div>
-
-          <div class="absolute top-4 right-4 z-10 text-right">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 text-[10px] font-bold block">
-              ✓ NABL Lab Passed
-            </span>
-            <span class="text-[9px] text-[#5b7369] mt-0.5 block">Batch #ARG-2026-9</span>
-          </div>
-
-          <!-- Dynamic Gallery Screen -->
-          <div id="gallery-screen" class="py-12 flex flex-col items-center justify-center min-h-[340px] transition-all duration-300">
-            <div class="w-36 h-36 rounded-full bg-gradient-to-br from-[#0d5c46] to-[#06291f] border-4 border-[#c48b71] flex items-center justify-center text-6xl shadow-2xl relative mb-4">
-              👑
-              <div class="absolute -bottom-2 px-3 py-0.5 rounded-full bg-[#c48b71] text-white font-serif-display text-[10px] font-bold tracking-widest uppercase shadow">
-                Pure Gold
-              </div>
-            </div>
-            <h4 id="screen-title" class="font-serif-display font-bold text-lg text-[#0d5c46]">Sarvam Amrit Rasayana Gold</h4>
-            <p id="screen-subtitle" class="text-xs text-[#5b7369] max-w-sm mt-1">60 Pharmaceutical-Grade Vegetarian Pullulan Capsules in UV-Protected Amber Glass</p>
-          </div>
-
-          <!-- Purity Guarantee Badges Row -->
-          <div class="pt-6 border-t border-[#d0e3dc] grid grid-cols-3 gap-3 text-center text-xs">
-            <div class="p-2.5 rounded-xl bg-[#edf5f2] border border-[#d0e3dc]">
-              <span class="font-bold text-[#0d5c46] block text-xs">65.8%</span>
-              <span class="text-[10px] text-[#5b7369]">Fulvic Acid (HPLC)</span>
-            </div>
-            <div class="p-2.5 rounded-xl bg-[#edf5f2] border border-[#d0e3dc]">
-              <span class="font-bold text-[#0d5c46] block text-xs">99.9%</span>
-              <span class="text-[10px] text-[#5b7369]">Gold Nanoparticles</span>
-            </div>
-            <div class="p-2.5 rounded-xl bg-[#edf5f2] border border-[#d0e3dc]">
-              <span class="font-bold text-[#0d5c46] block text-xs">0.00 ppm</span>
-              <span class="text-[10px] text-[#5b7369]">Lead / Mercury</span>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Gallery Thumbnails -->
-        <div class="grid grid-cols-4 gap-3 text-xs">
-          <button onclick="switchView('bottle')" class="gallery-thumb active-thumb p-3 rounded-2xl bg-white border-2 border-[#0d5c46] text-center shadow-sm hover:border-[#c48b71] transition-all">
-            <span class="text-xl block mb-1">👑</span>
-            <span class="font-bold text-[#0d5c46] block text-[10px]">Apothecary Jar</span>
+        <!-- 4 Vitrine Inspection Tabs -->
+        <div class="grid grid-cols-4 gap-2 text-center text-xs">
+          <button onclick="switchGalleryView('bottle')" class="gallery-thumb active-thumb p-2.5 rounded-2xl bg-white border-2 border-[#075B46] hover:bg-[#FAF5EB] transition-all">
+            <span class="text-xl block">🏺</span>
+            <span class="text-[10px] font-bold text-[#063D32] mt-1 block">Vitrine</span>
           </button>
-          <button onclick="switchView('shilajit')" class="gallery-thumb p-3 rounded-2xl bg-white border border-[#d0e3dc] text-center shadow-sm hover:border-[#c48b71] transition-all">
-            <span class="text-xl block mb-1">⛰️</span>
-            <span class="font-bold text-[#344840] block text-[10px]">Pure Shilajit</span>
+          <button onclick="switchGalleryView('herb')" class="gallery-thumb p-2.5 rounded-2xl bg-white border border-[#E6DFD1] hover:bg-[#FAF5EB] transition-all">
+            <span class="text-xl block">🌿</span>
+            <span class="text-[10px] font-bold text-[#063D32] mt-1 block">Botanical</span>
           </button>
-          <button onclick="switchView('gold')" class="gallery-thumb p-3 rounded-2xl bg-white border border-[#d0e3dc] text-center shadow-sm hover:border-[#c48b71] transition-all">
-            <span class="text-xl block mb-1">✨</span>
-            <span class="font-bold text-[#344840] block text-[10px]">24K Swarna</span>
+          <button onclick="switchGalleryView('assay')" class="gallery-thumb p-2.5 rounded-2xl bg-white border border-[#E6DFD1] hover:bg-[#FAF5EB] transition-all">
+            <span class="text-xl block">🔬</span>
+            <span class="text-[10px] font-bold text-[#063D32] mt-1 block">HPLC Assay</span>
           </button>
-          <button onclick="switchView('coa')" class="gallery-thumb p-3 rounded-2xl bg-white border border-[#d0e3dc] text-center shadow-sm hover:border-[#c48b71] transition-all">
-            <span class="text-xl block mb-1">🔬</span>
-            <span class="font-bold text-[#344840] block text-[10px]">HPLC Report</span>
+          <button onclick="switchGalleryView('coa')" class="gallery-thumb p-2.5 rounded-2xl bg-white border border-[#E6DFD1] hover:bg-[#FAF5EB] transition-all">
+            <span class="text-xl block">📜</span>
+            <span class="text-[10px] font-bold text-[#063D32] mt-1 block">Batch COA</span>
           </button>
+        </div>
+
+        <!-- Analytical Guarantee Card -->
+        <div class="p-4 rounded-2xl bg-[#FFFDF7] border border-[#E6DFD1] flex items-center justify-between text-xs">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">🛡️</span>
+            <div>
+              <span class="font-bold text-[#063D32] block">Verified Zero Heavy Metals</span>
+              <span class="text-[10px] text-[#686E68]">Lead: 0.00 ppm • Mercury: 0.00 ppm • Arsenic: 0.00 ppm</span>
+            </div>
+          </div>
+          <span class="text-[10px] font-bold text-[#075B46] bg-[#E9F2EE] px-2 py-1 rounded-full border border-[#C8DDD6]">NABL PASS</span>
         </div>
 
       </div>
 
-      <!-- RIGHT: PRODUCT FORMULATION & ORDER DETAILS -->
-      <div class="lg:col-span-6 space-y-6">
+      <!-- RIGHT: LUXURY PRODUCT SPECIFICATION & WHATSAPP ACTION (7 Cols) -->
+      <div class="lg:col-span-7 space-y-6">
         
-        <!-- Header & Rating -->
         <div>
-          <div class="flex items-center gap-2 mb-2">
-            <span class="px-3 py-1 rounded-full bg-[#faf1ed] text-[#a66b53] border border-[#c48b71]/30 text-xs font-bold">
-              ⚖️ Tridosha Harmonizer • Rasayana Sthapana
+          <!-- Badges & Dosha -->
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span id="product-badge" class="px-3 py-1 rounded-full text-xs font-bold bg-[#FAF5EB] text-[#8E6F3A] border border-[#B08D57]">
+              Crown Formulation
             </span>
-            <span class="text-xs text-[#5b7369]">Classical Lineage: Charaka Samhita</span>
+            <span id="product-dosha" class="px-3 py-1 rounded-full text-xs font-semibold bg-[#E9F2EE] text-[#075B46] border border-[#C8DDD6]">
+              Tridosha Harmonizer
+            </span>
+            <span id="product-shelf-tag" class="px-3 py-1 rounded-full text-xs font-semibold bg-white text-[#686E68] border border-[#E6DFD1]">
+              Flagship Shelf
+            </span>
           </div>
 
-          <h1 class="font-serif-display text-3xl sm:text-4xl font-bold text-[#0d5c46] tracking-tight">
+          <!-- Titles -->
+          <h1 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-[#063D32] leading-tight" id="product-name">
             Sarvam Amrit Rasayana Gold
           </h1>
+          <div class="text-base text-[#8E6F3A] italic font-serif-luxury mt-1" id="product-sanskrit">
+            अमृत रसायन स्वर्ण युक्त
+          </div>
 
-          <p class="font-serif-body italic text-base text-[#a66b53] mt-1">
-            Purified Himalayan Shilajit • 24K Swarna Bhasma • Kashmiri Mongra Saffron • KSM-66 Ashwagandha
-          </p>
-
-          <!-- Reviews & Doctor Endorsement -->
+          <!-- Review Stars & Batch Info -->
           <div class="flex items-center gap-3 mt-3 text-xs">
-            <div class="flex text-[#c48b71]">★★★★★</div>
-            <span class="font-bold text-[#101c17]">5.0</span>
-            <span class="text-[#5b7369]">(248 Clinical & Patient Reviews)</span>
-            <span class="text-[#d0e3dc]">|</span>
-            <span class="text-emerald-800 font-semibold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-              🩺 Endorsed by 45+ B.A.M.S Physicians
-            </span>
+            <div class="text-[#B08D57] font-bold flex items-center gap-1">
+              <span>★★★★★</span>
+              <span class="text-[#242B27]" id="product-rating">5.0</span>
+              <span class="text-[#686E68]" id="product-reviews">(248 Clinical Reviews)</span>
+            </div>
+            <span class="text-[#E6DFD1]">|</span>
+            <span class="text-[#075B46] font-semibold text-[11px]" id="product-lot">Lot SV-10104 • Fresh Dispensary Batch</span>
           </div>
         </div>
 
-        <!-- Description Highlight -->
-        <p class="text-xs sm:text-sm text-[#344840] leading-relaxed">
-          The pinnacle of classical Ayurvedic cellular revitalization. Sourced from pristine 16,000 ft Himalayan rock faces and purified through seven sacred Triphala Agni cycles, then bio-chelated with 99.9% pure incinerated 24K Gold Nanoparticles (Swarna Bhasma) and Grade-A Kashmiri Saffron. Engineered to nourish all seven Dhatus (bodily tissues) from Rasa to Ojas.
+        <!-- Description -->
+        <p class="text-sm sm:text-base text-[#686E68] leading-relaxed" id="product-desc">
+          Flagship master Rasayana formulated according to Charaka Samhita Chikitsa Sthana. Features high-altitude Himalayan Shilajit purified through 7 Surya-Tapi cycles with certified 99.9% 24K Swarna Bhasma nano-particles.
         </p>
 
-        <!-- Pricing Block -->
-        <div class="p-5 rounded-2xl bg-[#ffffff] border border-[#d0e3dc] shadow-sm">
-          <div class="flex items-baseline justify-between">
-            <div class="flex items-baseline gap-3">
-              <span id="product-price" class="text-3xl font-bold text-[#0d5c46]">₹1,999</span>
-              <span id="product-orig-price" class="text-sm text-[#5b7369] line-through">₹2,499</span>
-              <span id="product-discount-badge" class="px-2 py-0.5 rounded bg-[#faf1ed] text-rose-800 border border-[#c48b71]/30 text-xs font-bold">20% OFF</span>
-            </div>
-            <span class="text-xs text-emerald-700 font-semibold">Taxes Included • Free Express Shipping</span>
+        <!-- Bio-Active Standard Box -->
+        <div class="p-4 rounded-2xl bg-white border border-[#E6DFD1] shadow-xs space-y-2">
+          <div class="text-xs font-bold uppercase tracking-wider text-[#8E6F3A]">Pharmacognosy Biomarker Assay:</div>
+          <div class="text-sm font-semibold text-[#063D32]" id="product-marker">
+            Pure Himalayan Shilajit (65.8% Fulvic Acid) + 24K Swarna Bhasma Nano-Particles
           </div>
-
-          <!-- Supply Size Selector -->
-          <div class="mt-4 pt-4 border-t border-[#edf2f0] space-y-2">
-            <span class="text-xs font-bold text-[#0d5c46] block">Select Course Duration:</span>
-            <div class="grid grid-cols-2 gap-3">
-              <button onclick="selectPackage(30, 1999, 2499, '20% OFF')" id="pkg-30" class="pkg-option active-pkg p-3 rounded-xl border-2 border-[#0d5c46] bg-[#edf5f2] text-left transition-all">
-                <span class="font-bold text-xs text-[#0d5c46] block">30-Day Course (60 Caps)</span>
-                <span class="text-[11px] text-[#5b7369]">₹1,999 (₹66 / day)</span>
-              </button>
-              <button onclick="selectPackage(60, 3599, 4999, '28% OFF')" id="pkg-60" class="pkg-option p-3 rounded-xl border border-[#d0e3dc] bg-white text-left hover:border-[#c48b71] transition-all">
-                <div class="flex justify-between items-center">
-                  <span class="font-bold text-xs text-[#0d5c46] block">60-Day Deep Cell (120 Caps)</span>
-                  <span class="px-1.5 py-0.5 rounded bg-[#c48b71] text-white text-[9px] font-bold">Save ₹800</span>
-                </div>
-                <span class="text-[11px] text-[#5b7369]">₹3,599 (₹59 / day)</span>
-              </button>
-            </div>
+          <div class="text-xs text-[#686E68] pt-1 border-t border-[#E6DFD1]/60">
+            <strong>Classical Ingredients:</strong> <span id="product-formula">Shilajit, Swarna Bhasma, Kashmiri Kesar, Ashwagandha</span>
           </div>
-
-          <!-- Quantity & Action Buttons -->
-          <div class="mt-5 pt-4 border-t border-[#edf2f0] flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-            
-            <!-- Quantity Control -->
-            <div class="flex items-center justify-between border border-[#d0e3dc] rounded-xl px-3 py-2 bg-[#f8faf9] w-full sm:w-32">
-              <button onclick="changeQty(-1)" class="text-[#0d5c46] font-bold text-lg px-2 hover:text-[#c48b71]">-</button>
-              <span id="qty-val" class="font-bold text-sm text-[#0d5c46]">1</span>
-              <button onclick="changeQty(1)" class="text-[#0d5c46] font-bold text-lg px-2 hover:text-[#c48b71]">+</button>
-            </div>
-
-            <!-- Add To Cart -->
-            <button onclick="handleAddDetailToCart()" class="jade-btn-gradient text-white flex-1 py-3.5 px-6 rounded-xl font-bold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center gap-2">
-              <span>Add to Healing Box</span>
-              <span class="text-sm">+</span>
-            </button>
-
-            <!-- Buy Now -->
-            <button onclick="handleInstantBuy()" class="rosegold-btn-gradient text-white flex-1 py-3.5 px-6 rounded-xl font-bold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center gap-2">
-              <span>Instant Checkout →</span>
-            </button>
-
-          </div>
-
-          <!-- Doctor Consultation Voucher Callout -->
-          <div class="mt-4 p-3 rounded-xl bg-[#edf5f2] border border-[#d0e3dc] flex items-center gap-3">
-            <span class="text-2xl">🩺</span>
-            <div class="text-xs">
-              <span class="font-bold text-[#0d5c46] block">Complimentary Video Consultation Included</span>
-              <span class="text-[#5b7369]">Order includes a free 20-minute Prakriti analysis with our certified Vaidya panel.</span>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Trust Signals Checklist -->
-        <div class="grid grid-cols-2 gap-3 text-xs text-[#344840]">
-          <div class="flex items-center gap-2">
-            <span class="text-[#0d5c46] font-bold">✓</span>
-            <span>100% Heavy-Metal Tested (ICP-MS)</span>
+        <!-- Package & Pricing Selector -->
+        <div class="p-5 rounded-3xl bg-[#FFFDF7] border border-[#E6DFD1] space-y-4">
+          <div class="flex items-baseline justify-between">
+            <div>
+              <span class="text-xs text-[#8B948E] line-through" id="product-orig-price">₹2,499</span>
+              <span class="text-3xl font-bold text-[#075B46] ml-2" id="product-price">₹1,999</span>
+              <span class="text-xs text-[#686E68] ml-1">(Inclusive of all AYUSH taxes)</span>
+            </div>
+            <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-[#FAF5EB] text-[#8E6F3A] border border-[#B08D57]/40" id="product-savings-badge">
+              20% SAVINGS
+            </span>
           </div>
-          <div class="flex items-center gap-2">
-            <span class="text-[#0d5c46] font-bold">✓</span>
-            <span>Vegetarian Pullulan Capsules</span>
+
+          <!-- Dual Package Options -->
+          <div class="grid grid-cols-2 gap-3" id="package-selector-row">
+            <button onclick="selectPackage(30)" id="pkg-30" class="pkg-option p-3.5 rounded-2xl border-2 border-[#075B46] bg-[#E9F2EE] text-left transition-all">
+              <span class="block text-xs font-bold text-[#063D32]">30-Day Classical Cycle</span>
+              <span class="text-[11px] text-[#686E68]">Standard therapeutic dosage</span>
+              <span class="block text-xs font-bold text-[#075B46] mt-1" id="pkg-30-price">₹1,999</span>
+            </button>
+            <button onclick="selectPackage(60)" id="pkg-60" class="pkg-option p-3.5 rounded-2xl border border-[#E6DFD1] bg-white text-left hover:border-[#B08D57] transition-all">
+              <span class="block text-xs font-bold text-[#063D32]">60-Day Complete Course</span>
+              <span class="text-[11px] text-[#8E6F3A] font-semibold">Includes extra 15% savings</span>
+              <span class="block text-xs font-bold text-[#075B46] mt-1" id="pkg-60-price">₹3,499</span>
+            </button>
           </div>
-          <div class="flex items-center gap-2">
-            <span class="text-[#0d5c46] font-bold">✓</span>
-            <span>No Artificial Preservatives or Binders</span>
+
+          <!-- PRIMARY CONVERSION BUTTON: WHATSAPP ENQUIRY -->
+          <div class="space-y-2 pt-2">
+            <a id="main-whatsapp-enquiry-btn" href="#" target="_blank" class="w-full py-4 px-6 rounded-2xl btn-whatsapp-showroom font-bold text-sm text-center flex items-center justify-center gap-2 shadow-md">
+              <span class="text-lg">💬</span>
+              <span id="whatsapp-btn-text">Enquire on WhatsApp About This Formulation</span>
+            </a>
+            <p class="text-[11px] text-center text-[#686E68]">Direct one-on-one consultation with Sarvam Healthcare product specialists</p>
           </div>
-          <div class="flex items-center gap-2">
-            <span class="text-[#0d5c46] font-bold">✓</span>
-            <span>Dispatched in Temperature-Controlled Glass</span>
+
+          <!-- Secondary eCommerce / Consultation CTAs -->
+          <div class="grid grid-cols-2 gap-3 pt-1">
+            <button onclick="handleAddToCartFromDetail()" class="py-3 px-4 rounded-xl btn-emerald text-xs font-bold text-center shadow-xs">
+              + Add to Healing Box
+            </button>
+            <a href="consultation.html" class="py-3 px-4 rounded-xl btn-outline-gold text-xs font-bold text-center">
+              Book Vaidya Session
+            </a>
           </div>
+
         </div>
 
       </div>
 
     </div>
 
-    <!-- ================= DETAILED TABS: SCIENCE, INGREDIENTS, DOSAGE ================= -->
-    <section class="mt-16 bg-white rounded-3xl p-6 sm:p-10 border border-[#d0e3dc] shadow-sm">
+    <!-- ================= IN-DEPTH CLINICAL SPECIFICATION TABS ================= -->
+    <section class="mt-16 bg-white rounded-3xl border border-[#E6DFD1] p-6 sm:p-10 shadow-sm">
       
-      <!-- Tab Navigation -->
-      <div class="flex border-b border-[#d0e3dc] gap-6 text-sm font-bold overflow-x-auto no-scrollbar">
-        <button onclick="switchTab('specs')" id="tab-specs" class="tab-btn pb-3 text-[#0d5c46] border-b-2 border-[#c48b71] whitespace-nowrap">
-          🔬 Clinical Pharmacognosy & HPLC
+      <!-- Tab Controls -->
+      <div class="flex items-center gap-6 border-b border-[#E6DFD1] overflow-x-auto pb-3 text-sm font-semibold">
+        <button onclick="switchTab('pharmacognosy')" id="tab-pharmacognosy" class="tab-btn text-[#075B46] border-b-2 border-[#B08D57] pb-3 whitespace-nowrap">
+          Pharmacognosy & Biomarkers
         </button>
-        <button onclick="switchTab('ingredients')" id="tab-ingredients" class="tab-btn pb-3 text-[#5b7369] hover:text-[#0d5c46] whitespace-nowrap">
-          🌿 Classical Ingredients & Sourcing
+        <button onclick="switchTab('ayurveda')" id="tab-ayurveda" class="tab-btn text-[#686E68] pb-3 hover:text-[#063D32] whitespace-nowrap">
+          Classical Lineage & Extraction
         </button>
-        <button onclick="switchTab('anupana')" id="tab-anupana" class="tab-btn pb-3 text-[#5b7369] hover:text-[#0d5c46] whitespace-nowrap">
-          🥛 Anupana & Dosage Protocol
+        <button onclick="switchTab('dosage')" id="tab-dosage" class="tab-btn text-[#686E68] pb-3 hover:text-[#063D32] whitespace-nowrap">
+          Dosage & Anupana Guidelines
         </button>
-        <button onclick="switchTab('reviews')" id="tab-reviews" class="tab-btn pb-3 text-[#5b7369] hover:text-[#0d5c46] whitespace-nowrap">
-          ⭐ Verified Reviews (248)
+        <button onclick="switchTab('coa')" id="tab-coa" class="tab-btn text-[#686E68] pb-3 hover:text-[#063D32] whitespace-nowrap">
+          Analytical COA & 0 ppm Purity
         </button>
       </div>
 
-      <!-- Tab 1: Pharmacognosy Specs -->
-      <div id="panel-specs" class="tab-panel pt-8 space-y-6">
-        <div>
-          <h3 class="font-serif-display text-xl font-bold text-[#0d5c46]">
-            High-Performance Liquid Chromatography (HPLC) Standards
-          </h3>
-          <p class="text-xs text-[#5b7369] mt-1 max-w-3xl">
-            Each batch of Sarvam Amrit Rasayana Gold undergoes triple-tier analytical confirmation via Photodiode Array HPLC and Inductively Coupled Plasma Mass Spectrometry (ICP-MS) at an independent NABL-accredited facility.
-          </p>
+      <!-- Tab 1: Pharmacognosy -->
+      <div id="panel-pharmacognosy" class="tab-panel pt-6 space-y-4 text-xs sm:text-sm text-[#686E68] leading-relaxed">
+        <h3 class="font-serif-luxury text-xl font-bold text-[#063D32]">HPLC Standardized Molecular Profile</h3>
+        <p>
+          Sarvam Healthcare bridges classical Charaka Chikitsa with advanced chromatographic standardization. Unlike raw herbal powders with variable potency, our botanical extracts are assayed via High-Performance Liquid Chromatography (HPLC) and Ultra-Performance Liquid Chromatography (UPLC) to verify standardized biomarker concentrations in every single capsule or batch.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+          <div class="p-4 rounded-2xl bg-[#FFFDF7] border border-[#E6DFD1]">
+            <span class="block font-bold text-[#063D32] text-sm">Supercritical CO2</span>
+            <span class="text-xs text-[#686E68] mt-1 block">Extracted at sub-thermal temperatures to safeguard heat-sensitive terpenes and alkaloids without organic solvent residues.</span>
+          </div>
+          <div class="p-4 rounded-2xl bg-[#FFFDF7] border border-[#E6DFD1]">
+            <span class="block font-bold text-[#063D32] text-sm">Targeted Bioavailability</span>
+            <span class="text-xs text-[#686E68] mt-1 block">Complexed with traditional bio-enhancers (Anupana matrices like Pippali, Black Pepper, or Ghee) for superior cellular uptake.</span>
+          </div>
+          <div class="p-4 rounded-2xl bg-[#FFFDF7] border border-[#E6DFD1]">
+            <span class="block font-bold text-[#063D32] text-sm">Pullulan Veggie Shells</span>
+            <span class="text-xs text-[#686E68] mt-1 block">Encapsulated in 100% plant-based pullulan vegetarian capsules with zero synthetic gelatin, phthalates, or chemical glazes.</span>
+          </div>
         </div>
+      </div>
 
-        <div class="border border-[#d0e3dc] rounded-2xl overflow-hidden text-xs">
-          <table class="w-full text-left">
-            <thead class="bg-[#edf5f2] text-[#0d5c46] font-bold">
+      <!-- Tab 2: Classical Lineage -->
+      <div id="panel-ayurveda" class="tab-panel hidden pt-6 space-y-4 text-xs sm:text-sm text-[#686E68] leading-relaxed">
+        <h3 class="font-serif-luxury text-xl font-bold text-[#063D32]">Formulated According to Charaka Samhita</h3>
+        <p>
+          Our classical formulations are prepared respecting the sacred principles of <em>Samskara</em> (beneficial alteration) and <em>Samyoga</em> (synergistic combination). Every ingredient is selected to balance the Tridoshas (Vata, Pitta, Kapha) and kindle digestive <em>Agni</em> without creating metabolic toxicity (<em>Ama</em>).
+        </p>
+        <div class="p-4 rounded-2xl bg-[#FAF5EB] border border-[#B08D57]/30 text-xs text-[#8E6F3A] font-serif-luxury italic">
+          "प्रयोजनं चास्य स्वस्थस्य स्वास्थ्यरक्षणमातुरस्य विकारप्रशमनं च॥" <br>
+          <span class="not-italic text-[11px] text-[#686E68]">The objective of Ayurveda is to protect the health of the healthy and relieve the disorders of the diseased. — Charaka Samhita, Sutra Sthana 30:26</span>
+        </div>
+      </div>
+
+      <!-- Tab 3: Dosage & Anupana -->
+      <div id="panel-dosage" class="tab-panel hidden pt-6 space-y-4 text-xs sm:text-sm text-[#686E68] leading-relaxed">
+        <h3 class="font-serif-luxury text-xl font-bold text-[#063D32]">Therapeutic Dosage & Carrier Vehicle (Anupana)</h3>
+        <div class="p-4 rounded-2xl bg-[#FFFDF7] border border-[#E6DFD1] space-y-2 text-xs">
+          <div><strong class="text-[#063D32]">Recommended Dosage:</strong> <span id="tab-dosage-text">1-2 capsules daily</span></div>
+          <div><strong class="text-[#063D32]">Classical Anupana:</strong> <span id="tab-anupana-text">Warm A2 Cow Milk, Organic Ghee, or Lukewarm Water</span></div>
+          <div><strong class="text-[#063D32]">Optimal Timing:</strong> Early morning on an empty stomach or 45 minutes before sleep, as guided by your Ayurvedic Vaidya.</div>
+        </div>
+        <p class="text-xs text-[#686E68]">
+          *Note: Pregnant or lactating women and patients with chronic pre-existing renal conditions should consult their attending physician or book a 1-on-1 Sarvam Vaidya consultation before initiating a new therapeutic regimen.
+        </p>
+      </div>
+
+      <!-- Tab 4: Analytical COA -->
+      <div id="panel-coa" class="tab-panel hidden pt-6 space-y-4 text-xs sm:text-sm text-[#686E68] leading-relaxed">
+        <h3 class="font-serif-luxury text-xl font-bold text-[#063D32]">Batch Certificate of Analysis (COA)</h3>
+        <p>
+          Every batch produced at our WHO-GMP and AYUSH certified manufacturing facility undergoes mandatory testing by independent NABL-accredited analytical laboratories.
+        </p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border border-[#E6DFD1] rounded-xl overflow-hidden">
+            <thead class="bg-[#FAF5EB] text-[#063D32] font-bold">
               <tr>
-                <th class="p-3.5">Assay / Test Parameter</th>
-                <th class="p-3.5">Standard Pharmacopoeia Limit</th>
-                <th class="p-3.5">Sarvam Batch Actual Result</th>
-                <th class="p-3.5">Compliance Status</th>
+                <th class="p-3 border-b border-[#E6DFD1]">Heavy Metal Parameter</th>
+                <th class="p-3 border-b border-[#E6DFD1]">USP / AYUSH Limit</th>
+                <th class="p-3 border-b border-[#E6DFD1]">Sarvam Batch Result</th>
+                <th class="p-3 border-b border-[#E6DFD1]">Status</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-[#edf2f0] text-[#344840]">
+            <tbody class="divide-y divide-[#E6DFD1] text-[#686E68]">
               <tr>
-                <td class="p-3.5 font-semibold">Fulvic Acid Potency</td>
-                <td class="p-3.5">Min 50.0% by UV-Vis</td>
-                <td class="p-3.5 font-bold text-[#0d5c46]">65.84% High-Purity Extract</td>
-                <td class="p-3.5 text-emerald-700 font-bold">✓ Exceeds Standard</td>
+                <td class="p-3">Lead (Pb)</td>
+                <td class="p-3">&lt; 10.0 ppm</td>
+                <td class="p-3 font-bold text-[#075B46]">0.00 ppm (Not Detected)</td>
+                <td class="p-3"><span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">PASSED</span></td>
               </tr>
               <tr>
-                <td class="p-3.5 font-semibold">24K Swarna Bhasma Particle Size</td>
-                <td class="p-3.5">&lt; 100 nm (Sub-micron)</td>
-                <td class="p-3.5 font-bold text-[#0d5c46]">42 - 58 nm (TEM Confirmed)</td>
-                <td class="p-3.5 text-emerald-700 font-bold">✓ Cellular Penetration</td>
+                <td class="p-3">Mercury (Hg)</td>
+                <td class="p-3">&lt; 1.0 ppm</td>
+                <td class="p-3 font-bold text-[#075B46]">0.00 ppm (Not Detected)</td>
+                <td class="p-3"><span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">PASSED</span></td>
               </tr>
               <tr>
-                <td class="p-3.5 font-semibold">Withanolides Matrix (Ashwagandha)</td>
-                <td class="p-3.5">Min 5.0% by HPLC</td>
-                <td class="p-3.5 font-bold text-[#0d5c46]">5.32% Standardized</td>
-                <td class="p-3.5 text-emerald-700 font-bold">✓ Optimal Bioavailability</td>
+                <td class="p-3">Arsenic (As)</td>
+                <td class="p-3">&lt; 3.0 ppm</td>
+                <td class="p-3 font-bold text-[#075B46]">0.00 ppm (Not Detected)</td>
+                <td class="p-3"><span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">PASSED</span></td>
               </tr>
               <tr>
-                <td class="p-3.5 font-semibold">Heavy Metal Screen (Lead, Arsenic, Mercury)</td>
-                <td class="p-3.5">AYUSH Limit: &lt; 10 ppm</td>
-                <td class="p-3.5 font-bold text-emerald-700">&lt; 0.005 ppm (Not Detected)</td>
-                <td class="p-3.5 text-emerald-700 font-bold">✓ 100% Zero-Metal Pass</td>
-              </tr>
-              <tr>
-                <td class="p-3.5 font-semibold">Microbial Bio-Burden & Pathogens</td>
-                <td class="p-3.5">USP 2021 / 2022 Criteria</td>
-                <td class="p-3.5 font-bold text-emerald-700">0 CFU/g (Sterile Batch)</td>
-                <td class="p-3.5 text-emerald-700 font-bold">✓ Passed</td>
+                <td class="p-3">Cadmium (Cd)</td>
+                <td class="p-3">&lt; 0.3 ppm</td>
+                <td class="p-3 font-bold text-[#075B46]">0.00 ppm (Not Detected)</td>
+                <td class="p-3"><span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">PASSED</span></td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-      <!-- Tab 2: Ingredients & Sourcing -->
-      <div id="panel-ingredients" class="tab-panel pt-8 space-y-6 hidden">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="p-5 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc]">
-            <span class="text-2xl block mb-2">⛰️</span>
-            <h4 class="font-serif-display font-bold text-base text-[#0d5c46]">1. Himalayan Shuddha Shilajit</h4>
-            <p class="text-xs text-[#5b7369] mt-1">Exudate hand-harvested at 16,000+ feet in the Gilgit and Ladakh ridges during peak summer solar radiation. Purified through seven Surya Tapi agni washes in Triphala decoction.</p>
-          </div>
-          <div class="p-5 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc]">
-            <span class="text-2xl block mb-2">✨</span>
-            <h4 class="font-serif-display font-bold text-base text-[#0d5c46]">2. 24K Swarna Bhasma (Gold Calx)</h4>
-            <p class="text-xs text-[#5b7369] mt-1">Prepared using the classical Rasashastra method of 108 Puta cycles with purified Mercury & Sulfur intermediates completely volatilized, producing therapeutically inert, biologically active nano-gold.</p>
-          </div>
-          <div class="p-5 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc]">
-            <span class="text-2xl block mb-2">🌸</span>
-            <h4 class="font-serif-display font-bold text-base text-[#0d5c46]">3. Grade-1 Kashmiri Mongra Saffron</h4>
-            <p class="text-xs text-[#5b7369] mt-1">Sourced from certified growers in Pampore, Kashmir. Highest active Crocin, Picrocrocin, and Safranal contents for cardiovascular vigor and neural rejuvenation.</p>
-          </div>
-          <div class="p-5 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc]">
-            <span class="text-2xl block mb-2">🌿</span>
-            <h4 class="font-serif-display font-bold text-base text-[#0d5c46]">4. Shodhita KSM-66 Ashwagandha</h4>
-            <p class="text-xs text-[#5b7369] mt-1">Organic root-only extract treated with classical cow milk Shodhana to preserve active withanolides while eliminating gastrointestinal irritability.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tab 3: Anupana & Dosage Protocol -->
-      <div id="panel-anupana" class="tab-panel pt-8 space-y-6 hidden">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="p-5 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc]">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="text-xl">💨</span>
-              <h4 class="font-bold text-sm text-[#0d5c46]">For Vata Constitution</h4>
-            </div>
-            <p class="text-xs text-[#5b7369]">Take 1 capsule 30 minutes after dinner with <strong>1 cup of warm organic A2 milk</strong> mixed with 1/2 tsp of pure Desi cow ghee. Enhances deep nervous system replenishment and neuromuscular recovery.</p>
-          </div>
-          <div class="p-5 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc]">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="text-xl">🔥</span>
-              <h4 class="font-bold text-sm text-[#0d5c46]">For Pitta Constitution</h4>
-            </div>
-            <p class="text-xs text-[#5b7369]">Take 1 capsule with <strong>room-temperature tender coconut water</strong> or raw organic milk. Saffron and nano-gold naturally balance metabolic heat without aggravating internal bile.</p>
-          </div>
-          <div class="p-5 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc]">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="text-xl">💧</span>
-              <h4 class="font-bold text-sm text-[#0d5c46]">For Kapha Constitution</h4>
-            </div>
-            <p class="text-xs text-[#5b7369]">Take 1 capsule in the morning on an empty stomach with <strong>warm water infused with raw wild honey</strong> and a pinch of dry ginger. Ignites cellular Agni and clears metabolic sluggishness.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tab 4: Reviews -->
-      <div id="panel-reviews" class="tab-panel pt-8 space-y-6 hidden">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          
-          <div class="p-5 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc] space-y-2">
-            <div class="flex justify-between items-center text-xs">
-              <span class="font-bold text-[#0d5c46]">Dr. K. S. Ramanathan (B.A.M.S, M.D.)</span>
-              <span class="text-[#c48b71]">★★★★★</span>
-            </div>
-            <p class="text-xs text-[#344840]">"As an Ayurvedic physician practicing in Bengaluru, I have recommended Sarvam Amrit Rasayana Gold to over 60 patients recovering from post-viral chronic exhaustion. The bioavailability of their nano-gold Swarna Bhasma is unparalleled."</p>
-            <span class="text-[10px] text-emerald-700 font-semibold block">✓ Verified Doctor Review • Karnataka</span>
-          </div>
-
-          <div class="p-5 rounded-2xl bg-[#f8faf9] border border-[#d0e3dc] space-y-2">
-            <div class="flex justify-between items-center text-xs">
-              <span class="font-bold text-[#0d5c46]">Vikramaditya S.</span>
-              <span class="text-[#c48b71]">★★★★★</span>
-            </div>
-            <p class="text-xs text-[#344840]">"I was skeptical about taking Shilajit due to heavy metals reported in commercial brands. Sarvam's batch report showing 0.00 ppm lead and mercury convinced me. My morning stamina and mental clarity within 14 days have been remarkable."</p>
-            <span class="text-[10px] text-emerald-700 font-semibold block">✓ Verified Purchase • 60-Day Regimen</span>
-          </div>
-
-        </div>
-      </div>
-
     </section>
 
-    <!-- ================= RELATED FORMULATIONS ================= -->
-    <section class="mt-16">
-      <div class="flex justify-between items-end mb-6">
+    <!-- ================= RELATED SHOWROOM FORMULATIONS ================= -->
+    <section class="mt-16 mb-8">
+      <div class="flex items-center justify-between mb-8">
         <div>
-          <span class="text-xs font-bold text-[#a66b53] uppercase tracking-wider">Synergistic Formulations</span>
-          <h3 class="font-serif-display text-2xl font-bold text-[#0d5c46]">Complete Your Ayurvedic Regimen</h3>
+          <span class="text-xs uppercase tracking-wider font-bold text-[#8E6F3A]">Synergistic Dispensary Vitrines</span>
+          <h2 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-[#063D32]">Complementary Ayurvedic Remedies</h2>
         </div>
-        <a href="shop.html" class="text-xs font-bold text-[#c48b71] hover:underline">Explore Full Apothecary →</a>
+        <a href="shop.html" class="text-xs font-bold text-[#075B46] hover:text-[#B08D57] flex items-center gap-1">
+          Explore Complete Showroom →
+        </a>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="p-5 rounded-3xl bg-white border border-[#d0e3dc] flex flex-col justify-between">
-          <div>
-            <span class="text-xs text-[#5b7369]">Digestive Agni Deepana</span>
-            <h4 class="font-serif-display font-bold text-sm text-[#0d5c46] mt-1">Triphala Bio-Active Cleanse</h4>
-            <p class="text-xs text-[#5b7369] mt-1">Restores natural elimination and gut microflora to amplify Rasayana absorption.</p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-[#edf2f0] flex justify-between items-center">
-            <span class="font-bold text-[#0d5c46]">₹549</span>
-            <button onclick="addToCart(2, 'Triphala Bio-Active Cleanse', 549, 'Gut Detox')" class="px-3 py-1.5 rounded-lg bg-[#edf5f2] text-[#0d5c46] text-xs font-bold hover:bg-[#0d5c46] hover:text-white transition-all">Add +</button>
-          </div>
-        </div>
-
-        <div class="p-5 rounded-3xl bg-white border border-[#d0e3dc] flex flex-col justify-between">
-          <div>
-            <span class="text-xs text-[#5b7369]">Adrenal & Restorative Sleep</span>
-            <h4 class="font-serif-display font-bold text-sm text-[#0d5c46] mt-1">Ashwagandha KSM-66 Max</h4>
-            <p class="text-xs text-[#5b7369] mt-1">5.24% Withanolides root extract to modulate stress hormone cortisol.</p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-[#edf2f0] flex justify-between items-center">
-            <span class="font-bold text-[#0d5c46]">₹899</span>
-            <button onclick="addToCart(1, 'Ashwagandha KSM-66 Max', 899, 'Stress & Adrenals')" class="px-3 py-1.5 rounded-lg bg-[#edf5f2] text-[#0d5c46] text-xs font-bold hover:bg-[#0d5c46] hover:text-white transition-all">Add +</button>
-          </div>
-        </div>
-
-        <div class="p-5 rounded-3xl bg-white border border-[#d0e3dc] flex flex-col justify-between">
-          <div>
-            <span class="text-xs text-[#5b7369]">Immunity Fortifier</span>
-            <h4 class="font-serif-display font-bold text-sm text-[#0d5c46] mt-1">Ojas Chyawanprash Supreme</h4>
-            <p class="text-xs text-[#5b7369] mt-1">Cooked with Desi Cow Ghee and 42 wild Himalayan herbs with zero refined sugar.</p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-[#edf2f0] flex justify-between items-center">
-            <span class="font-bold text-[#0d5c46]">₹899</span>
-            <button onclick="addToCart(6, 'Ojas Chyawanprash Supreme', 899, 'Immunity Fortifier')" class="px-3 py-1.5 rounded-lg bg-[#edf5f2] text-[#0d5c46] text-xs font-bold hover:bg-[#0d5c46] hover:text-white transition-all">Add +</button>
-          </div>
-        </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="related-products-grid">
+        <!-- Injected via JavaScript from complementary SARVAM_PRODUCTS -->
       </div>
     </section>
 
   </main>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="bg-[#093b2d] text-white pt-16 pb-12 border-t-4 border-[#c48b71]">
+  <!-- ================= LUXURY FOOTER ================= -->
+  <footer class="bg-[#063D32] text-white pt-16 pb-12 border-t-2 border-[#B08D57]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
         
         <!-- Brand & Mission -->
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-[#edf5f2] text-[#0d5c46] flex items-center justify-center font-serif-display font-bold text-xl">S</div>
+            <div class="w-10 h-10 rounded-xl bg-[#075B46] border border-[#B08D57] text-[#D4BE91] flex items-center justify-center font-serif-luxury font-bold text-xl">S</div>
             <div>
-              <span class="font-serif-display font-bold text-sm tracking-wide block text-white">SARVAM HEALTHCARE</span>
-              <span class="text-[9px] tracking-[0.2em] text-[#d89e84] font-semibold uppercase block">Pvt Ltd • Modern Ayurveda</span>
+              <span class="font-serif-luxury font-bold text-base tracking-wide block text-white">SARVAM HEALTHCARE</span>
+              <span class="text-[9px] tracking-[0.2em] text-[#D4BE91] font-semibold uppercase block">Pvt Ltd • Modern Ayurveda</span>
             </div>
           </div>
-          <p class="text-xs text-[#d0e3dc] leading-relaxed">
+          <p class="text-xs text-white/80 leading-relaxed">
             Bridging 5,000 years of classical Ayurvedic science with modern pharmacognosy, supercritical fluid extraction, and rigorous double-blind trials.
           </p>
-          <div class="text-xs text-[#d89e84] font-serif-body italic">
-            "सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः" <br>
-            <span class="text-[11px] text-white/50 not-italic">May all beings be happy, may all beings be free from disease.</span>
-          </div>
+        </div>
+
+        <!-- Category Shelves -->
+        <div>
+          <h4 class="font-serif-luxury text-sm font-bold text-[#D4BE91] uppercase tracking-wider mb-4">Dispensary Shelves</h4>
+          <ul class="space-y-2.5 text-xs text-white/80">
+            <li><a href="shop.html?cat=liver" class="hover:text-white transition-colors">Liver Syrups & Hepatoprotective</a></li>
+            <li><a href="shop.html?cat=digestion" class="hover:text-white transition-colors">Digestive Tonics & Gut Agni</a></li>
+            <li><a href="shop.html?cat=pain-relief" class="hover:text-white transition-colors">Pain Relief & Joint Mobility</a></li>
+            <li><a href="shop.html?cat=vitality" class="hover:text-white transition-colors">Rasayana & Vitality Formulations</a></li>
+            <li><a href="shop.html?cat=stress" class="hover:text-white transition-colors">Stress, Sleep & Cognitive Elixirs</a></li>
+          </ul>
         </div>
 
         <!-- Quick Links -->
         <div>
-          <h4 class="font-serif-display text-sm font-bold text-[#d89e84] uppercase tracking-wider mb-4">Apothecary</h4>
-          <ul class="space-y-2.5 text-xs text-[#d0e3dc]">
-            <li><a href="shop.html" class="hover:text-white transition-colors">All Formulations</a></li>
-            <li><a href="product.html" class="hover:text-white transition-colors text-[#d89e84] font-semibold">Amrit Rasayana Gold →</a></li>
-            <li><a href="shop.html?cat=vitality" class="hover:text-white transition-colors">Vitality & Rasayana</a></li>
-            <li><a href="shop.html?cat=digestion" class="hover:text-white transition-colors">Digestive Bio-Actives</a></li>
-            <li><a href="shop.html?cat=stress" class="hover:text-white transition-colors">Stress & Sleep Support</a></li>
-            <li><a href="shop.html?cat=immunity" class="hover:text-white transition-colors">Metabolic & Immunity</a></li>
-          </ul>
-        </div>
-
-        <!-- Clinical & Science -->
-        <div>
-          <h4 class="font-serif-display text-sm font-bold text-[#d89e84] uppercase tracking-wider mb-4">Science & Vaidya</h4>
-          <ul class="space-y-2.5 text-xs text-[#d0e3dc]">
+          <h4 class="font-serif-luxury text-sm font-bold text-[#D4BE91] uppercase tracking-wider mb-4">Patient Care & Clinics</h4>
+          <ul class="space-y-2.5 text-xs text-white/80">
+            <li><a href="shop.html" class="hover:text-white transition-colors">All Formulations Showroom</a></li>
+            <li><a href="consultation.html" class="hover:text-white transition-colors">Book B.A.M.S Vaidya Consultation</a></li>
             <li><a href="about.html" class="hover:text-white transition-colors">Heritage & Extraction Science</a></li>
-            <li><a href="about.html#sourcing" class="hover:text-white transition-colors">Himalayan Sourcing Ethics</a></li>
-            <li><a href="consultation.html" class="hover:text-white transition-colors">Book Vaidya Video Consult</a></li>
-            <li><a href="index.html#dosha-section" class="hover:text-white transition-colors">Tridosha Diagnostic Tool</a></li>
-            <li><a href="contact.html" class="hover:text-white transition-colors">Clinics & Distribution Inquiries</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Dispensary Locations & Dispensers</a></li>
           </ul>
         </div>
 
-        <!-- Corporate Info -->
-        <div>
-          <h4 class="font-serif-display text-sm font-bold text-[#d89e84] uppercase tracking-wider mb-4">Dispensary Headquarters</h4>
-          <p class="text-xs text-[#d0e3dc] leading-relaxed">
-            <strong>Sarvam Healthcare Pvt Ltd</strong><br>
-            AYUSH License: AY-DL-2024-00892<br>
-            Plot 44, Bio-Pharma Herbal Park,<br>
-            Sector 18, Udyog Vihar, Gurugram,<br>
-            Haryana - 122015, India.<br>
-            <span class="block mt-2 text-[#d89e84]">care@sarvamhealthcare.com</span>
-            <span>+91 (011) 4988-7200</span>
-          </p>
+        <!-- Contact & Direct Channels -->
+        <div class="space-y-3">
+          <h4 class="font-serif-luxury text-sm font-bold text-[#D4BE91] uppercase tracking-wider mb-4">Showroom Desk</h4>
+          <div class="text-xs text-white/80 space-y-2">
+            <p><strong class="text-white">Helpline:</strong> <a href="tel:+911149887200" class="hover:underline">+91 (011) 4988-7200</a></p>
+            <p><strong class="text-white">WhatsApp:</strong> <a href="https://wa.me/919876543210" target="_blank" class="hover:underline">+91 98765 43210</a></p>
+            <p><strong class="text-white">Email:</strong> care@sarvamhealthcare.com</p>
+          </div>
+          <a href="https://wa.me/919876543210?text=Hello%20Sarvam%20Healthcare%2C%20I%20would%20like%20to%20enquire%20about%20your%20Ayurvedic%20medicines." target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl btn-whatsapp-showroom text-xs font-semibold mt-2">
+            <span>💬</span> <span>Open WhatsApp Concierge</span>
+          </a>
         </div>
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
-        <p>© 2026 Sarvam Healthcare Pvt Ltd. All rights reserved.</p>
-        <div class="flex space-x-6 text-[11px]">
-          <a href="#" class="hover:underline">Privacy Policy</a>
-          <a href="#" class="hover:underline">Terms of Service</a>
-          <a href="#" class="hover:underline">AYUSH Disclaimers</a>
-          <a href="#" class="hover:underline">GMP Compliance</a>
-        </div>
+      <!-- Regulatory Disclaimers & Copyright -->
+      <div class="pt-8 text-center sm:flex sm:justify-between sm:text-left text-[11px] text-white/60">
+        <p>© 2026 Sarvam Healthcare Pvt. Ltd. All rights reserved. Formulations licensed under AYUSH regulations.</p>
+        <p class="mt-2 sm:mt-0">Authentic classical Ayurveda • Non-GMO • Zero heavy metals verified</p>
       </div>
-
     </div>
   </footer>
 
-  <!-- ================= SLIDE-OUT CART DRAWER (SYNCHRONIZED) ================= -->
+  <!-- ================= HEALING BOX / CART DRAWER ================= -->
   <div id="cart-drawer" class="fixed inset-0 z-50 pointer-events-none transition-all duration-300">
-    <div id="cart-backdrop" onclick="closeCart()" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"></div>
-
-    <div id="cart-panel" class="absolute top-0 right-0 w-full max-w-md h-full bg-[#f8faf9] shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 pointer-events-auto border-l border-[#d0e3dc]">
+    <div id="cart-backdrop" class="absolute inset-0 bg-black/40 backdrop-blur-xs opacity-0 transition-opacity duration-300"></div>
+    <div id="cart-panel" class="absolute top-0 right-0 h-full w-full max-w-md bg-[#FFFDF7] shadow-2xl border-l border-[#E6DFD1] translate-x-full transition-transform duration-300 flex flex-col justify-between pointer-events-auto">
       
-      <div class="p-6 bg-[#0d5c46] text-white flex justify-between items-center">
-        <div>
-          <h3 class="font-serif-display text-lg font-bold">Your Healing Box</h3>
-          <p class="text-xs text-[#d89e84]">Sarvam Healthcare Direct Dispensary</p>
+      <div class="p-5 border-b border-[#E6DFD1] flex items-center justify-between bg-white">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🌿</span>
+          <h3 class="font-serif-luxury font-bold text-lg text-[#063D32]">Your Healing Regimen Box</h3>
         </div>
-        <button onclick="closeCart()" class="text-white/70 hover:text-white p-2">✕</button>
+        <button onclick="closeCart()" class="p-2 text-[#686E68] hover:text-[#063D32] text-sm">✕</button>
       </div>
 
-      <div class="bg-[#edf5f2] p-3.5 border-b border-[#d0e3dc] text-xs text-center text-[#344840]">
-        <span id="shipping-progress-text">Add ₹500 more for <strong>FREE Express Delivery</strong>!</span>
-        <div class="w-full h-1.5 bg-[#d0e3dc] rounded-full overflow-hidden mt-2">
-          <div id="shipping-bar" class="h-full bg-[#c48b71] transition-all" style="width: 0%"></div>
+      <div class="px-5 py-3 bg-[#FAF5EB] border-b border-[#E6DFD1] text-xs">
+        <div class="flex justify-between items-center mb-1 text-[11px] text-[#8E6F3A]">
+          <span id="shipping-progress-text">Add ₹500 more for <strong>FREE Express Delivery</strong>!</span>
+          <span class="font-bold">Complimentary Shipping @ ₹500</span>
+        </div>
+        <div class="w-full h-1.5 bg-[#E6DFD1] rounded-full overflow-hidden">
+          <div id="shipping-bar" class="h-full bg-[#B08D57] transition-all duration-300" style="width: 0%"></div>
         </div>
       </div>
 
-      <!-- Items List -->
-      <div id="cart-items-container" class="p-6 overflow-y-auto flex-grow space-y-4">
-        <!-- Injected via updateCartUI -->
-      </div>
+      <div id="cart-items-container" class="flex-grow overflow-y-auto p-5 space-y-3"></div>
 
-      <!-- Footer & Promo -->
-      <div class="p-6 bg-white border-t border-[#d0e3dc] space-y-4">
-        
-        <!-- Promo Code Input -->
-        <div class="flex gap-2">
-          <input type="text" id="promo-input" placeholder="Promo code (SARVAMFIRST / VEDA15)" class="flex-grow px-3 py-2 rounded-xl border border-[#d0e3dc] text-xs uppercase focus:outline-none focus:border-[#c48b71]">
-          <button onclick="applyPromoCode()" class="px-4 py-2 rounded-xl bg-[#edf5f2] text-[#0d5c46] font-bold text-xs hover:bg-[#dcefe8] border border-[#d0e3dc]">Apply</button>
+      <div class="p-5 border-t border-[#E6DFD1] bg-white space-y-3">
+        <div class="flex justify-between text-sm font-bold text-[#063D32]">
+          <span>Order Total:</span>
+          <span id="cart-total">₹0</span>
         </div>
-        <div id="promo-msg" class="text-[11px] font-semibold hidden"></div>
-
-        <!-- Totals -->
-        <div class="space-y-1.5 text-xs text-[#5b7369]">
-          <div class="flex justify-between">
-            <span>Subtotal:</span>
-            <span id="cart-subtotal" class="font-semibold text-[#0d5c46]">₹0</span>
-          </div>
-          <div class="flex justify-between text-emerald-700" id="discount-row" style="display:none;">
-            <span>Ayurvedic Discount (15%):</span>
-            <span id="cart-discount">-₹0</span>
-          </div>
-          <div class="flex justify-between">
-            <span>Standard Shipping:</span>
-            <span id="cart-shipping" class="text-emerald-700 font-semibold">FREE</span>
-          </div>
-          <div class="flex justify-between text-sm font-bold text-[#0d5c46] pt-2 border-t border-[#edf2f0]">
-            <span>Total Amount:</span>
-            <span id="cart-total">₹0</span>
-          </div>
+        <div class="grid grid-cols-2 gap-2 pt-2">
+          <a href="https://wa.me/919876543210?text=Hello%20Sarvam%20Healthcare%2C%20I%20have%20items%20in%20my%20healing%20regimen%20box%20and%20would%20like%20to%20place%20an%20order." target="_blank" class="text-center py-3 rounded-xl btn-whatsapp-showroom text-xs font-bold shadow flex items-center justify-center gap-1">
+            <span>💬</span> WhatsApp Order
+          </a>
+          <button onclick="handleCheckout()" class="py-3 rounded-xl btn-emerald text-xs font-bold shadow">
+            Checkout →
+          </button>
         </div>
-
-        <button onclick="handleCheckout()" class="rosegold-btn-gradient text-white w-full py-3.5 rounded-xl font-bold text-xs tracking-wider uppercase shadow-lg hover:scale-101 transition-transform">
-          Proceed to Secure Checkout →
-        </button>
-
-        <p class="text-[10px] text-center text-[#5b7369]">
-          🔒 256-Bit Encrypted Payment • 100% Authentic Batch Verification
-        </p>
       </div>
 
     </div>
   </div>
 
-  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <!-- ================= SCRIPTS ================= -->
   <script>
-    // 1. Persistent Cart Management
+    // 1. Resolve Active Product from URL query (?id= or ?slug=)
+    const urlParams = new URLSearchParams(window.location.search);
+    const productParam = urlParams.get('id') || urlParams.get('slug');
+    const currentProduct = getSarvamProductByIdOrSlug(productParam);
+
+    let selectedDays = 30;
+    let currentPrice = currentProduct.price;
+
+    function initProductDetails() {
+      // Document metadata
+      document.title = `${currentProduct.name} | Classical Ayurvedic Showroom | Sarvam Healthcare`;
+      document.getElementById('meta-page-title').textContent = `${currentProduct.name} | Sarvam Healthcare`;
+      document.getElementById('meta-page-desc').setAttribute('content', currentProduct.desc);
+
+      // Breadcrumb
+      document.getElementById('breadcrumb-category').textContent = currentProduct.categoryLabel;
+      document.getElementById('breadcrumb-category-link').href = `shop.html?cat=${currentProduct.category}`;
+      document.getElementById('breadcrumb-name').textContent = currentProduct.name;
+
+      // Badges & Titles
+      document.getElementById('product-badge').textContent = currentProduct.badge;
+      document.getElementById('product-dosha').textContent = currentProduct.doshaLabel;
+      document.getElementById('product-shelf-tag').textContent = currentProduct.shelf;
+      document.getElementById('product-name').textContent = currentProduct.name;
+      document.getElementById('product-sanskrit').textContent = currentProduct.sanskritName;
+      document.getElementById('product-rating').textContent = currentProduct.rating;
+      document.getElementById('product-reviews').textContent = `(${currentProduct.reviews} Clinical Reviews)`;
+      document.getElementById('product-lot').textContent = `Lot SV-${currentProduct.id}04 • Fresh Dispensary Batch`;
+
+      // Copy & Pharmacognosy
+      document.getElementById('product-desc').textContent = currentProduct.desc;
+      document.getElementById('product-marker').textContent = currentProduct.marker;
+      document.getElementById('product-formula').textContent = currentProduct.botanicalFormula;
+
+      // Pricing
+      updatePricingDisplay();
+
+      // WhatsApp Button links
+      const waUrl = getWhatsAppEnquiryUrl(currentProduct.name);
+      document.getElementById('main-whatsapp-enquiry-btn').href = waUrl;
+      document.getElementById('header-whatsapp-btn').href = waUrl;
+      document.getElementById('whatsapp-btn-text').textContent = `Enquire on WhatsApp About ${currentProduct.name}`;
+
+      // Tab text
+      document.getElementById('tab-dosage-text').textContent = currentProduct.dosage;
+      document.getElementById('tab-anupana-text').textContent = currentProduct.anupana;
+
+      // Gallery Initial View
+      switchGalleryView('bottle');
+
+      // Related Products
+      renderRelatedProducts();
+
+      // Meta Pixel ViewContent event
+      if (typeof fbq === 'function') {
+        fbq('track', 'ViewContent', {
+          content_ids: [String(currentProduct.id)],
+          content_name: currentProduct.name,
+          content_category: currentProduct.categoryLabel,
+          value: currentProduct.price,
+          currency: 'INR'
+        });
+      }
+    }
+
+    function updatePricingDisplay() {
+      const orig = selectedDays === 30 ? currentProduct.originalPrice : Math.round(currentProduct.originalPrice * 1.85);
+      const cur = selectedDays === 30 ? currentProduct.price : Math.round(currentProduct.price * 1.8);
+      currentPrice = cur;
+
+      document.getElementById('product-orig-price').textContent = '₹' + orig;
+      document.getElementById('product-price').textContent = '₹' + cur;
+      const savingsPct = Math.round(((orig - cur) / orig) * 100);
+      document.getElementById('product-savings-badge').textContent = `${savingsPct}% SAVINGS`;
+
+      document.getElementById('pkg-30-price').textContent = '₹' + currentProduct.price;
+      document.getElementById('pkg-60-price').textContent = '₹' + Math.round(currentProduct.price * 1.8);
+    }
+
+    function selectPackage(days) {
+      selectedDays = days;
+      const btn30 = document.getElementById('pkg-30');
+      const btn60 = document.getElementById('pkg-60');
+
+      if (days === 30) {
+        btn30.className = 'pkg-option p-3.5 rounded-2xl border-2 border-[#075B46] bg-[#E9F2EE] text-left transition-all';
+        btn60.className = 'pkg-option p-3.5 rounded-2xl border border-[#E6DFD1] bg-white text-left hover:border-[#B08D57] transition-all';
+      } else {
+        btn60.className = 'pkg-option p-3.5 rounded-2xl border-2 border-[#075B46] bg-[#E9F2EE] text-left transition-all';
+        btn30.className = 'pkg-option p-3.5 rounded-2xl border border-[#E6DFD1] bg-white text-left hover:border-[#B08D57] transition-all';
+      }
+
+      updatePricingDisplay();
+    }
+
+    function switchGalleryView(view) {
+      const screen = document.getElementById('gallery-screen');
+      document.querySelectorAll('.gallery-thumb').forEach(t => {
+        t.classList.remove('border-2', 'border-[#075B46]', 'bg-[#FAF5EB]');
+        t.classList.add('border', 'border-[#E6DFD1]', 'bg-white');
+      });
+      if (window.event && window.event.currentTarget) {
+        window.event.currentTarget.classList.remove('border', 'border-[#E6DFD1]', 'bg-white');
+        window.event.currentTarget.classList.add('border-2', 'border-[#075B46]', 'bg-[#FAF5EB]');
+      }
+
+      if (view === 'bottle') {
+        screen.innerHTML = `
+          <div class="w-32 h-32 rounded-3xl bg-gradient-to-br from-[#063D32] to-[#042720] border-4 border-[#B08D57] flex items-center justify-center text-5xl shadow-xl relative mb-4">
+            ${currentProduct.isFlagship ? '👑' : (currentProduct.category === 'liver' ? '🍯' : (currentProduct.category === 'digestion' ? '🌱' : '🌿'))}
+            <div class="absolute -bottom-2 px-3 py-0.5 rounded-full bg-[#B08D57] text-white font-serif-luxury text-[10px] font-bold tracking-widest uppercase shadow">
+              UV Amber Glass
+            </div>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-lg text-[#063D32]">${currentProduct.name}</h4>
+          <p class="text-xs text-[#686E68] max-w-sm mt-1">Pharmaceutical-Grade Vegetarian Pullulan Capsules in UV-Protected Amber Glass Vitrine</p>
+        `;
+      } else if (view === 'herb') {
+        screen.innerHTML = `
+          <div class="w-32 h-32 rounded-3xl bg-gradient-to-br from-[#E9F2EE] to-[#C8DDD6] border-4 border-[#075B46] flex items-center justify-center text-5xl shadow-xl relative mb-4">
+            ⛰️
+            <div class="absolute -bottom-2 px-3 py-0.5 rounded-full bg-[#075B46] text-white font-serif-luxury text-[10px] font-bold tracking-widest uppercase shadow">
+              Wildcrafted
+            </div>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-lg text-[#063D32]">Botanical Sourcing & Heritage</h4>
+          <p class="text-xs text-[#686E68] max-w-sm mt-1">${currentProduct.botanicalFormula}</p>
+        `;
+      } else if (view === 'assay') {
+        screen.innerHTML = `
+          <div class="w-32 h-32 rounded-3xl bg-[#FAF5EB] border-4 border-[#B08D57] flex items-center justify-center text-5xl shadow-xl relative mb-4">
+            🔬
+            <div class="absolute -bottom-2 px-3 py-0.5 rounded-full bg-[#B08D57] text-white font-serif-luxury text-[10px] font-bold tracking-widest uppercase shadow">
+              HPLC Assayed
+            </div>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-lg text-[#063D32]">HPLC Molecular Fingerprint</h4>
+          <p class="text-xs text-[#686E68] max-w-sm mt-1">${currentProduct.marker}</p>
+        `;
+      } else if (view === 'coa') {
+        screen.innerHTML = `
+          <div class="w-32 h-32 rounded-3xl bg-white border-4 border-emerald-600 flex items-center justify-center text-5xl shadow-xl relative mb-4">
+            📜
+            <div class="absolute -bottom-2 px-3 py-0.5 rounded-full bg-emerald-700 text-white font-serif-luxury text-[10px] font-bold tracking-widest uppercase shadow">
+              0.00 ppm Metals
+            </div>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-lg text-[#063D32]">Batch Certificate of Analysis</h4>
+          <p class="text-xs text-[#686E68] max-w-sm mt-1">Lead: 0.00 ppm • Mercury: 0.00 ppm • Arsenic: 0.00 ppm • USP 2021 Pass</p>
+        `;
+      }
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('text-[#075B46]', 'border-b-2', 'border-[#B08D57]');
+        b.classList.add('text-[#686E68]');
+      });
+      document.getElementById('panel-' + tabId).classList.remove('hidden');
+      const activeBtn = document.getElementById('tab-' + tabId);
+      activeBtn.classList.add('text-[#075B46]', 'border-b-2', 'border-[#B08D57]');
+      activeBtn.classList.remove('text-[#686E68]');
+    }
+
+    function renderRelatedProducts() {
+      const container = document.getElementById('related-products-grid');
+      const related = SARVAM_PRODUCTS.filter(p => p.id !== currentProduct.id).slice(0, 3);
+      let html = '';
+      related.forEach(item => {
+        const waUrl = getWhatsAppEnquiryUrl(item.name);
+        html += `
+          <div class="showroom-vitrine rounded-3xl p-5 flex flex-col justify-between group">
+            <div>
+              <div class="flex justify-between items-center text-[10px] mb-2">
+                <span class="px-2 py-0.5 rounded-full bg-[#E9F2EE] text-[#075B46] font-bold">${item.categoryLabel}</span>
+                <span class="text-[#686E68]">${item.doshaLabel}</span>
+              </div>
+              <h4 class="font-serif-luxury font-bold text-base text-[#063D32] group-hover:text-[#075B46] transition-colors">
+                <a href="product.html?id=${item.id}">${item.name}</a>
+              </h4>
+              <p class="text-xs text-[#686E68] mt-1.5 line-clamp-2">${item.desc}</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#E6DFD1] flex items-center justify-between">
+              <span class="font-bold text-[#075B46] text-sm">₹${item.price}</span>
+              <div class="flex items-center gap-2">
+                <a href="${waUrl}" target="_blank" class="px-2.5 py-1.5 rounded-xl btn-whatsapp-showroom text-[10px] font-bold">
+                  💬 Enquire
+                </a>
+                <a href="product.html?id=${item.id}" class="px-2.5 py-1.5 rounded-xl btn-emerald text-[10px] font-semibold">
+                  Details →
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      container.innerHTML = html;
+    }
+
+    // Cart Management
     let cart = [];
     try {
       const saved = localStorage.getItem('sarvam_cart_items');
       if (saved) cart = JSON.parse(saved);
     } catch(e) { cart = []; }
-    let discountApplied = false;
 
     function saveCart() {
       try {
@@ -761,45 +738,36 @@
       } catch(e) {}
     }
 
-    function addToCart(id, name, price, concern, quantity = 1) {
-      const existing = cart.find(item => item.id === id);
+    function handleAddToCartFromDetail() {
+      const packageName = selectedDays === 30 ? 
+        `${currentProduct.name} (30-Day Regimen)` : 
+        `${currentProduct.name} (60-Day Regimen)`;
+      const packageId = selectedDays === 30 ? currentProduct.id : (currentProduct.id + 1000);
+
+      const existing = cart.find(i => i.id === packageId);
       if (existing) {
-        existing.quantity += quantity;
+        existing.quantity += 1;
       } else {
-        cart.push({ id, name, price, concern, quantity });
+        cart.push({ id: packageId, name: packageName, price: currentPrice, categoryLabel: currentProduct.categoryLabel, quantity: 1 });
       }
       saveCart();
       updateCartUI();
       openCart();
 
-      // Meta Pixel AddToCart Event
       if (typeof fbq === 'function') {
         fbq('track', 'AddToCart', {
-          content_ids: [String(id)],
-          content_name: name,
-          content_category: concern,
-          value: price * quantity,
+          content_ids: [String(packageId)],
+          content_name: packageName,
+          content_category: currentProduct.categoryLabel,
+          value: currentPrice,
           currency: 'INR'
         });
       }
     }
 
-    function updateCartQuantity(id, delta) {
-      const item = cart.find(i => i.id === id);
-      if (item) {
-        item.quantity += delta;
-        if (item.quantity <= 0) {
-          cart = cart.filter(i => i.id !== id);
-        }
-      }
-      saveCart();
-      updateCartUI();
-    }
-
     function updateCartUI() {
       const countBadge = document.getElementById('cart-count-badge');
       const container = document.getElementById('cart-items-container');
-      const subtotalEl = document.getElementById('cart-subtotal');
       const totalEl = document.getElementById('cart-total');
       const shippingBar = document.getElementById('shipping-bar');
       const shippingText = document.getElementById('shipping-progress-text');
@@ -809,70 +777,39 @@
 
       if (cart.length === 0) {
         container.innerHTML = `
-          <div class="text-center py-16 text-[#5b7369]">
+          <div class="text-center py-16 text-[#686E68]">
             <span class="text-4xl block mb-2">🌿</span>
-            <p class="text-sm font-semibold">Your healing box is empty</p>
-            <p class="text-xs mt-1">Explore our clinical Ayurvedic remedies and add to your regimen.</p>
+            <p class="text-sm font-semibold text-[#063D32]">Your healing box is empty</p>
           </div>
         `;
-        subtotalEl.textContent = '₹0';
         totalEl.textContent = '₹0';
         shippingBar.style.width = '0%';
-        shippingText.innerHTML = 'Add ₹500 more for <strong>FREE Express Delivery</strong>!';
         return;
       }
 
       let subtotal = 0;
       let html = '';
-
       cart.forEach(item => {
-        const itemTotal = item.price * item.quantity;
-        subtotal += itemTotal;
+        subtotal += item.price * item.quantity;
         html += `
-          <div class="p-3.5 rounded-xl bg-white border border-[#d0e3dc] flex items-center justify-between gap-3">
-            <div class="flex-grow">
-              <h4 class="font-bold text-xs text-[#0d5c46]">${item.name}</h4>
-              <p class="text-[10px] text-[#5b7369]">${item.concern}</p>
-              <div class="text-xs font-semibold text-[#0d5c46] mt-1">₹${item.price} each</div>
+          <div class="p-3 bg-white rounded-xl border border-[#E6DFD1] flex justify-between items-center text-xs">
+            <div>
+              <strong class="text-[#063D32]">${item.name}</strong>
+              <div class="text-[#075B46] font-bold">₹${item.price} × ${item.quantity}</div>
             </div>
-            <div class="flex items-center gap-2 bg-[#edf5f2] px-2 py-1 rounded-lg border border-[#d0e3dc]">
-              <button onclick="updateCartQuantity(${item.id}, -1)" class="text-[#0d5c46] font-bold px-1 hover:text-[#c48b71]">-</button>
-              <span class="text-xs font-bold w-4 text-center">${item.quantity}</span>
-              <button onclick="updateCartQuantity(${item.id}, 1)" class="text-[#0d5c46] font-bold px-1 hover:text-[#c48b71]">+</button>
-            </div>
-            <div class="text-right">
-              <span class="text-xs font-bold text-[#0d5c46]">₹${itemTotal}</span>
-            </div>
+            <button onclick="removeItem(${item.id})" class="text-rose-700 text-xs hover:underline">Remove</button>
           </div>
         `;
       });
-
       container.innerHTML = html;
-      subtotalEl.textContent = '₹' + subtotal;
+      totalEl.textContent = '₹' + subtotal;
+      shippingBar.style.width = subtotal >= 500 ? '100%' : ((subtotal/500)*100) + '%';
+    }
 
-      let finalTotal = subtotal;
-      const discountRow = document.getElementById('discount-row');
-      const discountVal = document.getElementById('cart-discount');
-      if (discountApplied) {
-        const disc = Math.round(subtotal * 0.15);
-        finalTotal = subtotal - disc;
-        discountRow.style.display = 'flex';
-        discountVal.textContent = '-₹' + disc;
-      } else {
-        discountRow.style.display = 'none';
-      }
-
-      totalEl.textContent = '₹' + finalTotal;
-
-      if (subtotal >= 500) {
-        shippingBar.style.width = '100%';
-        shippingText.innerHTML = '🎉 You unlocked <strong>FREE Express Delivery</strong>!';
-      } else {
-        const remaining = 500 - subtotal;
-        const pct = Math.min(100, Math.round((subtotal / 500) * 100));
-        shippingBar.style.width = pct + '%';
-        shippingText.innerHTML = `Add <strong>₹${remaining}</strong> more for <strong>FREE Express Delivery</strong>!`;
-      }
+    function removeItem(id) {
+      cart = cart.filter(i => i.id !== id);
+      saveCart();
+      updateCartUI();
     }
 
     function openCart() {
@@ -894,187 +831,36 @@
       backdrop.classList.add('opacity-0');
       panel.classList.remove('translate-x-0');
       panel.classList.add('translate-x-full');
-      setTimeout(() => {
-        drawer.classList.add('pointer-events-none');
-      }, 300);
-    }
-
-    function applyPromoCode() {
-      const input = document.getElementById('promo-input').value.trim().toUpperCase();
-      const msg = document.getElementById('promo-msg');
-      if (input === 'SARVAMFIRST' || input === 'VEDA15') {
-        discountApplied = true;
-        msg.textContent = '✓ 15% Ayurvedic discount applied!';
-        msg.className = 'text-[11px] font-semibold text-emerald-700 block';
-      } else {
-        discountApplied = false;
-        msg.textContent = '✕ Invalid promo code. Try SARVAMFIRST or VEDA15';
-        msg.className = 'text-[11px] font-semibold text-rose-600 block';
-      }
-      updateCartUI();
+      setTimeout(() => drawer.classList.add('pointer-events-none'), 300);
     }
 
     function handleCheckout() {
-      if (cart.length === 0) {
-        alert('Your healing box is empty. Please select a formulation first.');
-        return;
-      }
-
-      // Meta Pixel InitiateCheckout Event
+      if (cart.length === 0) return alert('Your healing box is empty.');
       if (typeof fbq === 'function') {
-        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
         fbq('track', 'InitiateCheckout', {
-          num_items: cart.reduce((sum, item) => sum + item.quantity, 0),
-          value: subtotal,
+          num_items: cart.length,
+          value: cart.reduce((s, i) => s + (i.price * i.quantity), 0),
           currency: 'INR'
         });
       }
-
-      alert('Namaste! Directing you to 256-Bit Encrypted Payment Gateway. Order batch verification certificate generated.');
-    }
-
-    // 2. Product Detail Interactions
-    let currentSelectedPrice = 1999;
-    let currentPackageDays = 30;
-    let selectedQuantity = 1;
-
-    function selectPackage(days, price, origPrice, discount) {
-      currentPackageDays = days;
-      currentSelectedPrice = price;
-
-      document.getElementById('product-price').textContent = '₹' + price;
-      document.getElementById('product-orig-price').textContent = '₹' + origPrice;
-      document.getElementById('product-discount-badge').textContent = discount;
-
-      document.querySelectorAll('.pkg-option').forEach(el => {
-        el.classList.remove('border-2', 'border-[#0d5c46]', 'bg-[#edf5f2]');
-        el.classList.add('border', 'border-[#d0e3dc]', 'bg-white');
-      });
-
-      const activeEl = document.getElementById(days === 30 ? 'pkg-30' : 'pkg-60');
-      activeEl.classList.remove('border', 'border-[#d0e3dc]', 'bg-white');
-      activeEl.classList.add('border-2', 'border-[#0d5c46]', 'bg-[#edf5f2]');
-    }
-
-    function changeQty(delta) {
-      selectedQuantity = Math.max(1, selectedQuantity + delta);
-      document.getElementById('qty-val').textContent = selectedQuantity;
-    }
-
-    function handleAddDetailToCart() {
-      const name = currentPackageDays === 30 ? 
-        'Sarvam Amrit Rasayana Gold (30-Day)' : 
-        'Sarvam Amrit Rasayana Gold (60-Day)';
-      const id = currentPackageDays === 30 ? 101 : 102;
-      addToCart(id, name, currentSelectedPrice, '👑 Crown Rasayana (Shilajit + Gold)', selectedQuantity);
-    }
-
-    function handleInstantBuy() {
-      handleAddDetailToCart();
-      setTimeout(handleCheckout, 300);
-    }
-
-    // Gallery Views
-    function switchView(view) {
-      const screen = document.getElementById('gallery-screen');
-      document.querySelectorAll('.gallery-thumb').forEach(t => {
-        t.classList.remove('border-2', 'border-[#0d5c46]');
-        t.classList.add('border', 'border-[#d0e3dc]');
-      });
-      event.currentTarget.classList.remove('border', 'border-[#d0e3dc]');
-      event.currentTarget.classList.add('border-2', 'border-[#0d5c46]');
-
-      if (view === 'bottle') {
-        screen.innerHTML = `
-          <div class="w-36 h-36 rounded-full bg-gradient-to-br from-[#0d5c46] to-[#06291f] border-4 border-[#c48b71] flex items-center justify-center text-6xl shadow-2xl relative mb-4">
-            👑
-            <div class="absolute -bottom-2 px-3 py-0.5 rounded-full bg-[#c48b71] text-white font-serif-display text-[10px] font-bold tracking-widest uppercase shadow">
-              Pure Gold
-            </div>
-          </div>
-          <h4 class="font-serif-display font-bold text-lg text-[#0d5c46]">Sarvam Amrit Rasayana Gold</h4>
-          <p class="text-xs text-[#5b7369] max-w-sm mt-1">60 Pharmaceutical-Grade Vegetarian Pullulan Capsules in UV-Protected Amber Glass</p>
-        `;
-      } else if (view === 'shilajit') {
-        screen.innerHTML = `
-          <div class="w-36 h-36 rounded-full bg-gradient-to-br from-[#241711] to-[#0a0604] border-4 border-[#c48b71] flex items-center justify-center text-6xl shadow-2xl relative mb-4">
-            ⛰️
-            <div class="absolute -bottom-2 px-3 py-0.5 rounded-full bg-[#0d5c46] text-white font-serif-display text-[10px] font-bold tracking-widest uppercase shadow">
-              16,000 Ft
-            </div>
-          </div>
-          <h4 class="font-serif-display font-bold text-lg text-[#0d5c46]">Surya-Tapi Purified Himalayan Shilajit</h4>
-          <p class="text-xs text-[#5b7369] max-w-sm mt-1">65.8% Fulvic Acid Standardized Resin • 7 Sacred Triphala Agni cycles</p>
-        `;
-      } else if (view === 'gold') {
-        screen.innerHTML = `
-          <div class="w-36 h-36 rounded-full bg-gradient-to-br from-[#d89e84] to-[#c48b71] border-4 border-[#0d5c46] flex items-center justify-center text-6xl shadow-2xl relative mb-4">
-            ✨
-            <div class="absolute -bottom-2 px-3 py-0.5 rounded-full bg-[#093b2d] text-white font-serif-display text-[10px] font-bold tracking-widest uppercase shadow">
-              99.9% Pure
-            </div>
-          </div>
-          <h4 class="font-serif-display font-bold text-lg text-[#0d5c46]">24K Swarna Bhasma Nano-Particles</h4>
-          <p class="text-xs text-[#5b7369] max-w-sm mt-1">Processed over 108 Varitar cycles for complete sub-cellular biocompatibility</p>
-        `;
-      } else if (view === 'coa') {
-        screen.innerHTML = `
-          <div class="w-36 h-36 rounded-full bg-[#edf5f2] border-4 border-[#0d5c46] flex items-center justify-center text-6xl shadow-2xl relative mb-4">
-            🔬
-            <div class="absolute -bottom-2 px-3 py-0.5 rounded-full bg-emerald-700 text-white font-serif-display text-[10px] font-bold tracking-widest uppercase shadow">
-              NABL Pass
-            </div>
-          </div>
-          <h4 class="font-serif-display font-bold text-lg text-[#0d5c46]">Official Batch #ARG-2026-9 COA</h4>
-          <p class="text-xs text-[#5b7369] max-w-sm mt-1">Lead: 0.00 ppm • Mercury: 0.00 ppm • Arsenic: 0.00 ppm • Passed USP 2021</p>
-        `;
-      }
-    }
-
-    // Tab Switching
-    function switchTab(tabId) {
-      document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
-      document.querySelectorAll('.tab-btn').forEach(b => {
-        b.classList.remove('text-[#0d5c46]', 'border-b-2', 'border-[#c48b71]');
-        b.classList.add('text-[#5b7369]');
-      });
-
-      document.getElementById('panel-' + tabId).classList.remove('hidden');
-      const activeBtn = document.getElementById('tab-' + tabId);
-      activeBtn.classList.add('text-[#0d5c46]', 'border-b-2', 'border-[#c48b71]');
-      activeBtn.classList.remove('text-[#5b7369]');
+      alert('Directing to Sarvam Encrypted Gateway. A dedicated batch COA pass has been generated.');
     }
 
     // Initialize
     document.addEventListener('DOMContentLoaded', () => {
+      initProductDetails();
       updateCartUI();
 
-      // Meta Pixel ViewContent Event
-      if (typeof fbq === 'function') {
-        fbq('track', 'ViewContent', {
-          content_ids: ['101'],
-          content_name: 'Sarvam Amrit Rasayana Gold',
-          content_category: 'Rasayana & Vitality',
-          content_type: 'product',
-          value: 1999,
-          currency: 'INR'
-        });
-      }
-
       document.getElementById('cart-toggle-btn').addEventListener('click', openCart);
+      document.getElementById('cart-backdrop').addEventListener('click', closeCart);
       document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-        const nav = document.getElementById('mobile-nav');
-        nav.classList.toggle('hidden');
+        document.getElementById('mobile-nav').classList.toggle('hidden');
       });
     });
 
-    // Cross-tab sync
     window.addEventListener('storage', (e) => {
       if (e.key === 'sarvam_cart_items') {
-        try {
-          cart = JSON.parse(e.newValue || '[]');
-          updateCartUI();
-        } catch(err) {}
+        try { cart = JSON.parse(e.newValue || '[]'); updateCartUI(); } catch(err) {}
       }
     });
   </script>
