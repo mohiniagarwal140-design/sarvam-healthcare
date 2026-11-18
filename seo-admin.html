@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Command Center & Metadata Portal | Sarvam Healthcare Pvt. Ltd.</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <link rel="stylesheet" href="showroom.css">
+
+  <style>
+    .font-mono-code { font-family: 'JetBrains Mono', monospace; }
+    .serp-title { color: #1a0dab; font-family: arial, sans-serif; }
+    .serp-url { color: #202124; font-family: arial, sans-serif; }
+    .serp-desc { color: #4d5156; font-family: arial, sans-serif; }
+    .whatsapp-bubble {
+      background-color: #ffffff;
+      border-radius: 8px 8px 8px 0px;
+      box-shadow: 0 1px 0.5px rgba(11,20,26,.13);
+    }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #111714; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #C48B71; border-radius: 3px; }
+  </style>
+</head>
+<body class="bg-[#0A0D0C] text-[#FAF8F5] min-h-screen flex flex-col font-sans antialiased">
+
+  <!-- ================= AUTH GATEKEEPER OVERLAY ================= -->
+  <div id="auth-modal" class="fixed inset-0 z-50 bg-[#0A0D0C]/95 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-[#111714] border border-[#C48B71]/40 rounded-2xl max-w-md w-full p-8 shadow-2xl relative text-center">
+      <div class="w-16 h-16 rounded-2xl bg-[#18201C] border border-[#C48B71]/50 mx-auto flex items-center justify-center mb-6 shadow-inner">
+        <svg class="w-8 h-8 text-[#C48B71]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+        </svg>
+      </div>
+      <p class="text-[11px] font-semibold tracking-widest uppercase text-[#D99E84]">Sarvam Healthcare Pvt. Ltd.</p>
+      <h2 class="font-serif text-2xl text-white mt-1 mb-2">SEO Command Center</h2>
+      <p class="text-xs text-white/60 mb-6">Enter your administrator access PIN to configure search engine metadata, Open Graph cards, and social preview assets.</p>
+
+      <form id="auth-form" onsubmit="handleAuthSubmit(event)" class="space-y-4">
+        <div>
+          <input type="password" id="auth-pin" placeholder="Enter Administrator PIN" class="w-full bg-[#18201C] border border-[#C48B71]/30 rounded-xl px-4 py-3 text-center text-lg tracking-widest text-white focus:outline-none focus:border-[#C48B71] transition" autofocus autocomplete="current-password" required>
+          <p id="auth-error" class="text-xs text-red-400 mt-2 hidden">Incorrect PIN. Please try again (Default: sarvam2026).</p>
+        </div>
+        <div class="flex items-center justify-between text-xs text-white/60 px-1">
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="checkbox" id="auth-remember" checked class="rounded border-[#C48B71]/50 text-[#C48B71] focus:ring-0">
+            <span>Remember session on this device</span>
+          </label>
+          <span class="text-[10px] text-[#C48B71]/80">PIN: sarvam2026</span>
+        </div>
+        <button type="submit" class="w-full py-3.5 rounded-xl btn-rosegold font-bold text-sm shadow-lg flex items-center justify-center space-x-2">
+          <span>Unlock SEO Portal</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <header class="bg-[#111714] border-b border-[#C48B71]/30 sticky top-0 z-40 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <span class="w-9 h-9 rounded-xl bg-[#18201C] border border-[#C48B71]/50 flex items-center justify-center text-[#C48B71] font-serif text-lg font-bold group-hover:scale-105 transition">S</span>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="font-serif text-base font-semibold text-white tracking-wide">Sarvam Healthcare</span>
+              <span class="px-2 py-0.5 rounded-full bg-[#C48B71]/20 text-[#D99E84] text-[10px] font-bold uppercase tracking-wider border border-[#C48B71]/30">SEO Suite</span>
+            </div>
+            <p class="text-[10px] text-white/50">Google SERP & Meta Tag Command Center</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-3">
+        <a href="index.html" target="_blank" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-[#18201C] border border-white/10 text-white/80 hover:text-white text-xs transition">
+          <svg class="w-3.5 h-3.5 text-[#C48B71]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          <span>View Live Site</span>
+        </a>
+
+        <button onclick="openGitHubModal()" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-[#18201C] border border-[#C48B71]/40 text-[#D99E84] hover:border-[#C48B71] text-xs transition">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <span class="hidden sm:inline">GitHub Sync</span>
+        </button>
+
+        <button onclick="saveAndExportAll()" class="px-3.5 py-1.5 rounded-lg btn-rosegold text-xs font-bold shadow flex items-center space-x-1.5">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"/></svg>
+          <span>Save / Export</span>
+        </button>
+
+        <button onclick="handleLogout()" title="Logout" class="p-2 rounded-lg bg-[#18201C] text-white/50 hover:text-white hover:bg-white/10 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= SUB-HEADER: OMNI SELECTOR ================= -->
+  <div class="bg-[#18201C] border-b border-white/5 py-3 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <!-- Route Selector Type -->
+      <div class="flex items-center space-x-2 bg-[#111714] p-1 rounded-xl border border-white/10 w-full md:w-auto">
+        <button id="tab-core-pages" onclick="switchRouteCategory('core')" class="flex-1 md:flex-none px-4 py-1.5 rounded-lg text-xs font-semibold bg-[#C48B71] text-white transition shadow-sm">
+          Core Showroom Pages (6)
+        </button>
+        <button id="tab-products" onclick="switchRouteCategory('products')" class="flex-1 md:flex-none px-4 py-1.5 rounded-lg text-xs font-semibold text-white/70 hover:text-white transition">
+          Formulation Vitrines (9)
+        </button>
+      </div>
+
+      <!-- Specific Item Picker -->
+      <div class="flex items-center space-x-3 w-full md:w-auto">
+        <span class="text-xs text-white/50 whitespace-nowrap">Editing Page:</span>
+        <select id="route-dropdown" onchange="handleRouteChange(this.value)" class="bg-[#111714] border border-[#C48B71]/40 rounded-xl px-4 py-2 text-xs text-white font-medium focus:outline-none focus:border-[#C48B71] w-full md:w-80 transition">
+          <!-- Options populated dynamically -->
+        </select>
+        <button onclick="resetCurrentToDefault()" title="Reset this page to default metadata" class="px-3 py-2 rounded-xl bg-[#111714] border border-white/10 text-white/60 hover:text-[#D99E84] text-xs transition whitespace-nowrap">
+          Reset
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN DASHBOARD BODY ================= -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+      <!-- ================= LEFT COLUMN: META & SOCIAL INPUTS (7 COLS) ================= -->
+      <section class="lg:col-span-7 space-y-6">
+
+        <!-- CARD 1: PRIMARY SEARCH ENGINE META TAGS -->
+        <div class="bg-[#111714] border border-[#C48B71]/30 rounded-2xl p-6 shadow-xl">
+          <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
+            <div class="flex items-center space-x-2.5">
+              <span class="w-7 h-7 rounded-lg bg-[#18201C] border border-[#C48B71]/40 flex items-center justify-center text-[#C48B71] text-xs">🔍</span>
+              <div>
+                <h3 class="font-serif text-lg text-white">Google & Search Engine Tags</h3>
+                <p class="text-[11px] text-white/50">Primary organic search result title and description snippets</p>
+              </div>
+            </div>
+            <span id="health-badge" class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold border border-emerald-500/30">
+              Optimal (100%)
+            </span>
+          </div>
+
+          <div class="space-y-4 text-xs">
+            <!-- Title Tag -->
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label class="font-semibold text-white/90 flex items-center space-x-1.5">
+                  <span>Page Title Tag (&lt;title&gt;)</span>
+                  <span class="text-[10px] text-[#C48B71]">*Required</span>
+                </label>
+                <div class="text-[11px] text-white/60 font-mono-code">
+                  <span id="title-char-count">0</span> / 60 chars <span id="title-status-indicator"></span>
+                </div>
+              </div>
+              <input type="text" id="meta-title" oninput="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#C48B71] transition" placeholder="e.g. Sarvam Healthcare Pvt. Ltd. | Modern Ayurvedic Medicine Showroom">
+              <div class="w-full bg-white/5 h-1 rounded-full mt-1.5 overflow-hidden">
+                <div id="title-progress-bar" class="h-full bg-emerald-500 transition-all duration-300" style="width: 50%;"></div>
+              </div>
+              <p class="text-[10px] text-white/40 mt-1">Recommended 50–60 characters. Keep the brand name at the end.</p>
+            </div>
+
+            <!-- Meta Description -->
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label class="font-semibold text-white/90 flex items-center space-x-1.5">
+                  <span>Meta Description (&lt;meta name="description"&gt;)</span>
+                  <span class="text-[10px] text-[#C48B71]">*Required</span>
+                </label>
+                <div class="text-[11px] text-white/60 font-mono-code">
+                  <span id="desc-char-count">0</span> / 160 chars <span id="desc-status-indicator"></span>
+                </div>
+              </div>
+              <textarea id="meta-desc" rows="3" oninput="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#C48B71] transition resize-none" placeholder="e.g. Official digital showroom of Sarvam Healthcare Pvt. Ltd. Discover certified Ayurvedic liver syrups, digestive tonics, joint pain remedies, and Rasayanas."></textarea>
+              <div class="w-full bg-white/5 h-1 rounded-full mt-1.5 overflow-hidden">
+                <div id="desc-progress-bar" class="h-full bg-emerald-500 transition-all duration-300" style="width: 50%;"></div>
+              </div>
+              <p class="text-[10px] text-white/40 mt-1">Recommended 150–160 characters. Clearly convey value and include primary keyword.</p>
+            </div>
+
+            <!-- Focus Keywords & Presence Check -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+              <div>
+                <label class="block font-semibold text-white/90 mb-1.5">Primary Focus Keyword</label>
+                <input type="text" id="meta-focus-keyword" oninput="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#C48B71] transition" placeholder="e.g. Ayurvedic medicine showroom">
+              </div>
+              <div>
+                <label class="block font-semibold text-white/90 mb-1.5">Keyword Density Check</label>
+                <div class="flex items-center space-x-2 pt-2 text-[11px]">
+                  <span id="kw-in-title" class="px-2 py-0.5 rounded bg-white/10 text-white/60">Title: ✕</span>
+                  <span id="kw-in-desc" class="px-2 py-0.5 rounded bg-white/10 text-white/60">Description: ✕</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Canonical URL & Robots -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div>
+                <label class="block font-semibold text-white/90 mb-1.5">Canonical URL Path</label>
+                <input type="text" id="meta-canonical" oninput="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white font-mono-code text-[11px] focus:outline-none focus:border-[#C48B71] transition" placeholder="e.g. index.html">
+              </div>
+              <div>
+                <label class="block font-semibold text-white/90 mb-1.5">Robots Directives</label>
+                <select id="meta-robots" onchange="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#C48B71] transition">
+                  <option value="index, follow">index, follow (Standard Public)</option>
+                  <option value="noindex, follow">noindex, follow (Hide from search)</option>
+                  <option value="noindex, nofollow">noindex, nofollow (Strict Private)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Comma Separated Keywords -->
+            <div>
+              <label class="block font-semibold text-white/90 mb-1.5">Meta Keywords Tag (Optional)</label>
+              <input type="text" id="meta-keywords" oninput="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2 text-white/80 focus:outline-none focus:border-[#C48B71] transition text-[11px]" placeholder="Sarvam Healthcare, Ayurvedic medicine showroom, Ayurvedic liver tonic...">
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: OPEN GRAPH & SOCIAL PREVIEW CARDS (WHATSAPP, FACEBOOK, LINKEDIN) -->
+        <div class="bg-[#111714] border border-[#C48B71]/30 rounded-2xl p-6 shadow-xl">
+          <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
+            <div class="flex items-center space-x-2.5">
+              <span class="w-7 h-7 rounded-lg bg-[#18201C] border border-[#C48B71]/40 flex items-center justify-center text-[#C48B71] text-xs">💬</span>
+              <div>
+                <h3 class="font-serif text-lg text-white">Social & WhatsApp Open Graph Tags</h3>
+                <p class="text-[11px] text-white/50">Controls preview cards generated when links are shared on WhatsApp, Facebook, iMessage</p>
+              </div>
+            </div>
+            <button onclick="syncOgWithPrimary()" class="px-2.5 py-1 rounded-lg bg-[#18201C] border border-[#C48B71]/40 text-[#D99E84] text-[10px] font-semibold hover:border-[#C48B71] transition">
+              Copy from Search Tags
+            </button>
+          </div>
+
+          <div class="space-y-4 text-xs">
+            <!-- OG Title -->
+            <div>
+              <label class="block font-semibold text-white/90 mb-1.5">Social Share Title (og:title)</label>
+              <input type="text" id="og-title" oninput="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#C48B71] transition" placeholder="e.g. Sarvam Healthcare | Luxury Ayurvedic Medicine Showroom">
+            </div>
+
+            <!-- OG Description -->
+            <div>
+              <label class="block font-semibold text-white/90 mb-1.5">Social Share Description (og:description)</label>
+              <textarea id="og-desc" rows="2" oninput="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#C48B71] transition resize-none" placeholder="e.g. Discover classical Ayurvedic remedies and standardized botanical formulations. Enquire directly on WhatsApp."></textarea>
+            </div>
+
+            <!-- OG Image URL & Presets -->
+            <div>
+              <label class="block font-semibold text-white/90 mb-1.5">Social Share Banner Image (og:image)</label>
+              <div class="flex space-x-2">
+                <input type="url" id="og-image" oninput="updateLivePreviews()" class="flex-1 bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white font-mono-code text-[11px] focus:outline-none focus:border-[#C48B71] transition" placeholder="https://...">
+                <button onclick="testImageUrl()" class="px-3 py-2 rounded-xl bg-[#18201C] border border-white/10 text-white/70 hover:text-white text-xs transition">Preview</button>
+              </div>
+              <div class="flex items-center space-x-2 mt-2">
+                <span class="text-[10px] text-white/40">Quick Presets:</span>
+                <button onclick="setPresetImage('vitrine')" class="text-[10px] text-[#D99E84] hover:underline">Showroom</button>
+                <span class="text-white/20">•</span>
+                <button onclick="setPresetImage('gold')" class="text-[10px] text-[#D99E84] hover:underline">Gold Rasayana</button>
+                <span class="text-white/20">•</span>
+                <button onclick="setPresetImage('lab')" class="text-[10px] text-[#D99E84] hover:underline">Clinical Lab</button>
+                <span class="text-white/20">•</span>
+                <button onclick="setPresetImage('vaidya')" class="text-[10px] text-[#D99E84] hover:underline">Vaidya Telehealth</button>
+              </div>
+            </div>
+
+            <!-- OG Type & Twitter Card -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+              <div>
+                <label class="block font-semibold text-white/90 mb-1.5">Open Graph Type (og:type)</label>
+                <select id="og-type" onchange="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#C48B71] transition">
+                  <option value="website">website (Standard Page)</option>
+                  <option value="product">product (Ayurvedic Formulation)</option>
+                  <option value="article">article (Scientific/Heritage)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block font-semibold text-white/90 mb-1.5">Twitter Card Format</label>
+                <select id="twitter-card" onchange="updateLivePreviews()" class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#C48B71] transition">
+                  <option value="summary_large_image">summary_large_image (High Impact Banner)</option>
+                  <option value="summary">summary (Compact Square)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: SCHEMA.ORG & ADVANCED TOOLS -->
+        <div class="bg-[#111714] border border-[#C48B71]/30 rounded-2xl p-6 shadow-xl">
+          <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
+            <div class="flex items-center space-x-2.5">
+              <span class="w-7 h-7 rounded-lg bg-[#18201C] border border-[#C48B71]/40 flex items-center justify-center text-[#C48B71] text-xs">🏷️</span>
+              <div>
+                <h3 class="font-serif text-lg text-white">Schema.org JSON-LD Rich Snippet</h3>
+                <p class="text-[11px] text-white/50">Google Rich Results structured data (MedicalBusiness / Product)</p>
+              </div>
+            </div>
+            <button onclick="copySchemaSnippet()" class="px-2.5 py-1 rounded-lg bg-[#18201C] border border-white/10 text-white/70 hover:text-white text-[10px] transition">
+              Copy Schema
+            </button>
+          </div>
+          <div class="relative">
+            <pre id="schema-preview" class="w-full bg-[#0A0D0C] border border-white/5 rounded-xl p-3 text-[11px] font-mono-code text-amber-200/90 overflow-x-auto max-h-48 custom-scrollbar"></pre>
+          </div>
+          <div class="mt-3 flex items-center justify-between text-[11px]">
+            <span class="text-white/40">Includes organization, AYUSH credential, telephone & address</span>
+            <a href="https://search.google.com/test/rich-results" target="_blank" class="text-[#D99E84] hover:underline flex items-center space-x-1">
+              <span>Test with Google Rich Results</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= RIGHT COLUMN: LIVE REAL-TIME PREVIEWS (5 COLS) ================= -->
+      <section class="lg:col-span-5 space-y-6">
+
+        <!-- PREVIEW 1: GOOGLE SERP RESULT (DESKTOP & MOBILE SIMULATOR) -->
+        <div class="bg-[#111714] border border-[#C48B71]/30 rounded-2xl p-6 shadow-xl sticky top-24">
+          <div class="flex items-center justify-between pb-3 border-b border-white/10 mb-4">
+            <div class="flex items-center space-x-2">
+              <span class="text-base">🔎</span>
+              <h3 class="font-serif text-base text-white">Google SERP Snippet Preview</h3>
+            </div>
+            <div class="flex items-center bg-[#18201C] p-0.5 rounded-lg border border-white/10 text-[10px]">
+              <button id="view-desktop-btn" onclick="toggleSerpView('desktop')" class="px-2.5 py-1 rounded bg-[#C48B71] text-white font-medium">Desktop</button>
+              <button id="view-mobile-btn" onclick="toggleSerpView('mobile')" class="px-2.5 py-1 rounded text-white/60 hover:text-white font-medium">Mobile</button>
+            </div>
+          </div>
+
+          <!-- Google SERP Card Box -->
+          <div id="serp-container" class="bg-white rounded-xl p-4 shadow-sm text-left transition-all max-w-full overflow-hidden">
+            <!-- URL / Breadcrumb Row -->
+            <div class="flex items-center space-x-2 text-[12px] serp-url mb-1">
+              <div class="w-4 h-4 rounded-full bg-[#111714] text-[#C48B71] font-serif text-[10px] flex items-center justify-center font-bold">S</div>
+              <div class="truncate">
+                <span class="font-medium text-[#202124]">Sarvam Healthcare</span>
+                <span class="text-[#5f6368] text-[11px] block sm:inline"> • <span id="serp-breadcrumb">https://mohiniagarwal140-design.github.io › ...</span></span>
+              </div>
+            </div>
+
+            <!-- Title in Google Blue -->
+            <h4 id="serp-title-display" class="serp-title text-base sm:text-lg hover:underline cursor-pointer leading-snug line-clamp-2 font-medium">
+              Sarvam Healthcare Pvt. Ltd. | Modern Ayurvedic Medicine Showroom
+            </h4>
+
+            <!-- Snippet Description -->
+            <p id="serp-desc-display" class="serp-desc text-xs mt-1 leading-relaxed line-clamp-2">
+              Official digital showroom of Sarvam Healthcare Pvt. Ltd. Discover certified Ayurvedic liver syrups, digestive tonics, joint pain remedies, and Rasayanas.
+            </p>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between text-[11px] text-white/50">
+            <span>Pixel Width: <strong id="serp-pixel-width" class="text-white/80">~510px</strong> / 600px</span>
+            <span id="serp-truncation-warning" class="text-emerald-400">✓ No truncation detected</span>
+          </div>
+
+          <!-- PREVIEW 2: WHATSAPP / SOCIAL SHARE BUBBLE SIMULATOR -->
+          <div class="pt-6 mt-6 border-t border-white/10">
+            <div class="flex items-center space-x-2 mb-3">
+              <span class="text-emerald-400">💬</span>
+              <h4 class="font-serif text-base text-white">WhatsApp & Chat Link Preview</h4>
+            </div>
+
+            <!-- WhatsApp Bubble -->
+            <div class="bg-[#0c1317] p-3 rounded-2xl border border-white/5">
+              <div class="whatsapp-bubble overflow-hidden max-w-sm mx-auto">
+                <!-- Thumbnail Image -->
+                <div class="h-36 w-full bg-[#18201C] relative overflow-hidden">
+                  <img id="wa-image-display" src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=1200&q=80" alt="Preview Image" class="w-full h-full object-cover">
+                  <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded backdrop-blur-xs font-mono-code">1200 × 630</span>
+                </div>
+                <!-- WhatsApp Text Container -->
+                <div class="p-3 bg-[#f0f2f5] text-left">
+                  <p id="wa-domain-display" class="text-[10px] uppercase tracking-wider text-[#54656f] font-semibold truncate">
+                    mohiniagarwal140-design.github.io
+                  </p>
+                  <h5 id="wa-title-display" class="text-xs font-bold text-[#111b21] line-clamp-2 mt-0.5 leading-snug">
+                    Sarvam Healthcare | Luxury Ayurvedic Medicine Showroom
+                  </h5>
+                  <p id="wa-desc-display" class="text-[11px] text-[#54656f] line-clamp-2 mt-1 leading-tight">
+                    Discover classical Ayurvedic remedies and standardized botanical formulations. Enquire directly on WhatsApp.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="text-[10px] text-center text-white/40 mt-2">Simulates incoming WhatsApp / Telegram link preview bubble</p>
+          </div>
+
+          <!-- QUICK ACTION BUTTONS -->
+          <div class="pt-6 mt-6 border-t border-white/10 space-y-2">
+            <button onclick="copyGeneratedHeadCode()" class="w-full py-2.5 rounded-xl bg-[#18201C] border border-[#C48B71]/40 text-[#D99E84] hover:border-[#C48B71] text-xs font-semibold flex items-center justify-center space-x-2 transition">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+              <span>Copy Generated &lt;head&gt; HTML</span>
+            </button>
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="downloadSitemapXml()" class="py-2 rounded-xl bg-[#18201C] border border-white/10 text-white/70 hover:text-white text-[11px] transition">
+                Download sitemap.xml
+              </button>
+              <button onclick="downloadRobotsTxt()" class="py-2 rounded-xl bg-[#18201C] border border-white/10 text-white/70 hover:text-white text-[11px] transition">
+                Download robots.txt
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ================= GITHUB 1-CLICK SYNC MODAL ================= -->
+  <div id="github-modal" class="fixed inset-0 z-50 bg-[#0A0D0C]/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-[#111714] border border-[#C48B71]/40 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
+      <button onclick="closeGitHubModal()" class="absolute top-4 right-4 text-white/50 hover:text-white">✕</button>
+      <div class="flex items-center space-x-3 mb-4">
+        <span class="w-10 h-10 rounded-xl bg-[#18201C] border border-[#C48B71]/50 flex items-center justify-center text-[#D99E84]">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </span>
+        <div>
+          <h3 class="font-serif text-lg text-white">1-Click GitHub Pages Direct Sync</h3>
+          <p class="text-xs text-white/50">Commit updated SEO config directly to repository</p>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-xs">
+        <div>
+          <label class="block font-semibold text-white/80 mb-1">Target Repository</label>
+          <input type="text" id="gh-repo" value="mohiniagarwal140-design/sarvam-healthcare" readonly class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2 text-white/60 font-mono-code">
+        </div>
+        <div>
+          <label class="block font-semibold text-white/80 mb-1">Target Branch</label>
+          <input type="text" id="gh-branch" value="main" readonly class="w-full bg-[#18201C] border border-white/10 rounded-xl px-4 py-2 text-white/60 font-mono-code">
+        </div>
+        <div>
+          <label class="block font-semibold text-white/80 mb-1">GitHub Personal Access Token (PAT)</label>
+          <input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" class="w-full bg-[#18201C] border border-[#C48B71]/40 rounded-xl px-4 py-2.5 text-white font-mono-code focus:outline-none focus:border-[#C48B71]">
+          <p class="text-[10px] text-white/40 mt-1">Requires 'repo' or 'contents:write' scope. Token is saved only in your local browser storage.</p>
+        </div>
+        <div id="gh-status" class="hidden p-3 rounded-xl text-xs font-mono-code"></div>
+
+        <button onclick="handleGitHubPublish()" id="gh-publish-btn" class="w-full py-3 rounded-xl btn-rosegold font-bold text-xs shadow-lg flex items-center justify-center space-x-2">
+          <span>Commit & Push SEO Changes to GitHub</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="bg-[#111714] border border-[#C48B71] text-white px-5 py-3 rounded-xl shadow-2xl flex items-center space-x-3">
+      <span class="text-[#C48B71] text-lg">✓</span>
+      <span id="toast-message" class="text-xs font-medium">Changes saved successfully</span>
+    </div>
+  </div>
+
+  <!-- ================= CLIENT SCRIPTS ================= -->
+  <script>
+    // Master defaults fallback
+    let seoDatabase = null;
+    let currentCategory = 'core'; // 'core' or 'products'
+    let currentKey = 'index.html';
+    const MASTER_PIN = 'sarvam2026';
+    const GITHUB_REPO = 'mohiniagarwal140-design/sarvam-healthcare';
+
+    // Image preset options
+    const PRESET_IMAGES = {
+      vitrine: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=1200&q=80',
+      gold: 'https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=1200&q=80',
+      lab: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1200&q=80',
+      vaidya: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80'
+    };
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', async () => {
+      checkAuthSession();
+      await loadSeoDatabase();
+      populateDropdown();
+      loadFormValues(currentKey);
+      loadSavedGitHubToken();
+    });
+
+    // ---------------- AUTHENTICATION ----------------
+    function checkAuthSession() {
+      const isAuth = sessionStorage.getItem('sarvam_seo_auth') || localStorage.getItem('sarvam_seo_auth');
+      if (isAuth === 'true') {
+        document.getElementById('auth-modal').classList.add('hidden');
+      }
+    }
+
+    function handleAuthSubmit(e) {
+      e.preventDefault();
+      const pin = document.getElementById('auth-pin').value;
+      const remember = document.getElementById('auth-remember').checked;
+      const errorEl = document.getElementById('auth-error');
+
+      if (pin === MASTER_PIN) {
+        if (remember) {
+          localStorage.setItem('sarvam_seo_auth', 'true');
+        } else {
+          sessionStorage.setItem('sarvam_seo_auth', 'true');
+        }
+        document.getElementById('auth-modal').classList.add('hidden');
+        showToast('Access granted to SEO Portal');
+      } else {
+        errorEl.classList.remove('hidden');
+        document.getElementById('auth-pin').classList.add('border-red-500');
+      }
+    }
+
+    function handleLogout() {
+      localStorage.removeItem('sarvam_seo_auth');
+      sessionStorage.removeItem('sarvam_seo_auth');
+      document.getElementById('auth-modal').classList.remove('hidden');
+      document.getElementById('auth-pin').value = '';
+    }
+
+    // ---------------- DATABASE MANAGEMENT ----------------
+    async function loadSeoDatabase() {
+      // 1. Check local storage first
+      const localData = localStorage.getItem('sarvam_seo_database');
+      if (localData) {
+        try {
+          seoDatabase = JSON.parse(localData);
+          return;
+        } catch (err) {
+          console.error("Local SEO data parse error:", err);
+        }
+      }
+
+      // 2. Fallback fetch from seo-config.json
+      try {
+        const res = await fetch('seo-config.json');
+        if (res.ok) {
+          seoDatabase = await res.json();
+          localStorage.setItem('sarvam_seo_database', JSON.stringify(seoDatabase));
+          return;
+        }
+      } catch (err) {
+        console.warn("Could not fetch seo-config.json:", err);
+      }
+    }
+
+    function switchRouteCategory(category) {
+      currentCategory = category;
+      const coreBtn = document.getElementById('tab-core-pages');
+      const prodBtn = document.getElementById('tab-products');
+
+      if (category === 'core') {
+        coreBtn.className = "flex-1 md:flex-none px-4 py-1.5 rounded-lg text-xs font-semibold bg-[#C48B71] text-white transition shadow-sm";
+        prodBtn.className = "flex-1 md:flex-none px-4 py-1.5 rounded-lg text-xs font-semibold text-white/70 hover:text-white transition";
+      } else {
+        prodBtn.className = "flex-1 md:flex-none px-4 py-1.5 rounded-lg text-xs font-semibold bg-[#C48B71] text-white transition shadow-sm";
+        coreBtn.className = "flex-1 md:flex-none px-4 py-1.5 rounded-lg text-xs font-semibold text-white/70 hover:text-white transition";
+      }
+
+      populateDropdown();
+      const dropdown = document.getElementById('route-dropdown');
+      handleRouteChange(dropdown.value);
+    }
+
+    function populateDropdown() {
+      const dropdown = document.getElementById('route-dropdown');
+      dropdown.innerHTML = '';
+
+      if (currentCategory === 'core') {
+        const pages = seoDatabase ? seoDatabase.pages : {};
+        for (const [key, page] of Object.entries(pages)) {
+          const opt = document.createElement('option');
+          opt.value = key;
+          opt.textContent = page.label || key;
+          dropdown.appendChild(opt);
+        }
+        currentKey = dropdown.value || 'index.html';
+      } else {
+        const products = seoDatabase ? seoDatabase.products : {};
+        for (const [key, prod] of Object.entries(products)) {
+          const opt = document.createElement('option');
+          opt.value = key;
+          opt.textContent = `${prod.name} (${prod.slug})`;
+          dropdown.appendChild(opt);
+        }
+        currentKey = dropdown.value || 'amrit-rasayana-gold';
+      }
+    }
+
+    function handleRouteChange(key) {
+      currentKey = key;
+      loadFormValues(key);
+    }
+
+    function getCurrentItem() {
+      if (currentCategory === 'core') {
+        return (seoDatabase && seoDatabase.pages) ? seoDatabase.pages[currentKey] : null;
+      } else {
+        return (seoDatabase && seoDatabase.products) ? seoDatabase.products[currentKey] : null;
+      }
+    }
+
+    function loadFormValues(key) {
+      const item = getCurrentItem();
+      if (!item) return;
+
+      document.getElementById('meta-title').value = item.title || '';
+      document.getElementById('meta-desc').value = item.description || '';
+      document.getElementById('meta-focus-keyword').value = item.focusKeyword || '';
+      document.getElementById('meta-canonical').value = item.canonical || '';
+      document.getElementById('meta-robots').value = item.robots || 'index, follow';
+      document.getElementById('meta-keywords').value = item.keywords || '';
+
+      document.getElementById('og-title').value = item.ogTitle || item.title || '';
+      document.getElementById('og-desc').value = item.ogDescription || item.description || '';
+      document.getElementById('og-image').value = item.ogImage || (seoDatabase.site ? seoDatabase.site.defaultOgImage : '');
+      document.getElementById('og-type').value = item.ogType || (currentCategory === 'core' ? 'website' : 'product');
+      document.getElementById('twitter-card').value = item.twitterCard || 'summary_large_image';
+
+      updateLivePreviews();
+    }
+
+    // ---------------- REAL-TIME PREVIEWS & VALIDATION ----------------
+    function updateLivePreviews() {
+      const title = document.getElementById('meta-title').value;
+      const desc = document.getElementById('meta-desc').value;
+      const focusKw = document.getElementById('meta-focus-keyword').value.trim().toLowerCase();
+      const canonical = document.getElementById('meta-canonical').value;
+      const ogTitle = document.getElementById('og-title').value;
+      const ogDesc = document.getElementById('og-desc').value;
+      const ogImage = document.getElementById('og-image').value;
+
+      // 1. Character counters & Bars
+      const titleCount = title.length;
+      document.getElementById('title-char-count').textContent = titleCount;
+      const titleProgress = document.getElementById('title-progress-bar');
+      const titleIndicator = document.getElementById('title-status-indicator');
+
+      if (titleCount >= 50 && titleCount <= 60) {
+        titleProgress.className = "h-full bg-emerald-500 transition-all";
+        titleIndicator.innerHTML = '<span class="text-emerald-400">✓ Optimal</span>';
+      } else if (titleCount > 60) {
+        titleProgress.className = "h-full bg-red-500 transition-all";
+        titleIndicator.innerHTML = '<span class="text-red-400">⚠ Truncated in SERP</span>';
+      } else {
+        titleProgress.className = "h-full bg-amber-500 transition-all";
+        titleIndicator.innerHTML = '<span class="text-amber-400">Too short</span>';
+      }
+      titleProgress.style.width = Math.min((titleCount / 60) * 100, 100) + '%';
+
+      const descCount = desc.length;
+      document.getElementById('desc-char-count').textContent = descCount;
+      const descProgress = document.getElementById('desc-progress-bar');
+      const descIndicator = document.getElementById('desc-status-indicator');
+
+      if (descCount >= 140 && descCount <= 160) {
+        descProgress.className = "h-full bg-emerald-500 transition-all";
+        descIndicator.innerHTML = '<span class="text-emerald-400">✓ Optimal</span>';
+      } else if (descCount > 160) {
+        descProgress.className = "h-full bg-red-500 transition-all";
+        descIndicator.innerHTML = '<span class="text-red-400">⚠ Truncated in SERP</span>';
+      } else {
+        descProgress.className = "h-full bg-amber-500 transition-all";
+        descIndicator.innerHTML = '<span class="text-amber-400">Expand for better CTR</span>';
+      }
+      descProgress.style.width = Math.min((descCount / 160) * 100, 100) + '%';
+
+      // 2. Keyword check
+      const kwTitleEl = document.getElementById('kw-in-title');
+      const kwDescEl = document.getElementById('kw-in-desc');
+      if (focusKw && title.toLowerCase().includes(focusKw)) {
+        kwTitleEl.className = "px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-semibold";
+        kwTitleEl.textContent = "Title: ✓ Present";
+      } else {
+        kwTitleEl.className = "px-2 py-0.5 rounded bg-white/10 text-white/50";
+        kwTitleEl.textContent = "Title: ✕ Missing";
+      }
+
+      if (focusKw && desc.toLowerCase().includes(focusKw)) {
+        kwDescEl.className = "px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-semibold";
+        kwDescEl.textContent = "Description: ✓ Present";
+      } else {
+        kwDescEl.className = "px-2 py-0.5 rounded bg-white/10 text-white/50";
+        kwDescEl.textContent = "Description: ✕ Missing";
+      }
+
+      // 3. Google SERP Preview Card
+      document.getElementById('serp-title-display').textContent = title || 'Sarvam Healthcare Pvt. Ltd. | Modern Ayurvedic Medicine Showroom';
+      document.getElementById('serp-desc-display').textContent = desc || 'Official digital showroom of Sarvam Healthcare Pvt. Ltd. Discover certified Ayurvedic formulations.';
+      document.getElementById('serp-breadcrumb').textContent = `https://mohiniagarwal140-design.github.io › ${canonical || currentKey}`;
+
+      // Estimated pixel width: average 9.5px per char for Arial 18px
+      const estimatedPx = Math.round(titleCount * 9.2);
+      document.getElementById('serp-pixel-width').textContent = `~${estimatedPx}px`;
+      if (estimatedPx > 580) {
+        document.getElementById('serp-truncation-warning').className = "text-red-400";
+        document.getElementById('serp-truncation-warning').textContent = "⚠ Google will truncate title";
+      } else {
+        document.getElementById('serp-truncation-warning').className = "text-emerald-400";
+        document.getElementById('serp-truncation-warning').textContent = "✓ Fits Google search container";
+      }
+
+      // 4. WhatsApp / Social Preview Card
+      document.getElementById('wa-title-display').textContent = ogTitle || title || 'Sarvam Healthcare';
+      document.getElementById('wa-desc-display').textContent = ogDesc || desc || 'Luxury Ayurvedic Medicine Showroom.';
+      if (ogImage) {
+        document.getElementById('wa-image-display').src = ogImage;
+      }
+
+      // 5. Update Schema snippet
+      renderSchemaSnippet();
+
+      // 6. Save current state to local object
+      saveCurrentToMemory();
+    }
+
+    function toggleSerpView(view) {
+      const container = document.getElementById('serp-container');
+      const deskBtn = document.getElementById('view-desktop-btn');
+      const mobBtn = document.getElementById('view-mobile-btn');
+
+      if (view === 'mobile') {
+        container.style.maxWidth = '375px';
+        container.style.borderRadius = '16px';
+        container.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+        mobBtn.className = "px-2.5 py-1 rounded bg-[#C48B71] text-white font-medium";
+        deskBtn.className = "px-2.5 py-1 rounded text-white/60 hover:text-white font-medium";
+      } else {
+        container.style.maxWidth = '100%';
+        container.style.borderRadius = '12px';
+        container.style.boxShadow = 'none';
+        deskBtn.className = "px-2.5 py-1 rounded bg-[#C48B71] text-white font-medium";
+        mobBtn.className = "px-2.5 py-1 rounded text-white/60 hover:text-white font-medium";
+      }
+    }
+
+    function syncOgWithPrimary() {
+      document.getElementById('og-title').value = document.getElementById('meta-title').value;
+      document.getElementById('og-desc').value = document.getElementById('meta-desc').value;
+      updateLivePreviews();
+      showToast('Copied Search tags to Social tags');
+    }
+
+    function setPresetImage(preset) {
+      if (PRESET_IMAGES[preset]) {
+        document.getElementById('og-image').value = PRESET_IMAGES[preset];
+        updateLivePreviews();
+        showToast(`Applied ${preset} image preset`);
+      }
+    }
+
+    function testImageUrl() {
+      const url = document.getElementById('og-image').value;
+      if (url) {
+        window.open(url, '_blank');
+      }
+    }
+
+    // ---------------- SCHEMA.ORG GENERATION ----------------
+    function renderSchemaSnippet() {
+      const title = document.getElementById('meta-title').value;
+      const desc = document.getElementById('meta-desc').value;
+      const canonical = document.getElementById('meta-canonical').value;
+      const ogImage = document.getElementById('og-image').value;
+      const baseUrl = (seoDatabase && seoDatabase.site) ? seoDatabase.site.baseUrl : 'https://mohiniagarwal140-design.github.io/sarvam-healthcare';
+
+      let schema = {};
+
+      if (currentCategory === 'products') {
+        const item = getCurrentItem();
+        schema = {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": title.split('|')[0].trim(),
+          "image": [ogImage],
+          "description": desc,
+          "sku": `SARVAM-${(item && item.id) || '101'}`,
+          "brand": {
+            "@type": "Brand",
+            "name": "Sarvam Healthcare Pvt. Ltd."
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": `${baseUrl}/${canonical || currentKey}`,
+            "priceCurrency": "INR",
+            "price": (item && item.price) || 999,
+            "availability": "https://schema.org/InStock"
+          }
+        };
+      } else {
+        schema = {
+          "@context": "https://schema.org",
+          "@type": "MedicalBusiness",
+          "name": "Sarvam Healthcare Pvt. Ltd.",
+          "url": `${baseUrl}/${canonical || currentKey}`,
+          "logo": "https://mohiniagarwal140-design.github.io/sarvam-healthcare/logo.png",
+          "image": ogImage,
+          "description": desc,
+          "telephone": "+91 (011) 4988-7200",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gurugram",
+            "addressRegion": "Haryana",
+            "addressCountry": "IN"
+          }
+        };
+      }
+
+      document.getElementById('schema-preview').textContent = JSON.stringify(schema, null, 2);
+    }
+
+    function copySchemaSnippet() {
+      const text = document.getElementById('schema-preview').textContent;
+      const code = `<script type="application/ld+json">\n${text}\n<\/script>`;
+      navigator.clipboard.writeText(code).then(() => {
+        showToast('Schema.org snippet copied to clipboard');
+      });
+    }
+
+    // ---------------- SAVE & EXPORT ----------------
+    function saveCurrentToMemory() {
+      if (!seoDatabase) return;
+      const target = getCurrentItem();
+      if (!target) return;
+
+      target.title = document.getElementById('meta-title').value;
+      target.description = document.getElementById('meta-desc').value;
+      target.focusKeyword = document.getElementById('meta-focus-keyword').value;
+      target.canonical = document.getElementById('meta-canonical').value;
+      target.robots = document.getElementById('meta-robots').value;
+      target.keywords = document.getElementById('meta-keywords').value;
+
+      target.ogTitle = document.getElementById('og-title').value;
+      target.ogDescription = document.getElementById('og-desc').value;
+      target.ogImage = document.getElementById('og-image').value;
+      target.ogType = document.getElementById('og-type').value;
+      target.twitterCard = document.getElementById('twitter-card').value;
+
+      localStorage.setItem('sarvam_seo_database', JSON.stringify(seoDatabase));
+    }
+
+    function saveAndExportAll() {
+      saveCurrentToMemory();
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(seoDatabase, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "seo-config.json");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+      showToast('Saved locally & downloaded seo-config.json');
+    }
+
+    function resetCurrentToDefault() {
+      if (confirm(`Reset metadata for ${currentKey} to factory defaults?`)) {
+        localStorage.removeItem('sarvam_seo_database');
+        location.reload();
+      }
+    }
+
+    function copyGeneratedHeadCode() {
+      const title = document.getElementById('meta-title').value;
+      const desc = document.getElementById('meta-desc').value;
+      const keywords = document.getElementById('meta-keywords').value;
+      const canonical = document.getElementById('meta-canonical').value;
+      const robots = document.getElementById('meta-robots').value;
+      const ogTitle = document.getElementById('og-title').value;
+      const ogDesc = document.getElementById('og-desc').value;
+      const ogImage = document.getElementById('og-image').value;
+      const ogType = document.getElementById('og-type').value;
+      const twCard = document.getElementById('twitter-card').value;
+      const baseUrl = (seoDatabase && seoDatabase.site) ? seoDatabase.site.baseUrl : 'https://mohiniagarwal140-design.github.io/sarvam-healthcare';
+      const fullUrl = `${baseUrl}/${canonical || currentKey}`;
+
+      const code = `<!-- Search Engine & Metadata -->
+<title>${title}</title>
+<meta name="description" content="${desc}">
+<meta name="keywords" content="${keywords}">
+<link rel="canonical" href="${fullUrl}">
+<meta name="robots" content="${robots}">
+
+<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+<meta property="og:title" content="${ogTitle}">
+<meta property="og:description" content="${ogDesc}">
+<meta property="og:image" content="${ogImage}">
+<meta property="og:url" content="${fullUrl}">
+<meta property="og:type" content="${ogType}">
+<meta property="og:site_name" content="Sarvam Healthcare Pvt. Ltd.">
+
+<!-- Twitter / X Cards -->
+<meta name="twitter:card" content="${twCard}">
+<meta name="twitter:title" content="${ogTitle}">
+<meta name="twitter:description" content="${ogDesc}">
+<meta name="twitter:image" content="${ogImage}">`;
+
+      navigator.clipboard.writeText(code).then(() => {
+        showToast('Generated <head> HTML copied to clipboard');
+      });
+    }
+
+    function downloadSitemapXml() {
+      window.open('sitemap.xml', '_blank');
+      showToast('Opening sitemap.xml');
+    }
+
+    function downloadRobotsTxt() {
+      window.open('robots.txt', '_blank');
+      showToast('Opening robots.txt');
+    }
+
+    // ---------------- GITHUB 1-CLICK SYNC ----------------
+    function openGitHubModal() {
+      document.getElementById('github-modal').classList.remove('hidden');
+    }
+
+    function closeGitHubModal() {
+      document.getElementById('github-modal').classList.add('hidden');
+    }
+
+    function loadSavedGitHubToken() {
+      const savedToken = localStorage.getItem('sarvam_gh_pat');
+      if (savedToken) {
+        document.getElementById('gh-token').value = savedToken;
+      }
+    }
+
+    async function handleGitHubPublish() {
+      const token = document.getElementById('gh-token').value.trim();
+      const statusEl = document.getElementById('gh-status');
+      const publishBtn = document.getElementById('gh-publish-btn');
+
+      if (!token) {
+        alert("Please enter a GitHub Personal Access Token to commit changes.");
+        return;
+      }
+
+      localStorage.setItem('sarvam_gh_pat', token);
+      statusEl.classList.remove('hidden');
+      statusEl.className = "p-3 rounded-xl text-xs font-mono-code bg-amber-500/10 text-amber-300 border border-amber-500/30";
+      statusEl.textContent = "Connecting to GitHub API...";
+      publishBtn.disabled = true;
+
+      try {
+        // 1. Get current SHA of seo-config.json
+        const fileRes = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/seo-config.json?ref=main`, {
+          headers: {
+            "Authorization": `Bearer ${token}`,
+            "Accept": "application/vnd.github.v3+json"
+          }
+        });
+
+        let currentSha = null;
+        if (fileRes.ok) {
+          const fileData = await fileRes.json();
+          currentSha = fileData.sha;
+        }
+
+        // 2. Prepare base64 encoded content
+        saveCurrentToMemory();
+        const contentStr = JSON.stringify(seoDatabase, null, 2);
+        const encodedContent = btoa(unescape(encodeURIComponent(contentStr)));
+
+        // 3. Commit file via GitHub API
+        const commitRes = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/seo-config.json`, {
+          method: "PUT",
+          headers: {
+            "Authorization": `Bearer ${token}`,
+            "Accept": "application/vnd.github.v3+json",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            message: `chore: update SEO metadata for ${currentKey} via SEO Admin Portal`,
+            content: encodedContent,
+            sha: currentSha || undefined,
+            branch: "main"
+          })
+        });
+
+        if (commitRes.ok) {
+          statusEl.className = "p-3 rounded-xl text-xs font-mono-code bg-emerald-500/10 text-emerald-300 border border-emerald-500/30";
+          statusEl.textContent = "✓ Success! Committed directly to GitHub main. GitHub Pages will redeploy in 30-60s.";
+          showToast('Published directly to GitHub main branch');
+          setTimeout(() => { closeGitHubModal(); }, 2500);
+        } else {
+          const errorData = await commitRes.json();
+          throw new Error(errorData.message || "Failed to commit");
+        }
+      } catch (err) {
+        statusEl.className = "p-3 rounded-xl text-xs font-mono-code bg-red-500/10 text-red-300 border border-red-500/30";
+        statusEl.textContent = `Error: ${err.message}`;
+      } finally {
+        publishBtn.disabled = false;
+      }
+    }
+
+    // ---------------- UI UTILS ----------------
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

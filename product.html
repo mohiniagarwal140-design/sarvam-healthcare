@@ -5,6 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="meta-page-title">Sarvam Amrit Rasayana Gold | Classical Ayurvedic Medicine | Sarvam Healthcare</title>
   <meta id="meta-page-desc" name="description" content="Classical Ayurvedic formulation verified through HPLC pharmacognosy, supercritical extraction, and zero heavy metal testing. Consult Sarvam Healthcare Vaidyas.">
+  <meta name="keywords" content="Sarvam Amrit Rasayana Gold, Ayurvedic Rasayana, Himalayan Shilajit 65% Fulvic Acid, 24K Swarna Bhasma Nano Particles, HPLC verified Ayurveda">
+  <link id="meta-canonical" rel="canonical" href="https://mohiniagarwal140-design.github.io/sarvam-healthcare/product.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="product">
+  <meta id="og-page-title" property="og:title" content="Sarvam Amrit Rasayana Gold | Pure Himalayan Shilajit & 24K Swarna Bhasma">
+  <meta id="og-page-desc" property="og:description" content="Verified through HPLC pharmacognosy and zero heavy metals testing. Pure Ayurvedic vitality for cellular longevity.">
+  <meta id="og-page-image" property="og:image" content="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=1200&q=80">
+  <meta id="og-page-url" property="og:url" content="https://mohiniagarwal140-design.github.io/sarvam-healthcare/product.html">
+  <meta property="og:site_name" content="Sarvam Healthcare Pvt. Ltd.">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta id="tw-page-title" name="twitter:title" content="Sarvam Amrit Rasayana Gold | Pure Himalayan Shilajit & 24K Swarna Bhasma">
+  <meta id="tw-page-desc" name="twitter:description" content="Verified through HPLC pharmacognosy and zero heavy metals testing. Pure Ayurvedic vitality for cellular longevity.">
+  <meta id="tw-page-image" name="twitter:image" content="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Sarvam Amrit Rasayana Gold",
+    "image": [
+      "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "description": "Classical master Rasayana with purified Himalayan Shilajit and 24K Swarna Bhasma nano-particles.",
+    "sku": "SARVAM-101",
+    "brand": {
+      "@type": "Brand",
+      "name": "Sarvam Healthcare Pvt. Ltd."
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://mohiniagarwal140-design.github.io/sarvam-healthcare/product.html",
+      "priceCurrency": "INR",
+      "price": "1999",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -480,9 +522,13 @@
 
       </div>
 
-      <div class="pt-8 text-center sm:flex sm:justify-between sm:text-left text-[11px] text-white/60">
+      <div class="pt-8 text-center sm:flex sm:justify-between sm:text-left text-[11px] text-white/60 border-t border-white/5 mt-4">
         <p>© 2026 Sarvam Healthcare Pvt. Ltd. All rights reserved. Formulations licensed under AYUSH regulations.</p>
-        <p class="mt-2 sm:mt-0">Authentic classical Ayurveda • Non-GMO • Zero heavy metals verified</p>
+        <div class="flex items-center justify-center sm:justify-end space-x-3 mt-2 sm:mt-0">
+          <span>Authentic classical Ayurveda • Non-GMO</span>
+          <span>•</span>
+          <a href="seo-admin.html" class="text-white/40 hover:text-[#D99E84] transition">SEO Portal</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -543,6 +589,22 @@
       document.title = `${currentProduct.name} | Classical Ayurvedic Showroom | Sarvam Healthcare`;
       document.getElementById('meta-page-title').textContent = `${currentProduct.name} | Sarvam Healthcare`;
       document.getElementById('meta-page-desc').setAttribute('content', currentProduct.desc);
+
+      const dynamicCanonical = `https://mohiniagarwal140-design.github.io/sarvam-healthcare/product.html?slug=${currentProduct.slug}`;
+      const canonicalEl = document.getElementById('meta-canonical');
+      if (canonicalEl) canonicalEl.setAttribute('href', dynamicCanonical);
+
+      const ogTitleEl = document.getElementById('og-page-title');
+      if (ogTitleEl) ogTitleEl.setAttribute('content', `${currentProduct.name} | Classical Ayurvedic Formulation`);
+      const ogDescEl = document.getElementById('og-page-desc');
+      if (ogDescEl) ogDescEl.setAttribute('content', currentProduct.desc);
+      const ogUrlEl = document.getElementById('og-page-url');
+      if (ogUrlEl) ogUrlEl.setAttribute('content', dynamicCanonical);
+
+      const twTitleEl = document.getElementById('tw-page-title');
+      if (twTitleEl) twTitleEl.setAttribute('content', `${currentProduct.name} | Sarvam Healthcare`);
+      const twDescEl = document.getElementById('tw-page-desc');
+      if (twDescEl) twDescEl.setAttribute('content', currentProduct.desc);
 
       document.getElementById('breadcrumb-category').textContent = currentProduct.categoryLabel;
       document.getElementById('breadcrumb-category-link').href = `shop.html?cat=${currentProduct.category}`;

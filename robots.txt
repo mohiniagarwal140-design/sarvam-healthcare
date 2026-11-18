@@ -1,0 +1,7 @@
+# Sarvam Healthcare Pvt. Ltd. - Robots Exclusion File
+User-agent: *
+Allow: /
+Disallow: /seo-admin.html
+
+# Sitemap Location
+Sitemap: https://mohiniagarwal140-design.github.io/sarvam-healthcare/sitemap.xml
